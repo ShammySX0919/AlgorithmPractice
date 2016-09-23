@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NorthernTour</title>
+</head>
+<body>
+You have a list of cities: . To visit the city, you must spend hours in the city. You also have a list of bidirectional
+connections between the cities and the respective travel times (in hours) that it will take to travel between each pair
+of connected cities.
+
+You and your friends live in the city of Bevagna. You want to plan an itinerary in such a way that you visit the maximum
+possible number of cities while satisfying the following rules:
+
+You start your journey in Bevagna on Monday at AM and leave the last city on Sunday morning at AM (at the latest) in
+order to return to Bevagna (do not take travel time home at the end of your trip into consideration).
+You go to sleep at midnight (i.e., AM) and wake up at AM every day.
+You only sleep in a city you're already in, so there is no sleep mid-travel.
+You cannot visit the same city twice.
+You must be awake to visit a city, so sleeping time does not count toward elapsed visit time.
+You cannot leave a city or complete your journey without spending the full hours there. This means that you must finish
+visiting the last city before ending your journey.
+
+Given the city and travel route lists described above, create a travel itinerary that maximizes the number of cities
+visited during the allotted time specified above. Then print your itinerary as a list of city names in the order in
+which you will need to visit them. It's guaranteed that the answer is unique.
+
+Input Format
+
+The first line contains an integer, , denoting the number of cities in the list.
+Each line of the subsequent lines describes a city in the form of two comma-separated values, (the city name) and (the
+minimum amount of time you must spend visiting it).
+The next line contains a single integer, , denoting the number of connections.
+Each of the subsequent lines describes a bidirectional connection between two cities in the form of three
+comma-separated values. The first two values are strings, and , describing a bidirectional connection between cities and
+; the third value is an integer, , describing the number of hours needed to travel between the two cities.
+
+Constraints
+
+Each city name consists of English alphabetic characters, spaces, and underscores.
+Each city name contains a maximum of characters.
+
+Output Format
+
+Print your itinerary as a list of city names in the order in which you plan to visit them. Each city name must be
+printed on a new line; if there is no solution satisfying the criteria above, print NONE instead.
+
+Sample Input
+
+4
+Roma,38
+Florence,10
+Perugia,12
+Ancona,12
+4
+Bevagna,Roma,14
+Bevagna,Perugia,1
+Roma,Florence,4
+Roma,Perugia,2
+
+Sample Output
+
+Perugia
+Roma
+Florence
+
+Explanation
+
+Bevagna is connected to Rome and Perugia, but Perugia is closer and quicker to visit, so we select Perugia first to help
+maximize the number of cities in our itinerary.
+
+From Perugia, the only new (i.e., not already visited) connected city is Roma, so we select Roma second.
+
+From Roma, the only city we can visit within the remaining time without violating the rules (as Perugia was already
+visited) is Florence, so we select Florence third.
+</body>
+</html>

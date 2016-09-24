@@ -73,10 +73,8 @@ public class Edge<E> implements Comparable<Edge<E>> {
      * @throws IllegalArgumentException if the vertex is not one of the
      *         endpoints of this edge
      */
-    public E to(E vertex) {
-        if      (vertex.equals(from)) return to;
-        else if (vertex.equals(to)) return from;
-        else throw new IllegalArgumentException("Illegal endpoint");
+    public E to() {
+        return to;
     }
 
     /**

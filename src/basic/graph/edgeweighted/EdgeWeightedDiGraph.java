@@ -1,11 +1,6 @@
 package basic.graph.edgeweighted;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 /**
  * this is based on http://algs4.cs.princeton.edu/44sp/EdgeWeightedDirectedCycle.java.html
  */
@@ -32,7 +27,6 @@ import java.util.Set;
  *  7: 2-7 0.34000  1-7 0.19000  0-7 0.16000  5-7 0.28000  4-7 0.37000
  *
  ******************************************************************************/
-import java.util.Stack;
 
 /**
  *  The {@code EdgeWeightedGraph} class represents an edge-weighted
@@ -107,7 +101,6 @@ public class EdgeWeightedDiGraph<E> {
      * Adds the directed edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
-     * @throws IndexOutOfBoundsException unless both endpoints are between {@code 0} and {@code V-1}
      */
     public void addEdge(Edge<E> e) {
         if(!adj.containsKey(e.from())){
@@ -122,8 +115,8 @@ public class EdgeWeightedDiGraph<E> {
      * @param  v the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
      */
-    public Iterable<Edge<E>> adj(E v) {
-    	if(adj.containsKey(v)){
+    public Iterable<Edge<E>> adjcencyList(E v) {
+        if(adj.containsKey(v)){
     		return adj.get(v);
     	}
         return null;
@@ -133,8 +126,7 @@ public class EdgeWeightedDiGraph<E> {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}               
-     * @throws IndexOutOfBoundsException unless {@code 0 <= v < V}
+     * @return the degree of vertex {@code v}
      */
     public int degree(E v) {
     	if(adj.containsKey(v)){
@@ -181,11 +173,78 @@ public class EdgeWeightedDiGraph<E> {
     }
 
     /**
+     * BFS to check if they are connected
+     * @param a
+     * @param b
+     * @return
+     */
+    public boolean connected(E a, E b) {
+        Objects.requireNonNull(a);
+        Objects.requireNonNull(b);
+        Queue<E> queue = new LinkedList<E>();
+        Set<E> visited = new HashSet<E>();
+        queue.add(a);
+        while (!queue.isEmpty()) {
+            E c = queue.poll();
+            if (c.equals(b)) {
+                return true;
+            }
+            if (visited.add(c)) {
+                if (adj.get(c) != null) {
+                    for (Edge<E> more : adj.get(c)) {
+                        queue.add(more.to());
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+    public List<Edge<E>> getPath(E a, E b) {
+        List<Edge<E>> path = new ArrayList<Edge<E>>();
+        Set<Edge<E>> visited = new HashSet<Edge<E>>();
+        if (connected(a, b)) {
+            path = dfsPath(a, b, path, visited);
+        }
+        return path;
+    }
+
+    private List<Edge<E>> dfsPath(E start, E end, List<Edge<E>> path, Set<Edge<E>> visited) {
+        if (start.equals(end)) {
+            List<Edge<E>> result = new ArrayList<Edge<E>>();
+            result.addAll(path);
+            return result;
+        }
+        if (adj.get(start) != null) {
+            for (Edge<E> edge : adj.get(start)) {
+                if (!visited.contains(edge)) {
+                    visited.add(edge);
+                    path.add(edge);
+                    List<Edge<E>> r = dfsPath(edge.to(), end, path, visited);
+                    if (r.size() > 0) return r;
+                    path.remove(edge);
+                }
+            }
+        }
+        return new ArrayList<Edge<E>>();
+    }
+
+    /**
      * Unit tests the {@code EdgeWeightedGraph} data type.
      *
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
+        EdgeWeightedDiGraph<String> g = new EdgeWeightedDiGraph<String>();
+        g.addEdge(new Edge<String>("a", "b", 1.0));
+        g.addEdge(new Edge<String>("b", "a", 1.0));
+        g.addEdge(new Edge<String>("b", "c", 2.0));
+        g.addEdge(new Edge<String>("b", "d", 3.0));
+        g.addEdge(new Edge<String>("c", "e", 2.0));
+
+        System.out.println(g.getPath("a", "e"));
+        System.out.println(g.getPath("a", "b"));
+        System.out.println(g.getPath("a", "y"));
     }
 
 }

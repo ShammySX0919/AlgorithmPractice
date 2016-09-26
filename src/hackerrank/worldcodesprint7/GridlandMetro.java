@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by andrew on 26/09/16.
  */
-public class GridlandMetro {
+
     class Pair implements Comparable {
         long from, to;
 
@@ -30,7 +30,7 @@ public class GridlandMetro {
         }
     }
 
-    public class Solution {
+public class GridlandMetro {
 
         private static List<Pair> mergePairs(List<Pair> ps) {
             Collections.sort(ps);

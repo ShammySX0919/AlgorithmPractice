@@ -1,4 +1,4 @@
-package booking.com.backendcodesprint.hackerrank;
+package hackerrank.booking.com.backendcodesprint;
 
 import java.util.Scanner;
 

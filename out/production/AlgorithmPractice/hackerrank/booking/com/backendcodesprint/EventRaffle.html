@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> EventRaffle</title>
+</head>
+<body>
+ou and <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="5.398ex" height="2.176ex" style="vertical-align: -0.338ex;"
+        viewBox="0 -791.3 2323.9 936.9" role="img" focusable="false"><g stroke="currentColor" fill="currentColor"
+                                                                        stroke-width="0"
+                                                                        transform="matrix(1 0 0 -1 0 0)"><path
+        stroke-width="1"
+        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path><g
+        transform="translate(822,0)"><path stroke-width="1"
+                                           d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path></g><g
+        transform="translate(1823,0)"><path stroke-width="1"
+                                            d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g></svg></span>
+friends entered a raffle where each person won a free ticket to one of <span
+        style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-2-Frame"><svg
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;"
+        viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor"
+                                                                       stroke-width="0"
+                                                                       transform="matrix(1 0 0 -1 0 0)"><path
+        stroke-width="1"
+        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+events in Amsterdam. Each person won exactly one free ticket to an event, and no event accepts two tickets (all events
+occur simultaneously).</p>
+
+<p>The events are all centered around the theme of <em>passions</em>, and each event has a list of passions it provides.
+    This is lucky, because you are all passionate people. Some of you prefer wine tasting over hiking and others prefer
+    hiking over biking, so each of you has a list of your own personal passions. </p>
+
+<p>A person in the group is <em>happy</em> if they have a ticket to an event that satisfies at least one of their
+    personal passions. Because these tickets were all won in a raffle, the event that a person has a ticket for doesn't
+    necessarily offer the passion(s) they're looking for. In cases where someone is <em>not happy</em> with their
+    assigned ticket, they can give their ticket to anyone else in the group and take a ticket from anyone else in the
+    group.</p>
+
+<p>Given the list of passions and ticket assignments for all <span style="font-size: 100%; display: inline-block;"
+                                                                   class="MathJax_SVG" id="MathJax-Element-3-Frame"><svg
+        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex" style="vertical-align: -0.338ex;"
+        viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g stroke="currentColor" fill="currentColor"
+                                                                       stroke-width="0"
+                                                                       transform="matrix(1 0 0 -1 0 0)"><path
+        stroke-width="1"
+        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+    people in your group as well as the list of passions offered by each event, find and print the maximum number of
+    people who can be <em>happy</em> with their ticket assignment.
+</p>
+</div></div></div>
+<div class="challenge_input_format">
+    <div class="msB challenge_input_format_title"><p><strong>Input Format</strong></p></div>
+    <div class="msB challenge_input_format_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <p>The first line contains a single integer, <span style="font-size: 100%; display: inline-block;"
+                                                               class="MathJax_SVG" id="MathJax-Element-1-Frame"><svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex"
+                    style="vertical-align: -0.338ex;" viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g
+                    stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>,
+                denoting the number of people in your group (including you). <br>
+                Each line <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                  width="0.802ex" height="2.176ex"
+                                                                  style="vertical-align: -0.338ex;"
+                                                                  viewBox="0 -791.3 345.5 936.9" role="img"
+                                                                  focusable="false"><g stroke="currentColor"
+                                                                                       fill="currentColor"
+                                                                                       stroke-width="0"
+                                                                                       transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                of the <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               width="1.395ex" height="1.676ex"
+                                                               style="vertical-align: -0.338ex;"
+                                                               viewBox="0 -576.1 600.5 721.6" role="img"
+                                                               focusable="false"><g stroke="currentColor"
+                                                                                    fill="currentColor" stroke-width="0"
+                                                                                    transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                subsequent lines describes event <span style="font-size: 100%; display: inline-block;"
+                                                       class="MathJax_SVG" id="MathJax-Element-4-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                (where <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-5-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               width="9.557ex" height="2.343ex"
+                                                               style="vertical-align: -0.505ex;"
+                                                               viewBox="0 -791.3 4114.6 1008.6" role="img"
+                                                               focusable="false"><g stroke="currentColor"
+                                                                                    fill="currentColor" stroke-width="0"
+                                                                                    transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g
+                        transform="translate(2457,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(3514,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>)
+                as a single line of space-separated values in the following format:
+            </p>
+
+            <ul>
+                <li>The first value is an integer, <span style="font-size: 100%; display: inline-block;"
+                                                         class="MathJax_SVG" id="MathJax-Element-6-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.807ex" height="2.009ex"
+                        style="vertical-align: -0.671ex;" viewBox="0 -576.1 777.8 865.1" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><g
+                        transform="translate(433,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></svg></span>,
+                    denoting the ID of the event for which person <span style="font-size: 100%; display: inline-block;"
+                                                                        class="MathJax_SVG"
+                                                                        id="MathJax-Element-7-Frame"><svg
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex"
+                            style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img"
+                            focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                 transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"
+                                                                                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                    already has a ticket.
+                </li>
+                <li>The second value is an integer, <span style="font-size: 100%; display: inline-block;"
+                                                          class="MathJax_SVG" id="MathJax-Element-8-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="2.059ex" height="2.009ex"
+                        style="vertical-align: -0.671ex;" viewBox="-38.5 -576.1 886.3 865.1" role="img"
+                        focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0"
+                                             transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"
+                                                                                    d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path><g
+                        transform="translate(503,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></svg></span>,
+                    denoting the number of passions person <span style="font-size: 100%; display: inline-block;"
+                                                                 class="MathJax_SVG" id="MathJax-Element-9-Frame"><svg
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex"
+                            style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img"
+                            focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                 transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"
+                                                                                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                    longs to pursue. This is followed by <span style="font-size: 100%; display: inline-block;"
+                                                               class="MathJax_SVG" id="MathJax-Element-10-Frame"><svg
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="2.059ex" height="2.009ex"
+                            style="vertical-align: -0.671ex;" viewBox="-38.5 -576.1 886.3 865.1" role="img"
+                            focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                 transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"
+                                                                                        d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path><g
+                            transform="translate(503,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                                  d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                    space-separated strings describing person <span style="font-size: 100%; display: inline-block;"
+                                                                    class="MathJax_SVG" id="MathJax-Element-11-Frame"><svg
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex"
+                            style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img"
+                            focusable="false"><g stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                 transform="matrix(1 0 0 -1 0 0)"><path stroke-width="1"
+                                                                                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>'s
+                    respective passions.
+                </li>
+            </ul>
+
+            <p>Each line <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                               id="MathJax-Element-12-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                  width="0.802ex" height="2.176ex"
+                                                                  style="vertical-align: -0.338ex;"
+                                                                  viewBox="0 -791.3 345.5 936.9" role="img"
+                                                                  focusable="false"><g stroke="currentColor"
+                                                                                       fill="currentColor"
+                                                                                       stroke-width="0"
+                                                                                       transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                of the <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-13-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                width="1.395ex" height="1.676ex"
+                                                                style="vertical-align: -0.338ex;"
+                                                                viewBox="0 -576.1 600.5 721.6" role="img"
+                                                                focusable="false"><g stroke="currentColor"
+                                                                                     fill="currentColor"
+                                                                                     stroke-width="0"
+                                                                                     transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                subsequent lines describes the event having ID <span style="font-size: 100%; display: inline-block;"
+                                                                     class="MathJax_SVG" id="MathJax-Element-14-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="0.802ex" height="2.176ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -791.3 345.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                (where <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-15-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                width="9.557ex" height="2.343ex"
+                                                                style="vertical-align: -0.505ex;"
+                                                                viewBox="0 -791.3 4114.6 1008.6" role="img"
+                                                                focusable="false"><g stroke="currentColor"
+                                                                                     fill="currentColor"
+                                                                                     stroke-width="0"
+                                                                                     transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g
+                        transform="translate(2457,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(3514,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>)
+                as a single line of space-separated values in the following format:
+            </p>
+
+            <ul>
+                <li>The first value is an integer, <span style="font-size: 100%; display: inline-block;"
+                                                         class="MathJax_SVG" id="MathJax-Element-16-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.883ex" height="2.009ex"
+                        style="vertical-align: -0.671ex;" viewBox="0 -576.1 810.8 865.1" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><g
+                        transform="translate(466,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></svg></span>,
+                    denoting the number of passions that the event satisfies. This is followed by <span
+                            style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                            id="MathJax-Element-17-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               width="1.883ex" height="2.009ex"
+                                                               style="vertical-align: -0.671ex;"
+                                                               viewBox="0 -576.1 810.8 865.1" role="img"
+                                                               focusable="false"><g stroke="currentColor"
+                                                                                    fill="currentColor" stroke-width="0"
+                                                                                    transform="matrix(1 0 0 -1 0 0)"><path
+                            stroke-width="1"
+                            d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><g
+                            transform="translate(466,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                                  d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                    space-separated strings describing the respective passions available at the event.
+                </li>
+            </ul>
+
+            <p><strong>Note:</strong> The number of people and the number of events is always the same because there are
+                <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG" id="MathJax-Element-18-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.395ex" height="1.676ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -576.1 600.5 721.6" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                people and <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                 id="MathJax-Element-19-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    width="1.395ex" height="1.676ex"
+                                                                    style="vertical-align: -0.338ex;"
+                                                                    viewBox="0 -576.1 600.5 721.6" role="img"
+                                                                    focusable="false"><g stroke="currentColor"
+                                                                                         fill="currentColor"
+                                                                                         stroke-width="0"
+                                                                                         transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>
+                tickets to unique events.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="challenge_constraints">
+    <div class="msB challenge_constraints_title"><p><strong>Constraints</strong></p></div>
+    <div class="msB challenge_constraints_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <ul>
+                <li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                          id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="12.241ex"
+                                                            height="2.343ex" style="vertical-align: -0.505ex;"
+                                                            viewBox="0 -791.3 5270.6 1008.6" role="img"
+                                                            focusable="false"><g stroke="currentColor"
+                                                                                 fill="currentColor" stroke-width="0"
+                                                                                 transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path
+                        stroke-width="1"
+                        d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                        transform="translate(500,0)"></path><path stroke-width="1"
+                                                                  d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                                                                  transform="translate(1001,0)"></path></g><g
+                        transform="translate(3613,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(4670,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                </li>
+                <li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                          id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10.561ex"
+                                                            height="2.509ex" style="vertical-align: -0.671ex;"
+                                                            viewBox="0 -791.3 4546.9 1080.4" role="img"
+                                                            focusable="false"><g stroke="currentColor"
+                                                                                 fill="currentColor" stroke-width="0"
+                                                                                 transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path><g
+                        transform="translate(433,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g
+                        transform="translate(2890,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(3946,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                </li>
+                <li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                          id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10.723ex"
+                                                            height="2.509ex" style="vertical-align: -0.671ex;"
+                                                            viewBox="0 -791.3 4616.9 1080.4" role="img"
+                                                            focusable="false"><g stroke="currentColor"
+                                                                                 fill="currentColor" stroke-width="0"
+                                                                                 transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path><g
+                        transform="translate(503,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g
+                        transform="translate(2960,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(4016,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                </li>
+                <li><span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                          id="MathJax-Element-4-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10.637ex"
+                                                            height="2.509ex" style="vertical-align: -0.671ex;"
+                                                            viewBox="0 -791.3 4579.9 1080.4" role="img"
+                                                            focusable="false"><g stroke="currentColor"
+                                                                                 fill="currentColor" stroke-width="0"
+                                                                                 transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><g
+                        transform="translate(778,0)"><path stroke-width="1"
+                                                           d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(1834,0)"><path stroke-width="1"
+                                                            d="M39 168Q39 225 58 272T107 350T174 402T244 433T307 442H310Q355 442 388 420T421 355Q421 265 310 237Q261 224 176 223Q139 223 138 221Q138 219 132 186T125 128Q125 81 146 54T209 26T302 45T394 111Q403 121 406 121Q410 121 419 112T429 98T420 82T390 55T344 24T281 -1T205 -11Q126 -11 83 42T39 168ZM373 353Q367 405 305 405Q272 405 244 391T199 357T170 316T154 280T149 261Q149 260 169 260Q282 260 327 284T373 353Z"></path><g
+                        transform="translate(466,-150)"><path stroke-width="1" transform="scale(0.707)"
+                                                              d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g><g
+                        transform="translate(2923,0)"><path stroke-width="1"
+                                                            d="M674 636Q682 636 688 630T694 615T687 601Q686 600 417 472L151 346L399 228Q687 92 691 87Q694 81 694 76Q694 58 676 56H670L382 192Q92 329 90 331Q83 336 83 348Q84 359 96 365Q104 369 382 500T665 634Q669 636 674 636ZM84 -118Q84 -108 99 -98H678Q694 -104 694 -118Q694 -130 679 -138H98Q84 -131 84 -118Z"></path></g><g
+                        transform="translate(3979,0)"><path stroke-width="1"
+                                                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></svg></span>
+                </li>
+                <li>Event IDs are distinct positive integers in the inclusive range from <span
+                        style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                        id="MathJax-Element-5-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex"
+                                                          height="2.176ex" style="vertical-align: -0.338ex;"
+                                                          viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>
+                    to <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-6-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                               width="1.395ex" height="1.676ex"
+                                                               style="vertical-align: -0.338ex;"
+                                                               viewBox="0 -576.1 600.5 721.6" role="img"
+                                                               focusable="false"><g stroke="currentColor"
+                                                                                    fill="currentColor" stroke-width="0"
+                                                                                    transform="matrix(1 0 0 -1 0 0)"><path
+                            stroke-width="1"
+                            d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></svg></span>.
+                </li>
+                <li>There are a maximum of <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                                 id="MathJax-Element-7-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="4.65ex" height="2.176ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -791.3 2002 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path
+                        stroke-width="1"
+                        d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                        transform="translate(500,0)"></path><path stroke-width="1"
+                                                                  d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                                                                  transform="translate(1001,0)"></path><path
+                        stroke-width="1"
+                        d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                        transform="translate(1501,0)"></path></g></svg></span> unique passions.
+                </li>
+                <li>It is guaranteed that the strings consist of lowercase English letters and underscores
+                    (<code>_</code>) only. Each string contains a maximum of <span
+                            style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                            id="MathJax-Element-8-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="3.487ex"
+                                                              height="2.176ex" style="vertical-align: -0.338ex;"
+                                                              viewBox="0 -791.3 1501.5 936.9" role="img"
+                                                              focusable="false"><g stroke="currentColor"
+                                                                                   fill="currentColor" stroke-width="0"
+                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                            stroke-width="1"
+                            d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path
+                            stroke-width="1"
+                            d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                            transform="translate(500,0)"></path><path stroke-width="1"
+                                                                      d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"
+                                                                      transform="translate(1001,0)"></path></g></svg></span>
+                    characters.
+                </li>
+                <li>Each event ID is distinct and must remain so when exchanging tickets between group members.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="challenge_output_format">
+    <div class="msB challenge_output_format_title"><p><strong>Output Format</strong></p></div>
+    <div class="msB challenge_output_format_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <p>Print a single integer denoting the maximum number of people who can be <em>happy</em> with their event
+                ticket, meaning that they have (either as their original ticket or one received through trading with
+                another group member) a ticket to an event satisfying one or more of their passions. </p></div>
+    </div>
+</div>
+<div class="challenge_sample_input">
+    <div class="msB challenge_sample_input_title"><p><strong>Sample Input</strong></p></div>
+    <div class="msB challenge_sample_input_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <pre><code>3
+1 3 museum wine_tasting biking
+3 2 museum flower_parade
+2 2 hiking biking
+1 flower_parade
+1 museum
+2 biking wine_tasting
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="challenge_sample_output">
+    <div class="msB challenge_sample_output_title"><p><strong>Sample Output</strong></p></div>
+    <div class="msB challenge_sample_output_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <pre><code>3
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="challenge_explanation">
+    <div class="msB challenge_explanation_title"><p><strong>Explanation</strong></p></div>
+    <div class="msB challenge_explanation_body">
+        <div class="hackdown-content">
+            <style id="MathJax_SVG_styles">.MathJax_SVG_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax_SVG .MJX-monospace {font-family: monospace}
+.MathJax_SVG .MJX-sans-serif {font-family: sans-serif}
+.MathJax_SVG {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax_SVG * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.mjx-svg-href {fill: blue; stroke: blue}
+
+            </style>
+            <svg style="display: none;">
+                <defs id="MathJax_SVG_glyphs"></defs>
+            </svg>
+            <p>Person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                            id="MathJax-Element-1-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex"
+                                                              height="2.176ex" style="vertical-align: -0.338ex;"
+                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                              focusable="false"><g stroke="currentColor"
+                                                                                   fill="currentColor" stroke-width="0"
+                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>
+                won a ticket to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                            id="MathJax-Element-2-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                              width="1.162ex" height="2.176ex"
+                                                                              style="vertical-align: -0.338ex;"
+                                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                              focusable="false"><g stroke="currentColor"
+                                                                                                   fill="currentColor"
+                                                                                                   stroke-width="0"
+                                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>
+                (<em>flower_parade</em>) and has three personal passions: <em>museum</em>, <em>wine_tasting</em>, and
+                <em>biking</em>. They can swap for the ticket to event <span
+                        style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                        id="MathJax-Element-3-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex"
+                                                          height="2.176ex" style="vertical-align: -0.338ex;"
+                                                          viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></svg></span>
+                and go to the <em>museum</em> (thus satisfying their passion).
+            </p>
+
+            <p>Person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                            id="MathJax-Element-4-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex"
+                                                              height="2.176ex" style="vertical-align: -0.338ex;"
+                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                              focusable="false"><g stroke="currentColor"
+                                                                                   fill="currentColor" stroke-width="0"
+                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></svg></span>
+                won a ticket to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                            id="MathJax-Element-5-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                              width="1.162ex" height="2.176ex"
+                                                                              style="vertical-align: -0.338ex;"
+                                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                              focusable="false"><g stroke="currentColor"
+                                                                                                   fill="currentColor"
+                                                                                                   stroke-width="0"
+                                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>
+                (<em>biking</em> and <em>wine_tasting</em>) and has two personal passions: <em>museum</em> and <em>flower_parade</em>.
+                They can swap for the ticket to event <span style="font-size: 100%; display: inline-block;"
+                                                            class="MathJax_SVG" id="MathJax-Element-6-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>
+                and go to the <em>flower_parade</em> (thus satisfying their passion).
+            </p>
+
+            <p>Person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                            id="MathJax-Element-7-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex"
+                                                              height="2.176ex" style="vertical-align: -0.338ex;"
+                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                              focusable="false"><g stroke="currentColor"
+                                                                                   fill="currentColor" stroke-width="0"
+                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>
+                won a ticket to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                            id="MathJax-Element-8-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                              width="1.162ex" height="2.176ex"
+                                                                              style="vertical-align: -0.338ex;"
+                                                                              viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                              focusable="false"><g stroke="currentColor"
+                                                                                                   fill="currentColor"
+                                                                                                   stroke-width="0"
+                                                                                                   transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></svg></span>
+                (<em>museum</em>) and has two personal passions: <em>hiking</em> and <em>biking</em>. They can swap for
+                the ticket to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                          id="MathJax-Element-9-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            width="1.162ex" height="2.176ex"
+                                                                            style="vertical-align: -0.338ex;"
+                                                                            viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                            focusable="false"><g stroke="currentColor"
+                                                                                                 fill="currentColor"
+                                                                                                 stroke-width="0"
+                                                                                                 transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>
+                and go <em>biking</em> (thus satisfying their passion).
+            </p>
+
+            <p>To recap, person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                      id="MathJax-Element-10-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                         width="1.162ex" height="2.176ex"
+                                                                         style="vertical-align: -0.338ex;"
+                                                                         viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                         focusable="false"><g stroke="currentColor"
+                                                                                              fill="currentColor"
+                                                                                              stroke-width="0"
+                                                                                              transform="matrix(1 0 0 -1 0 0)"><path
+                    stroke-width="1"
+                    d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>
+                goes to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                    id="MathJax-Element-11-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                       width="1.162ex" height="2.176ex"
+                                                                       style="vertical-align: -0.338ex;"
+                                                                       viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                       focusable="false"><g stroke="currentColor"
+                                                                                            fill="currentColor"
+                                                                                            stroke-width="0"
+                                                                                            transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></svg></span>,
+                person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                             id="MathJax-Element-12-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                width="1.162ex" height="2.176ex"
+                                                                style="vertical-align: -0.338ex;"
+                                                                viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                focusable="false"><g stroke="currentColor"
+                                                                                     fill="currentColor"
+                                                                                     stroke-width="0"
+                                                                                     transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></svg></span>
+                goes to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                    id="MathJax-Element-13-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                       width="1.162ex" height="2.176ex"
+                                                                       style="vertical-align: -0.338ex;"
+                                                                       viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                       focusable="false"><g stroke="currentColor"
+                                                                                            fill="currentColor"
+                                                                                            stroke-width="0"
+                                                                                            transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>,
+                and person <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                 id="MathJax-Element-14-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                    width="1.162ex" height="2.176ex"
+                                                                    style="vertical-align: -0.338ex;"
+                                                                    viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                    focusable="false"><g stroke="currentColor"
+                                                                                         fill="currentColor"
+                                                                                         stroke-width="0"
+                                                                                         transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>
+                goes to event <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                    id="MathJax-Element-15-Frame"><svg xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                       width="1.162ex" height="2.176ex"
+                                                                       style="vertical-align: -0.338ex;"
+                                                                       viewBox="0 -791.3 500.5 936.9" role="img"
+                                                                       focusable="false"><g stroke="currentColor"
+                                                                                            fill="currentColor"
+                                                                                            stroke-width="0"
+                                                                                            transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></svg></span>.
+                Because all three people were able to get a ticket to an event satisfying at least one of their
+                respective passions, we print <span style="font-size: 100%; display: inline-block;" class="MathJax_SVG"
+                                                    id="MathJax-Element-16-Frame"><svg
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="1.162ex" height="2.176ex"
+                        style="vertical-align: -0.338ex;" viewBox="0 -791.3 500.5 936.9" role="img" focusable="false"><g
+                        stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><path
+                        stroke-width="1"
+                        d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path></g></svg></span>
+                on a new line.
+            </p>
+</body>
+</html>

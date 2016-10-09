@@ -7,7 +7,7 @@ import java.util.*;
 /******************************************************************************
  *  Compilation:  javac EdgeWeightedGraph.java
  *  Execution:    java EdgeWeightedGraph filename.txt
- *  Dependencies: Bag.java Edge.java In.java StdOut.java
+ *  Dependencies: Bag.java DirectedEdge.java In.java StdOut.java
  *  Data files:   http://algs4.cs.princeton.edu/43mst/tinyEWG.txt
  *                http://algs4.cs.princeton.edu/43mst/mediumEWG.txt
  *                http://algs4.cs.princeton.edu/43mst/largeEWG.txt
@@ -31,7 +31,7 @@ import java.util.*;
 /**
  *  The {@code EdgeWeightedGraph} class represents an edge-weighted
  *  graph of vertices named 0 through <em>V</em> - 1, where each
- *  undirected edge is of type {@link Edge} and has a real-valued weight.
+ *  undirected edge is of type {@link DirectedEdge} and has a real-valued weight.
  *  It supports the following two primary operations: add an edge to the graph,
  *  iterate over all of the edges incident to a vertex. It also provides
  *  methods for returning the number of vertices <em>V</em> and the number
@@ -53,7 +53,7 @@ import java.util.*;
 public class EdgeWeightedDiGraph<E> {
     private static final String NEWLINE = System.getProperty("line.separator");
 
-    private HashMap<E,Set<Edge<E>>> adj = new HashMap<E,Set<Edge<E>>>();
+    private HashMap<E,Set<DirectedEdge<E>>> adj = new HashMap<E,Set<DirectedEdge<E>>>();
     
     /**
      * Initializes an empty edge-weighted graph 
@@ -68,7 +68,7 @@ public class EdgeWeightedDiGraph<E> {
      * @param  G the edge-weighted graph to copy
      */
     public EdgeWeightedDiGraph(EdgeWeightedDiGraph<E> G) {
-    	Iterator<Edge<E>> it = G.edges().iterator();
+    	Iterator<DirectedEdge<E>> it = G.edges().iterator();
         while (it.hasNext()) {
            	addEdge(it.next());
         }
@@ -80,7 +80,7 @@ public class EdgeWeightedDiGraph<E> {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int getVertexNubmer() {
+    public int getNumVertices() {
         return adj.size();
     }
 
@@ -89,9 +89,9 @@ public class EdgeWeightedDiGraph<E> {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int getEdgeNumer() {
+    public int getNumEdges() {
     	int cnt = 0;
-    	for(Map.Entry<E, Set<Edge<E>>> e:adj.entrySet()){
+    	for(Map.Entry<E, Set<DirectedEdge<E>>> e:adj.entrySet()){
     		cnt+=e.getValue().size();
     	}
         return cnt;
@@ -102,9 +102,9 @@ public class EdgeWeightedDiGraph<E> {
      *
      * @param  e the edge
      */
-    public void addEdge(Edge<E> e) {
+    public void addEdge(DirectedEdge<E> e) {
         if(!adj.containsKey(e.from())){
-        	adj.put(e.from(), new HashSet<Edge<E>>());
+        	adj.put(e.from(), new HashSet<DirectedEdge<E>>());
         }
         adj.get(e.from()).add(e);
     }
@@ -115,7 +115,7 @@ public class EdgeWeightedDiGraph<E> {
      * @param  v the vertex
      * @return the edges incident on vertex {@code v} as an Iterable
      */
-    public Iterable<Edge<E>> adjcencyList(E v) {
+    public Iterable<DirectedEdge<E>> adjcencyList(E v) {
         if(adj.containsKey(v)){
     		return adj.get(v);
     	}
@@ -138,20 +138,22 @@ public class EdgeWeightedDiGraph<E> {
     /**
      * Returns all edges in this edge-weighted graph.
      * To iterate over the edges in this edge-weighted graph, use foreach notation:
-     * {@code for (Edge e : G.edges())}.
+     * {@code for (DirectedEdge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
      */
-    public Iterable<Edge<E>> edges() {
-        Set<Edge<E>> list = new HashSet<Edge<E>>();
-        for(Map.Entry<E, Set<Edge<E>>> e:adj.entrySet()){
-            for (Edge<E> edge : e.getValue()) {
-            	list.add(edge);
+    public Iterable<DirectedEdge<E>> edges() {
+        Set<DirectedEdge<E>> list = new HashSet<DirectedEdge<E>>();
+        for(Map.Entry<E, Set<DirectedEdge<E>>> e:adj.entrySet()){
+            for (DirectedEdge<E> directedEdge : e.getValue()) {
+            	list.add(directedEdge);
             }
         }
         return list;
     }
-
+    public Iterable<E> vertices() {
+        return adj.keySet();
+    }
     /**
      * Returns a string representation of the edge-weighted directed graph.
      * This method takes time proportional to <em>E</em> + <em>V</em>.
@@ -161,11 +163,11 @@ public class EdgeWeightedDiGraph<E> {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(getVertexNubmer() + " " + getEdgeNumer() + NEWLINE);
-        for (Map.Entry<E, Set<Edge<E>>> e: adj.entrySet()) {
+        s.append(getNumVertices() + " " + getNumEdges() + NEWLINE);
+        for (Map.Entry<E, Set<DirectedEdge<E>>> e: adj.entrySet()) {
             s.append(e + ": ");
-            for (Edge<E> edge : e.getValue()) {
-                s.append(edge + "  ");
+            for (DirectedEdge<E> directedEdge : e.getValue()) {
+                s.append(directedEdge + "  ");
             }
             s.append(NEWLINE);
         }
@@ -191,7 +193,7 @@ public class EdgeWeightedDiGraph<E> {
             }
             if (visited.add(c)) {
                 if (adj.get(c) != null) {
-                    for (Edge<E> more : adj.get(c)) {
+                    for (DirectedEdge<E> more : adj.get(c)) {
                         queue.add(more.to());
                     }
                 }
@@ -200,33 +202,33 @@ public class EdgeWeightedDiGraph<E> {
         return false;
     }
 
-    public List<Edge<E>> getPath(E a, E b) {
-        List<Edge<E>> path = new ArrayList<Edge<E>>();
-        Set<Edge<E>> visited = new HashSet<Edge<E>>();
+    public List<DirectedEdge<E>> getPath(E a, E b) {
+        List<DirectedEdge<E>> path = new ArrayList<DirectedEdge<E>>();
+        Set<DirectedEdge<E>> visited = new HashSet<DirectedEdge<E>>();
         if (connected(a, b)) {
             path = dfsPath(a, b, path, visited);
         }
         return path;
     }
 
-    private List<Edge<E>> dfsPath(E start, E end, List<Edge<E>> path, Set<Edge<E>> visited) {
+    private List<DirectedEdge<E>> dfsPath(E start, E end, List<DirectedEdge<E>> path, Set<DirectedEdge<E>> visited) {
         if (start.equals(end)) {
-            List<Edge<E>> result = new ArrayList<Edge<E>>();
+            List<DirectedEdge<E>> result = new ArrayList<DirectedEdge<E>>();
             result.addAll(path);
             return result;
         }
         if (adj.get(start) != null) {
-            for (Edge<E> edge : adj.get(start)) {
-                if (!visited.contains(edge)) {
-                    visited.add(edge);
-                    path.add(edge);
-                    List<Edge<E>> r = dfsPath(edge.to(), end, path, visited);
+            for (DirectedEdge<E> directedEdge : adj.get(start)) {
+                if (!visited.contains(directedEdge)) {
+                    visited.add(directedEdge);
+                    path.add(directedEdge);
+                    List<DirectedEdge<E>> r = dfsPath(directedEdge.to(), end, path, visited);
                     if (r.size() > 0) return r;
-                    path.remove(edge);
+                    path.remove(directedEdge);
                 }
             }
         }
-        return new ArrayList<Edge<E>>();
+        return new ArrayList<DirectedEdge<E>>();
     }
 
     /**
@@ -236,11 +238,11 @@ public class EdgeWeightedDiGraph<E> {
      */
     public static void main(String[] args) {
         EdgeWeightedDiGraph<String> g = new EdgeWeightedDiGraph<String>();
-        g.addEdge(new Edge<String>("a", "b", 1.0));
-        g.addEdge(new Edge<String>("b", "a", 1.0));
-        g.addEdge(new Edge<String>("b", "c", 2.0));
-        g.addEdge(new Edge<String>("b", "d", 3.0));
-        g.addEdge(new Edge<String>("c", "e", 2.0));
+        g.addEdge(new DirectedEdge<String>("a", "b", 1.0));
+        g.addEdge(new DirectedEdge<String>("b", "a", 1.0));
+        g.addEdge(new DirectedEdge<String>("b", "c", 2.0));
+        g.addEdge(new DirectedEdge<String>("b", "d", 3.0));
+        g.addEdge(new DirectedEdge<String>("c", "e", 2.0));
 
         System.out.println(g.getPath("a", "e"));
         System.out.println(g.getPath("a", "b"));

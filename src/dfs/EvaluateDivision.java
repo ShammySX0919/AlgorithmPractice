@@ -66,7 +66,7 @@ class EdgeWeightedGraph {
 
     private List<Edge> dfsGetPath(String start, String end, List<Edge> path, Set<Edge> visited) {
         if (start.equals(end)) {
-            //List<Edge> result = new ArrayList<Edge>();
+            //List<DirectedEdge> result = new ArrayList<DirectedEdge>();
             //result.addAll(path);
             return path;
         }

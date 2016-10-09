@@ -3,8 +3,8 @@ package basic.graph.edgeweighted;
  * this is based on http://algs4.cs.princeton.edu/43mst/Edge.java.html
  */
 /******************************************************************************
- *  Compilation:  javac Edge.java
- *  Execution:    java Edge
+ *  Compilation:  javac DirectedEdge.java
+ *  Execution:    java DirectedEdge
  *  Dependencies: StdOut.java
  *
  *  Immutable weighted edge.
@@ -12,7 +12,7 @@ package basic.graph.edgeweighted;
  ******************************************************************************/
 
 /**
- *  The {@code Edge} class represents a weighted edge in an 
+ *  The {@code DirectedEdge} class represents a weighted edge in an
  *  {@link EdgeWeightedDiGraph}. Each edge consists of two integers
  *  (naming the two vertices) and a real-value weight. The data type
  *  provides methods for accessing the two endpoints of the edge and
@@ -25,7 +25,7 @@ package basic.graph.edgeweighted;
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
-public class Edge<E> implements Comparable<Edge<E>> { 
+public class DirectedEdge<E> implements Comparable<DirectedEdge<E>> {
 
     private final E from;
     private final E to;
@@ -40,7 +40,7 @@ public class Edge<E> implements Comparable<Edge<E>> {
      * @param  weight the weight of this edge
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
-    public Edge(E from, E to, double weight) {
+    public DirectedEdge(E from, E to, double weight) {
         if (Double.isNaN(weight)) throw new IllegalArgumentException("Weight is NaN");
         this.from = from;
         this.to = to;
@@ -55,24 +55,9 @@ public class Edge<E> implements Comparable<Edge<E>> {
     public double weight() {
         return weight;
     }
-
-    /**
-     * Returns either endpoint of this edge.
-     *
-     * @return either endpoint of this edge
-     */
     public E from() {
         return from;
     }
-
-    /**
-     * Returns the endpoint of this edge that is different from the given vertex.
-     *
-     * @param  vertex one endpoint of this edge
-     * @return the other endpoint of this edge
-     * @throws IllegalArgumentException if the vertex is not one of the
-     *         endpoints of this edge
-     */
     public E to() {
         return to;
     }
@@ -88,7 +73,7 @@ public class Edge<E> implements Comparable<Edge<E>> {
      *         argument edge
      */
     @Override
-    public int compareTo(Edge that) {
+    public int compareTo(DirectedEdge that) {
         return Double.compare(this.weight, that.weight);
     }
 
@@ -102,12 +87,12 @@ public class Edge<E> implements Comparable<Edge<E>> {
     }
 
     /**
-     * Unit tests the {@code Edge} data type.
+     * Unit tests the {@code DirectedEdge} data type.
      *
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        Edge<Integer> e = new Edge<Integer>(12, 34, 5.67);
+        DirectedEdge<Integer> e = new DirectedEdge<Integer>(12, 34, 5.67);
         System.out.println(e);
     }
 }

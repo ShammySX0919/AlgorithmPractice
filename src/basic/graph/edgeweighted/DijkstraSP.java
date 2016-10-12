@@ -1,8 +1,6 @@
 package basic.graph.edgeweighted;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**shortest paths tree
  * Data structures for single-source shortest paths.
@@ -12,7 +10,7 @@ import java.util.PriorityQueue;
 
  We represent the shortest paths with two vertex-indexed arrays:
 
- Edges on the shortest-paths tree: edgeTo[v] is the the last edge on a shortest path from s to v.
+ Edges on the shortest-paths tree: edgeToVertex[v] is the the last edge on a shortest path from s to v.
 
  Distance to the source: distTo[v] is the length of the shortest path from s to v.
 
@@ -21,43 +19,78 @@ import java.util.PriorityQueue;
  * Created by andrew on 08/10/16.
  */
 public class DijkstraSP<E> {
-    private Map<E,Double> distTo = new HashMap<E,Double>();          // distTo[v] = distance  of shortest s->v path
-    private Map<E,DirectedEdge<E>> edgeTo = new HashMap<E,DirectedEdge<E>>();    // edgeTo[v] = last edge on shortest s->v path
-    private PriorityQueue<Double> pq;    // priority queue of vertices
 
+    class DistToVertex<E> {
+        E v;
+        Double dist;
 
-    public DijkstraSP(EdgeWeightedDiGraph G, E s) {
-        for (DirectedEdge<E> e : G.edges()) {
+        DistToVertex(E v, Double d) {
+            this.v = v;
+            this.dist = d;
+        }
+
+        @Override
+        public int hashCode() {
+            return v.hashCode();
+        }
+
+        @Override
+        public boolean equals(Object o) {
+            return v.equals(o);
+        }
+    }
+
+    private Map<E, DistToVertex<E>> distTo = new HashMap<E, DistToVertex<E>>();       // distTo[v] = distance  of shortest s->v path
+    private Map<E, DirectedEdge<E>> edgeToVertex = new HashMap<E, DirectedEdge<E>>();    // edgeToVertex[v] = last edge on shortest s->v path
+    private PriorityQueue<DistToVertex<E>> pq;    // priority queue of entry of distTo
+
+    /**
+     * this class will build up a SPT: shortest path tree in edgeToVertex, and distTo under help of priority queue
+     *
+     * @param G
+     * @param s
+     */
+    public DijkstraSP(EdgeWeightedDiGraph<E> G, E s) {
+        for (DirectedEdge<E> e : G.edges())
             if (e.weight() < 0)
                 throw new IllegalArgumentException("edge " + e + " has negative weight");
-        }
-//
+//first of all, all nodes are not reachiable
         for (E v:G.vertices()) {
-            distTo.put(v, Double.POSITIVE_INFINITY);
+            distTo.put(v, new DistToVertex<E>(v, Double.POSITIVE_INFINITY));
         }
-        distTo.put(s,0.0);
+        //to the source node itself, distance is 0
+        distTo.get(s).dist=0.0;
 
         // relax vertices in order of distance from s
-        pq = new PriorityQueue<>(G.vertices());
-        pq.insert(s, distTo[s]);
+        pq = new PriorityQueue<DistToVertex<E>>(distTo.size(), new Comparator<DistToVertex<E>>() {
+            @Override
+            public int compare(DistToVertex<E> eDistToVertex, DistToVertex<E> t1) {
+                return eDistToVertex.dist.compareTo(t1.dist);
+            }
+        });
+        pq.add(distTo.get(s));
         while (!pq.isEmpty()) {
-            int v = pq.delMin();
-            for (DirectedEdge e : G.adj(v))
+            DistToVertex<E> dtv = pq.poll();
+            for (DirectedEdge<E> e : G.adjcencyList(dtv.v)) {
                 relax(e);
+            }
         }
 
-        // check optimality conditions
-        assert check(G, s);
     }
 
     // relax edge e and update pq if changed
     private void relax(DirectedEdge<E> e) {
         E v = e.from(), w = e.to();
-        if (distTo.get(w) > distTo.get(v) + e.weight()) {
-            distTo.put(w,distTo.get(v) + e.weight());
-            edgeTo.put(w,e);
-            if (pq.contains(w)) pq.decreaseKey(w, distTo[w]);
-            else                pq.insert(w, distTo[w]);
+        DistToVertex<E> dtw = distTo.get(w);
+        if (dtw.dist > distTo.get(v).dist + e.weight()) {
+            dtw.dist = distTo.get(v).dist + e.weight();
+            edgeToVertex.put(w, e);
+            if (pq.contains(dtw)) {
+                pq.remove(dtw);
+                pq.add(dtw);
+            } else {
+                pq.add(dtw);
+            }
         }
     }
 
@@ -67,8 +100,8 @@ public class DijkstraSP<E> {
      * @return the length of a shortest path from the source vertex {@code s} to vertex {@code v};
      *         {@code Double.POSITIVE_INFINITY} if no such path
      */
-    public double distTo(int v) {
-        return distTo[v];
+    public double distTo(E v) {
+        return distTo.get(v).dist;
     }
 
     /**
@@ -78,8 +111,9 @@ public class DijkstraSP<E> {
      * @return {@code true} if there is a path from the source vertex
      *         {@code s} to vertex {@code v}; {@code false} otherwise
      */
-    public boolean hasPathTo(int v) {
-        return distTo[v] < Double.POSITIVE_INFINITY;
+    public boolean hasPathTo(E v) {
+
+        return distTo(v) < Double.POSITIVE_INFINITY;
     }
 
     /**
@@ -89,10 +123,10 @@ public class DijkstraSP<E> {
      * @return a shortest path from the source vertex {@code s} to vertex {@code v}
      *         as an iterable of edges, and {@code null} if no such path
      */
-    public Iterable<DirectedEdge> pathTo(int v) {
+    public Iterable<DirectedEdge<E>> pathTo(E v) {
         if (!hasPathTo(v)) return null;
-        Stack<DirectedEdge> path = new Stack<DirectedEdge>();
-        for (DirectedEdge e = edgeTo[v]; e != null; e = edgeTo[e.from()]) {
+        Stack<DirectedEdge<E>> path = new Stack<DirectedEdge<E>>();
+        for (DirectedEdge<E> e = edgeToVertex.get(v); e != null; e = edgeToVertex.get(e.from())) {
             path.push(e);
         }
         return path;
@@ -102,34 +136,34 @@ public class DijkstraSP<E> {
     // check optimality conditions:
     // (i) for all edges e:            distTo[e.to()] <= distTo[e.from()] + e.weight()
     // (ii) for all edge e on the SPT: distTo[e.to()] == distTo[e.from()] + e.weight()
-    private boolean check(EdgeWeightedDigraph G, int s) {
+    private boolean check(EdgeWeightedDiGraph<E> G, E s) {
 
         // check that edge weights are nonnegative
-        for (DirectedEdge e : G.edges()) {
+        for (DirectedEdge<E> e : G.edges()) {
             if (e.weight() < 0) {
                 System.err.println("negative edge weight detected");
                 return false;
             }
         }
 
-        // check that distTo[v] and edgeTo[v] are consistent
-        if (distTo[s] != 0.0 || edgeTo[s] != null) {
-            System.err.println("distTo[s] and edgeTo[s] inconsistent");
+        // check that distTo[v] and edgeToVertex[v] are consistent
+        if (distTo.get(s).dist != 0.0 || edgeToVertex.get(s) != null) {
+            System.err.println("distTo[s] and edgeToVertex[s] inconsistent");
             return false;
         }
-        for (int v = 0; v < G.V(); v++) {
+        for (E v : G.vertices()) {
             if (v == s) continue;
-            if (edgeTo[v] == null && distTo[v] != Double.POSITIVE_INFINITY) {
-                System.err.println("distTo[] and edgeTo[] inconsistent");
+            if (edgeToVertex.get(v) == null && distTo.get(v).dist != Double.POSITIVE_INFINITY) {
+                System.err.println("distTo[] and edgeToVertex[] inconsistent");
                 return false;
             }
         }
 
         // check that all edges e = v->w satisfy distTo[w] <= distTo[v] + e.weight()
-        for (int v = 0; v < G.V(); v++) {
-            for (DirectedEdge e : G.adj(v)) {
-                int w = e.to();
-                if (distTo[v] + e.weight() < distTo[w]) {
+        for (E v : G.vertices()) {
+            for (DirectedEdge<E> e : G.adjcencyList(v)) {
+                E w = e.to();
+                if (distTo.get(v).dist + e.weight() < distTo.get(w).dist) {
                     System.err.println("edge " + e + " not relaxed");
                     return false;
                 }
@@ -137,12 +171,12 @@ public class DijkstraSP<E> {
         }
 
         // check that all edges e = v->w on SPT satisfy distTo[w] == distTo[v] + e.weight()
-        for (int w = 0; w < G.V(); w++) {
-            if (edgeTo[w] == null) continue;
-            DirectedEdge e = edgeTo[w];
-            int v = e.from();
+        for (E w : G.vertices()) {
+            if (edgeToVertex.get(w) == null) continue;
+            DirectedEdge<E> e = edgeToVertex.get(w);
+            E v = e.from();
             if (w != e.to()) return false;
-            if (distTo[v] + e.weight() != distTo[w]) {
+            if (distTo.get(v).dist + e.weight() != distTo.get(w).dist) {
                 System.err.println("edge " + e + " on shortest path not tight");
                 return false;
             }
@@ -157,26 +191,20 @@ public class DijkstraSP<E> {
      * @param args the command-line arguments
      */
     public static void main(String[] args) {
-        In in = new In(args[0]);
-        EdgeWeightedDigraph G = new EdgeWeightedDigraph(in);
-        int s = Integer.parseInt(args[1]);
+        EdgeWeightedDiGraph<String> g = new EdgeWeightedDiGraph<String>();
+        g.addEdge(new DirectedEdge<String>("a", "b", 1.0));
+        g.addEdge(new DirectedEdge<String>("b", "e", 3.0));
+        g.addEdge(new DirectedEdge<String>("b", "c", 2.0));
+        g.addEdge(new DirectedEdge<String>("c", "d", 3.0));
+        g.addEdge(new DirectedEdge<String>("d", "f", 5.0));
+        g.addEdge(new DirectedEdge<String>("e", "f", 2.0));
+        g.addEdge(new DirectedEdge<String>("d", "g", 3.0));//1
+        g.addEdge(new DirectedEdge<String>("f", "g", 2.0));
 
-        // compute shortest paths
-        DijkstraSP sp = new DijkstraSP(G, s);
+        DijkstraSP<String> dsp = new DijkstraSP(g, "a");
 
-
-        // print shortest path
-        for (int t = 0; t < G.V(); t++) {
-            if (sp.hasPathTo(t)) {
-                StdOut.printf("%d to %d (%.2f)  ", s, t, sp.distTo(t));
-                for (DirectedEdge e : sp.pathTo(t)) {
-                    StdOut.print(e + "   ");
-                }
-                StdOut.println();
-            }
-            else {
-                StdOut.printf("%d to %d         no path\n", s, t);
-            }
+        for (DirectedEdge<String> e : dsp.pathTo("g")) {
+            System.out.println(e);
         }
     }
 

@@ -106,6 +106,9 @@ public class EdgeWeightedDiGraph<E> {
         if(!adj.containsKey(e.from())){
         	adj.put(e.from(), new HashSet<DirectedEdge<E>>());
         }
+        if (!adj.containsKey(e.to())) {
+            adj.put(e.to(), new HashSet<DirectedEdge<E>>());
+        }
         adj.get(e.from()).add(e);
     }
 

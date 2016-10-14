@@ -18,13 +18,14 @@ public class BFS_ShortestReach {
         for(int i=0;i<q;i++){
             int n = in.nextInt();
             int m = in.nextInt();
-            //build up adjacency list, putting vertex as neighbors to represent edge since edge has unique weight,
+            //build up adjacency list, putting vertex as neighbors to represent edge since edge has same weight,
             //we do not need to have edge class
-            int[] distTo = new int[n+1];//ingore 0
+            int[] distTo = new int[n + 1];//ignore 0
             //initialize distTo each vertex
             for(int j=0;j<=n;j++){
                 distTo[j] = Integer.MAX_VALUE;
             }
+            //maybe use List<list<Integer>> to work with generics
             ArrayList[] adj = new ArrayList[n+1];//ignore 0
             for(int j=1;j<=n;j++){
             	adj[j] = new ArrayList();
@@ -33,6 +34,7 @@ public class BFS_ShortestReach {
             for(int j=1;j<=m;j++){
                 int v = in.nextInt();
                 int w = in.nextInt();
+                //bidirectional
                 adj[v].add(w);
                 adj[w].add(v);
                 in.nextLine();
@@ -42,17 +44,17 @@ public class BFS_ShortestReach {
             int start = in.nextInt();
             distTo[start]=0;
             qu.add(start);
-            boolean[] visited = new boolean[n+1];
-            visited[0]=true;
+            //boolean[] visited = new boolean[n+1];
+            //visited[0]=true;
             while(!qu.isEmpty()){
                 int v = qu.poll();
-                visited[v] = true;
-
+                // visited[v] = true;
+//generic will make these code better
                 for(int d=0;d<adj[v].size();d++){
                     int w = (Integer)(adj[v].get(d));
-                    if(!visited[w] && distTo[w]>1+distTo[v]){
+                    if (distTo[w] > 1 + distTo[v]) {
                         distTo[w]=1+distTo[v];
-                        qu.add(w);
+                        qu.add(w);//if distTo[w] is changed, we need to revisit its neighbors
                     }
                 }
             }

@@ -5,18 +5,9 @@ import java.util.LinkedList;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Queue;
+import java.util.Scanner;
 
-public class TrieUtil {
-/**
- * TrieNode 
- * is basically a character, and its children.
- * With some more attributes to facilitate operations
- * a flag of isLeaf and isStopNode
- * stop node reflects certain restriction we want to put on a trie tree, such as maximum deepth it supports
- * Children is implemented as a map of TrieNode mapping to its character
- * @author Andrew Ma
- *
- */
+
 	class TrieNode {
         char charValue;
         HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
@@ -150,13 +141,26 @@ public class TrieUtil {
         }
 
 	}
-	public static void main(String[] args){
-		TrieUtil tu = new TrieUtil();
-		TrieUtil.TrieTree tt =  tu.new TrieTree();
-		tt.insert("Rose");
-		tt.insert("Rosemary");
-		tt.insert("Andy");
-		tt.insert("Anddrew");
-		System.out.println(tt.getLongestCommonPrefix());
-	}
+
+public class TriesContacts {
+    static TrieTree trie = new TrieTree();
+    public static void add(String name){
+        trie.insert(name);
+    }
+    public static void find(String partial){
+        System.out.println(trie.find(partial));
+    }
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        for(int a0 = 0; a0 < n; a0++){
+            String op = in.next();
+            String contact = in.next();
+            if("add".equals(op)){
+                add(contact);
+            }else if("find".equals(op)){
+                find(contact);
+            }
+        }
+    }
 }

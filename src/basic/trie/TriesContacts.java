@@ -1,5 +1,28 @@
 package basic.trie;
-
+/**
+ * Unlike a binary search tree, no node in the tree stores the key associated with that node; 
+ * instead, its position in the tree defines the key with which it is associated. 
+ * All the descendants of a node have a common prefix of the string associated with that node, 
+ * and the root is associated with the empty string.
+ * Values are not necessarily associated with every node. Rather, values tend only to be associated with leaves, 
+ * and with some inner nodes that correspond to keys of interest
+ * 
+ * Values are not necessarily associated with every node. Rather, values tend only to be associated with leaves, 
+ * and with some inner nodes that correspond to keys of interest.
+ * 
+ * A trie can also be used to replace a hash table. it has no conlision, and it's worst case is O(m), m is length of key
+ * 
+ * quick on search, insert and delete
+ * 
+ * to save space, you can use compressed trie
+ * 
+ * suffix tree is a special kind of trie, it indexes all suffixes in a test in order to carry out fast full text search.
+ * suffix tree: finding longest common substring. use lot more memory.
+ * bitwise tries : CPU, cache
+ * Common usage: predictive text or autcomplete dictionary.
+ * 				spell checking, approximate matching algorithms
+ * 
+ */
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;

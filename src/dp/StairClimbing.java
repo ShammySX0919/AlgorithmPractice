@@ -2,7 +2,7 @@ package dp;
 
 import java.util.Scanner;
 
-public class ClimStairs {
+public class StairClimbing {
 	static void numWays(int n){
         //let dp[i] is num ways to reach stair i. 
         //each dp[i] is an accumulation of ways to reach to there

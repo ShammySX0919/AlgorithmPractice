@@ -1,4 +1,4 @@
-package dp;
+package hackerrank.crackthecodinginterview.dp;
 
 import java.util.Scanner;
 

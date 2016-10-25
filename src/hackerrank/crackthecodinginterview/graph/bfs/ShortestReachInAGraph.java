@@ -1,4 +1,4 @@
-package basic.graph.edgeweighted;
+package hackerrank.crackthecodinginterview.graph.bfs;
 
 import java.util.ArrayList;
 import java.util.Arrays;

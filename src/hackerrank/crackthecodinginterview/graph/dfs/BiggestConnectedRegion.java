@@ -1,4 +1,4 @@
-package dfs;
+package hackerrank.crackthecodinginterview.graph.dfs;
 
 import java.util.HashSet;
 import java.util.LinkedList;

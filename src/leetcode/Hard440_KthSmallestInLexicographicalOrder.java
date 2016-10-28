@@ -39,8 +39,6 @@ public class Hard440_KthSmallestInLexicographicalOrder {
      * 20--29, 10 numbers
      * 200 is bigger tha 100, so it is not reaching to there
      *
-     * layer by layer, if n is 1000, then you will also need to count numbers between 100 and 200
-     * 100-199, totally 100 number in between 100 and 200 in this layer
      * @param n
      * @param n1
      * @param n2
@@ -82,6 +80,7 @@ public class Hard440_KthSmallestInLexicographicalOrder {
             preOrderDFS(n, k, i);
         }
     }
+
     public static void main(String[] args){
         //1,10,11,12,13,2,3,4,5,6,7,8,9
         Hard440_KthSmallestInLexicographicalOrder   o = new Hard440_KthSmallestInLexicographicalOrder();

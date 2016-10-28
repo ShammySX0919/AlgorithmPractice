@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String</title>
+</head>
+<body>
+String is backed up by char[], immutable.
+    constant time on charAt and substring, since substring is done by reusing same char[] in string
+    O(n) on concatenation because it needs to copy two strings into a new string
+StringBuilder is backed up by resizable array. mutable
+    O(1*) on concatenation(amortized), but O(n) on substring, because it needs to create a new string
+
+Radix: unique numbers of characters in alphabet
+    ascii table's radix is 128
+    extended ascii is 256
+    DNA 's radix is 4 GCTA
+    decimal is 10
+Key-indexed sort:
+    for limited unique number of element set, if element can be naturally mapped to small integers, then count the
+    number of keys and rearranged them according to mapped integer and their counts.
+
+</body>
+</html>

@@ -44,7 +44,7 @@ public class NorthernTour {
         }
         in.close();
         int totalHours = 16 * 6;
-        Queue<CityAndStay> q = new LinkedList<>();
+        Queue<CityAndStay> q = new LinkedList<CityAndStay>();
         q.add(start);
 
         // now dfs starting from

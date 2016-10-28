@@ -53,7 +53,7 @@ public class InverseRMQ {
 
         //retrieve unique values which as leaf nodes the segTree is built for
         //this is wrong because duplication is allowed
-        Set<Long> leafs = new TreeSet<>();
+        Set<Long> leafs = new TreeSet<Long>();
         for (int i = 0; i < sa.length; i++) {
             leafs.add(sa[i]);
         }

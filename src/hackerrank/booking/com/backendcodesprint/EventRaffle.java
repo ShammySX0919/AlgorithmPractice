@@ -14,9 +14,9 @@ public class EventRaffle {
         int numPerson = in.nextInt();
         in.nextLine();//numPerson is also num of events in this example
         //but to be safe, count the number of event by myself
-        Set<Integer> eSet = new HashSet<>();
+        Set<Integer> eSet = new HashSet<Integer>();
         //person passion set. it does not matter if id is from 0 or 1
-        Map<Integer, Set<String>> pp = new HashMap<>();
+        Map<Integer, Set<String>> pp = new HashMap<Integer,Set<String>>();
         for (int i = 0; i < numPerson; i++) {
             eSet.add(in.nextInt());
             Set<String> pSet = new HashSet<String>();//person's passion set

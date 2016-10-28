@@ -31,7 +31,7 @@ public class Reviews {
 
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Map<String, Map<Integer, Integer>> reviewAndScore = new LinkedHashMap<>();
+        Map<String, Map<Integer, Integer>> reviewAndScore = new LinkedHashMap<String, Map<Integer, Integer>>();
         Scanner in = new Scanner(System.in);
         int numP = in.nextInt();
         int numR = in.nextInt();

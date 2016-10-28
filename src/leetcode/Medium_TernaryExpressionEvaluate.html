@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TernaryExpressionEvaluate</title>
+</head>
+<body>
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">LeetCode 439. Ternary Expression Parser</strong></a><br data-mce-bogus="1"></p><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;">Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">0-9</code>, <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">?</code>, <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">:</code>, <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">T</code> and <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">F</code> (<code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">T</code> and <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">F</code> represent True and False respectively).</p><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Note:</strong></p><ol style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px;" data-mce-style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px;"><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">The length of the given string is ≤ 10000.</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">Each number will contain only one digit.</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">The conditional expressions group right-to-left (as usual in most languages).</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">The condition will always be either <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">T</code> or <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">F</code>. That is, the condition will never be a digit.</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">The result of the expression will always evaluate to either a digit <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">0-9</code>, <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">T</code> or <code style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;" data-mce-style="box-sizing: border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 90%; padding: 2px 4px; color: #c7254e; background-color: #f9f2f4; border-radius: 4px; white-space: normal;">F</code>.</li></ol><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Example 1:</strong></p><pre style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;" xml:space="preserve" data-mce-style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Input:</strong> "T?2:3"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Output:</strong> "2"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Explanation:</strong> If true, then result is 2; otherwise result is 3.
+</pre><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Example 2:</strong></p><pre style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;" xml:space="preserve" data-mce-style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Input:</strong> "F?1:T?4:5"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Output:</strong> "4"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Explanation:</strong> The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:
+
+             "(F ? 1 : (T ? 4 : 5))"                   "(F ? 1 : (T ? 4 : 5))"
+          -&gt; "(F ? 1 : 4)"                 or       -&gt; "(T ? 4 : 5)"
+          -&gt; "4"                                    -&gt; "4"
+</pre><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Example 3:</strong></p><pre style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;" xml:space="preserve" data-mce-style="color: #333333; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; white-space: pre-wrap; box-sizing: border-box; display: block; padding: 9.5px; margin: 0px 0px 10px; line-height: 1.42857; font-size: 13px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid #cccccc; border-radius: 4px; position: relative; overflow: hidden;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Input:</strong> "T?T?F:5:3"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Output:</strong> "F"
+
+<strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">Explanation:</strong> The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:
+
+             "(T ? (T ? F : 5) : 3)"                   "(T ? (T ? F : 5) : 3)"
+          -&gt; "(T ? F : 3)"                 or       -&gt; "(T ? F : 5)"
+          -&gt; "F"                                    -&gt; "F"
+</pre><h2 style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; margin-top: 20px; margin-bottom: 10px; font-size: 24px;" data-mce-style="box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: inherit; margin-top: 20px; margin-bottom: 10px; font-size: 24px;">题目大意：</h2><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;">给定一个字符串表示一个任意嵌套的三目表达式，计算表达式的结果。你可以假设表达式一定有效，并且只包含数字0-9,?, :, T 和 F (T 和 F 分别表示 True 和 False)</p><p style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;" data-mce-style="box-sizing: border-box; margin: 0px 0px 10px; line-height: 1.896; color: #303338;"><strong style="box-sizing: border-box; font-weight: bold;" data-mce-style="box-sizing: border-box; font-weight: bold;">注意：</strong></p><ol style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px;" data-mce-style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px;"><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">字符串长度 ≤ 10000</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">每个数字只有一位</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">条件表达式从右向左分组 (与大多数编程语言保持一致)</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">条件永远是 T 或者 F。 也就是说，条件永远不会是数字</li><li style="box-sizing: border-box;" data-mce-style="box-sizing: border-box;">表达式的结果可以是 0-9, T 或者 F</li>
+    </ol>
+LeetCode 439. Ternary Expression Parser
+
+Given a string representing arbitrarily nested ternary expressions, calculate the result of the expression. You can always assume that the given expression is valid and only consists of digits 0-9, ?, :, T and F (T and F represent True and False respectively).
+
+Note:
+
+The length of the given string is ≤ 10000.
+Each number will contain only one digit.
+The conditional expressions group right-to-left (as usual in most languages).
+The condition will always be either T or F. That is, the condition will never be a digit.
+The result of the expression will always evaluate to either a digit 0-9, T or F.
+Example 1:
+
+Input: "T?2:3"
+
+Output: "2"
+
+Explanation: If true, then result is 2; otherwise result is 3.
+Example 2:
+
+Input: "F?1:T?4:5"
+
+Output: "4"
+
+Explanation: The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:
+
+"(F ? 1 : (T ? 4 : 5))"                   "(F ? 1 : (T ? 4 : 5))"
+-> "(F ? 1 : 4)"                 or       -> "(T ? 4 : 5)"
+-> "4"                                    -> "4"
+Example 3:
+
+Input: "T?T?F:5:3"
+
+Output: "F"
+
+Explanation: The conditional expressions group right-to-left. Using parenthesis, it is read/evaluated as:
+
+"(T ? (T ? F : 5) : 3)"                   "(T ? (T ? F : 5) : 3)"
+-> "(T ? F : 3)"                 or       -> "(T ? F : 5)"
+-> "F"                                    -> "F"
+题目大意：
+给定一个字符串表示一个任意嵌套的三目表达式，计算表达式的结果。你可以假设表达式一定有效，并且只包含数字0-9,?, :, T 和 F (T 和 F 分别表示 True 和 False)
+
+注意：
+
+字符串长度 ≤ 10000
+每个数字只有一位
+条件表达式从右向左分组 (与大多数编程语言保持一致)
+条件永远是 T 或者 F。 也就是说，条件永远不会是数字
+表达式的结果可以是 0-9, T 或者 F
+解题思路：
+栈（Stack）数据结构
+
+循环直到栈中元素为1并且表达式为空：
+
+取栈顶的5个元素，判断是否为一个可以解析的表达式。若是，则解析后压栈
+
+否则从右向左将expression中的字符压入栈stack
+</body>
+</html>

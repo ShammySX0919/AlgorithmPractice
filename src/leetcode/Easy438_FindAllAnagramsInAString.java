@@ -32,7 +32,7 @@ public class Easy438_FindAllAnagramsInAString {
     }
 
     public List<Integer> findAnagrams(String s, String p) {
-        List<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<Integer>();
         if (s == null || s.length() == 0 || s.length() < p.length()) return result;
         //build up pattern feature
         int[] statsP = buildStats(p, 0, p.length());
@@ -54,7 +54,7 @@ public class Easy438_FindAllAnagramsInAString {
      */
     public List<Integer> findAnagramsSmart(String s, String p) {
         int[] chars = new int[26];
-        List<Integer> result = new ArrayList<>();
+        List<Integer> result = new ArrayList<Integer>();
 
         if (s == null || p == null || s.length() < p.length())
             return result;

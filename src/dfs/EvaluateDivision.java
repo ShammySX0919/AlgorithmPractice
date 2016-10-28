@@ -32,7 +32,7 @@ class Edge {
 }
 
 class EdgeWeightedGraph {
-    Map<String, Set<Edge>> adj = new HashMap<>();
+    Map<String, Set<Edge>> adj = new HashMap<String, Set<Edge>>();
 
     public void addEdge(String a, String b, double weight) {
         Edge one = new Edge(a, b, weight);
@@ -40,7 +40,7 @@ class EdgeWeightedGraph {
         if (adj.containsKey(a)) {
             adj.get(a).add(one);
         } else {
-            Set<Edge> s = new HashSet<>();
+            Set<Edge> s = new HashSet<Edge>();
             s.add(one);
             adj.put(a, s);
         }

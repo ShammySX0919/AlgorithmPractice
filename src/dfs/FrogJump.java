@@ -13,9 +13,9 @@ public class FrogJump {
         //this is an adjacency list. and our target is to figure out
         //if there's a path to a node following certain restrictions
         //Controversy to traditional use of adjacency list, this list is built up on the fly
-        Map<Integer, Set<Integer>> validMovements = new HashMap<>();
+        Map<Integer, Set<Integer>> validMovements = new HashMap<Integer, Set<Integer>>();
         for(int i:stones){
-            validMovements.put(i, new HashSet<>());
+            validMovements.put(i, new HashSet<Integer>());
         }
         validMovements.get(0).add(1);
         return dfs(validMovements,1,1,stones[stones.length-1]);

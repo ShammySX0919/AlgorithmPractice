@@ -1,12 +1,11 @@
 package leetcode;
 
-import java.util.Objects;
 import java.util.Stack;
 
 /**
  * Created by Andrew Ma on 10/27/2016.
  */
-public class Medium_TernaryExpressionEvaluate {
+public class Medium439_TernaryExpressionEvaluate {
     Character evaluate(Character[] ternaryExpression){
       //  Objects.requireNonNull(ternaryExpression);
         if(ternaryExpression.length!=5){
@@ -39,7 +38,7 @@ public class Medium_TernaryExpressionEvaluate {
         System.out.println(stack.pop());
     }
     public static void main(String[] args){
-        Medium_TernaryExpressionEvaluate o = new Medium_TernaryExpressionEvaluate();
+        Medium439_TernaryExpressionEvaluate o = new Medium439_TernaryExpressionEvaluate();
         o.parseTernary("F?1:T?4:5");
     }
 }

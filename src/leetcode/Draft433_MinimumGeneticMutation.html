@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Draft433_MinimumGeneticMutation</title>
+</head>
+<body>
+A gene string can be represented by an 8-character long string, with choices from "A","C","G","T". <br>
+Suppose we need to investigate about a mutation (mutation from "start" to "end"), where ONE mutation is defined as ONE single character changed in the gene string. <br>
+For example, "AACCGGTT" -&gt; "AACCGGTA" is 1 mutation. <br>
+Also, there is a given gene "bank", which records all the valid gene mutations. A gene must be in the bank to make it a valid gene string. <br>
+<br>
+Now, given 3 things - start, end, bank, your task is to determine what is the minimum number of mutations needed to mutate from "start" to "end". If there is no such a mutation, return -1. <br>
+<br>
+
+NOTE: 1. Starting point is assumed to be valid, so it might not be included in the bank.
+2. If multiple mutations are needed, all mutations during in the sequence must be valid.
+
+For example, <br>
+bank: "AACCGGTA" <br>
+start: "AACCGGTT" <br>
+end: "AACCGGTA" <br>
+return: 1<br>
+<br>
+bank: "AACCGGTA", "AACCGCTA", "AAACGGTA"<br>
+start: "AACCGGTT"<br>
+end: "AAACGGTA"<br>
+return: 2<br>
+bank: "AAAACCCC", "AAACCCCC", "AACCCCCC"<br>
+start: "AAAAACCC"<br>
+end: "AACCCCCC"<br>
+return: 3
+</body>
+</html>

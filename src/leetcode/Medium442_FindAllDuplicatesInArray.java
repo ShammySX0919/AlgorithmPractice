@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by andrew on 27/10/16.
  */
-public class Medium_FindAllDuplicatesInArray {
+public class Medium442_FindAllDuplicatesInArray {
     public static List<Integer>  findDuplicates(int[] nums){
         List<Integer> ans = new ArrayList<Integer>();
         //we do not change abs value, so Math.abs(num) is original value

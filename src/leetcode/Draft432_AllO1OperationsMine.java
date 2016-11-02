@@ -19,9 +19,9 @@ class Node implements Comparator<Node>{
 		return val;
 	}
 	//change it not using pointer
-	public boolean equals(Node o){
+	public boolean equals(Object o){
 		if(o==null)return false;
-		return this.val==o.val;
+		return this.val==((Node)o).val;
 	}
 	@Override
 	public int compare(Node o1, Node o2) {
@@ -50,6 +50,41 @@ class Node implements Comparator<Node>{
     public String getMinKey() {
     	return head==null ? "" : valueToKeys.get(head).iterator().next();
     }
+    private void addNewBiggerValue(Node value,Node newValue){
+    	//Node newValue = new Node(value.val+1);
+    	Node next = value.next;
+    	value.next=newValue;
+    	newValue.prev=value;
+    	newValue.next = next;
+    	if(next!=null)next.prev=newValue;
+    	else tail=newValue;
+    	valueToKeys.put(newValue, new HashSet<String>());
+    }
+    private void addNewSmallerValue(Node value,Node newValue){
+    	//Node newValue = new Node(value.val+1);
+    	Node prev = value.prev;
+    	value.prev=newValue;
+    	newValue.next=value;
+    	newValue.prev = prev;
+    	if(prev!=null)prev.next=newValue;
+    	else head=newValue;
+    	valueToKeys.put(newValue, new HashSet<String>());
+    }
+    private void removeValue(Node value){
+    	if(value==null)return;
+    	//only remove nodes having no keys
+    	if(valueToKeys.get(value)!=null && valueToKeys.get(value).size()>0)return;
+    	valueToKeys.remove(value);
+    	Node prev = value.prev;
+    	Node next = value.next;
+    	if(head==value)head=next;
+    	if(tail==value)tail=prev;
+    	if(prev!=null)prev.next=next;
+    	if(next!=null)next.prev=prev;
+    }
+    private void removeKey(String key){
+    	
+    }
 	public void inc(String key) {
 		Node value = new Node(1);
 		if(keyToValue.isEmpty()){
@@ -72,18 +107,14 @@ class Node implements Comparator<Node>{
 			if(!valueToKeys.containsKey(newValue)){
 				//new value, insert it to value's next position
 				//this way we maintain the order
-				Node tmp = value.next;
-				value.next=newValue;
-				newValue.next=tmp;
-				if(tail.val==value.val){//this could also be address based
-					tail = newValue;
-				}
-				valueToKeys.put(newValue, new HashSet<String>());
+				addNewBiggerValue(value,newValue);
+				
 			}
 			//we might do dupliate operation on set, but this makes code shorter
 			valueToKeys.get(newValue).add(key);
 			//remove key from its old value's list
 			valueToKeys.get(value).remove(key);
+			removeValue(value);//try to remove value if value's key is empty
 			//set key map to new value
 			keyToValue.put(key, newValue);
 
@@ -93,9 +124,10 @@ class Node implements Comparator<Node>{
 			if(!valueToKeys.containsKey(value)){
 				valueToKeys.put(value,new HashSet<String>());
 				//new key's value is smallest
-				Node tmp = head.next;
+				value.next=head;
+				head.prev=value;
 				head = value;
-				value.next = tmp;
+				
 			}
 			valueToKeys.get(value).add(key);
 			keyToValue.put(key, value);
@@ -108,58 +140,44 @@ class Node implements Comparator<Node>{
 			Node newValue = new Node(value.val  -1);
 			//1. removing key from value
 			valueToKeys.get(value).remove(key);
+			removeValue(value);//value will be possibly removed
 			//if value contains no more key, remove it
-			if(valueToKeys.get(value).size()==0){
-				valueToKeys.remove(value);
-				Node p = value.prev;
-				Node n = value.next;
-				//list update
-				if(p!=null){
-					
-					p.next=n;
-				}
-				if( n!=null){
-					n.prev=p;
-				}
-				if(head==value){
-					head = value.next;
-				}
-				if(tail==value){
-					tail = value.prev;
-				}
-
-			}
 			//deal with new value
 			if(newValue.val==0){
 				//if newValue is 0, then remove key
 				keyToValue.remove(key);
 			}else{
 				keyToValue.put(key, newValue);
-				if(keyToValue.containsKey(newValue)){
+				if(valueToKeys.containsKey(newValue)){
 					valueToKeys.get(newValue).add(key);
 				}else{
 					//create new value and adding it to list and everywhere
-					Node tmp = value.prev;
-					if(tmp==null){
-						head = newValue;
-						newValue.next=value;
-						value.prev=newValue;
-					}else{
-						value.prev=newValue;
-						newValue.prev=tmp;
-						tmp.next=newValue;
-						newValue.next=value;
-					}
-					if(head.val==value.val){//this could also be address based
-						head = newValue;
-					}
-					valueToKeys.put(newValue, new HashSet<String>());
-					//we might do dupliate operation on set, but this makes code shorter
+					addNewSmallerValue(value,newValue);
 					valueToKeys.get(newValue).add(key);
-				
 				}
 			}
 		}		
 	}
+public static void main(String[] args){
+	Draft432_AllO1OperationsMine o = new Draft432_AllO1OperationsMine();
+	/*
+	o.inc("hello");
+	o.inc("goodbye");
+	o.inc("hello");
+	o.inc("hello");
+	System.out.println(o.getMaxKey());
+	o.inc("leet");
+	o.inc("code");
+	o.inc("leet");
+	o.dec("hello");
+	o.inc("leet");
+	o.inc("code");
+	o.inc("code");
+	System.out.println(o.getMaxKey());
+	*/
+	o.inc("hello");
+	o.dec("hello");;
 
+	System.out.println(o.getMaxKey());
+}
 }

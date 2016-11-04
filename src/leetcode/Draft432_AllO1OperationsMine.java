@@ -1,165 +1,222 @@
 package leetcode;
 
-import java.util.Comparator;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
-import java.util.Objects;
+import java.util.Scanner;
 import java.util.Set;
-
-public class Draft432_AllO1OperationsMine {
-//no need to implement comparator. practice purpose	
-class Node implements Comparator<Node>{
-	Node next,prev;//doubly linked list
-	int val;
-	public Node(int v){
-		val = v;
-	}
-	public int hashCode(){
-		return val;
-	}
-	//change it not using pointer
-	public boolean equals(Node o){
-		if(o==null)return false;
-		return this.val==o.val;
-	}
-	@Override
-	public int compare(Node o1, Node o2) {
-		Objects.requireNonNull(o1);
-		Objects.requireNonNull(o2);
-		return o1.val - o2.val;
-	}
-}
 /**
- * thoughts:
+ * use map to access value in O(1) time, use doubly linked list to access tail and head in O(1) time.
+ * need to maintain the order of values in efficient O(1) time and that's supported by doubly linked list and map
+ * for reverse searching form value to keys, it can have a list in value to track keys, but in order to
+ * also easily achieve O(1) operation, I just use a map inside value to track the key, value of map is key itself.
  * 
- * maintain a key-value map for O(1) key finding, as well as value-keys mapping for O(1)
- * value finding. Values are supported by doubly linked list for 
- * O(1) access to min and max. order is maintained during ins and dec operation.
+ * since adding new value only considers adjacent value which can be +1 or -1, so accessing other nodes in this
+ * task is O(1), and it does not need to have separate map to randomly access value in O(1) manner.
+ * 
+ * @author Andrew Ma
+ *
  */
-
-	Map<String,Node> keyToValue = new HashMap<String,Node>();
-	Map<Node,Set<String>> valueToKeys = new HashMap<Node,Set<String>>();
-	Node head=null,tail=null;
-
-    public String getMaxKey() {
-    	return tail==null?"": valueToKeys.get(tail).iterator().next();
-    }
-    
-    /** Returns one of the keys with Minimal value. */
-    public String getMinKey() {
-    	return head==null ? "" : valueToKeys.get(head).iterator().next();
-    }
-	public void inc(String key) {
-		Node value = new Node(1);
-		if(keyToValue.isEmpty()){
-			//first ever key-value
-			//set head and tail in doubly linked list
-			head = value;
-			tail= value;
-			//define key-value map
-			keyToValue.put(key, value);
-			//define value-keys map
-			Set<String> valueKeys = new HashSet<String>();
-			valueKeys.add(key);
-			valueToKeys.put(value, valueKeys);
+public class Draft432_AllO1OperationsMine {
+	class Node{
+		//key-key map for O(1) key retrieval
+		Map<String,String> keys = new HashMap<String,String>();
+		Node next,prev;//doubly linked list to organize nodes in order and O(1) tail, head access
+		int val;
+		public Node(int v){
+			val = v;
 		}
-		else if(keyToValue.containsKey(key)){
-		//increase val by 1
-			value = keyToValue.get(key);
-			Node newValue = new Node(value.val+1);
-			//prepare newValue in doubly linked list
-			if(!valueToKeys.containsKey(newValue)){
-				//new value, insert it to value's next position
-				//this way we maintain the order
-				Node tmp = value.next;
-				value.next=newValue;
-				newValue.next=tmp;
-				if(tail.val==value.val){//this could also be address based
-					tail = newValue;
-				}
-				valueToKeys.put(newValue, new HashSet<String>());
-			}
-			//we might do dupliate operation on set, but this makes code shorter
-			valueToKeys.get(newValue).add(key);
-			//remove key from its old value's list
-			valueToKeys.get(value).remove(key);
-			//set key map to new value
-			keyToValue.put(key, newValue);
+		public int hashCode(){
+			return val;
+		}
+		//change it not using pointer
+		public boolean equals(Object o){
+			if(o==null)return false;
+			return this.val==((Node)o).val;
+		}
+		public String getFirstKey(){
+			return keys.keySet().iterator().next();
+		}
+		public void removeKey(String key){
+			keys.remove(key);
+		}
+		public void addKey(String key){
+			keys.put(key, key);
+		}
+		public boolean hasKey(){
+			return keys.size()>0;
+		}
 
-		}
-		else{
-			//new key
-			if(!valueToKeys.containsKey(value)){
-				valueToKeys.put(value,new HashSet<String>());
-				//new key's value is smallest
-				Node tmp = head.next;
-				head = value;
-				value.next = tmp;
-			}
-			valueToKeys.get(value).add(key);
-			keyToValue.put(key, value);
-		}
 	}
-	public void dec(String key) {
-		//do it only when key is already defined
-		if(keyToValue.containsKey(key)){
-			Node value = keyToValue.get(key);
-			Node newValue = new Node(value.val  -1);
-			//1. removing key from value
-			valueToKeys.get(value).remove(key);
-			//if value contains no more key, remove it
-			if(valueToKeys.get(value).size()==0){
-				valueToKeys.remove(value);
-				Node p = value.prev;
-				Node n = value.next;
-				//list update
-				if(p!=null){
-					
-					p.next=n;
-				}
-				if( n!=null){
-					n.prev=p;
-				}
-				if(head==value){
-					head = value.next;
-				}
-				if(tail==value){
-					tail = value.prev;
-				}
+//global variables
+		Map<String,Node> keyToValue = new HashMap<String,Node>();
+		//found it's easier to use dummy nodes in linked list
+		//be caution to not let list pointing back to tail and head in this implementation
+		Node head=new Node(Integer.MIN_VALUE),tail=new Node(Integer.MAX_VALUE);
 
+	    public String getMaxKey() {
+	    	return tail.prev==null?"": tail.prev.getFirstKey();
+	    }
+	    
+	    /** Returns one of the keys with Minimal value. */
+	    public String getMinKey() {
+	    	return head.next==null?"": head.next.getFirstKey();
+	    }
+	    private void addNewBiggerValue(String key,Node value){
+	    	int nextValue = value.val+1;
+	    	Node newValue = null;
+	    	//value is tail, append new value
+	    	if(value.next==null){
+	    		newValue = new Node(nextValue);
+	    		value.next = newValue;
+	    		newValue.prev = value;
+	    		tail.prev=newValue;
+	    		newValue.addKey(key);
+
+	    		//remove value if no key uses it
+	    	}else if (value.next.val==nextValue){
+	    		//next value is already there
+	    		newValue = value.next;
+	    		newValue.addKey(key);
+	    	}
+	    	else{
+	    		//new value need to be inserted between value and its next
+	    		Node next = value.next;
+	    		newValue = new Node(nextValue);
+	    		newValue.addKey(key);
+	    		value.next = newValue;
+	    		newValue.prev = value;
+	    		newValue.next = next;
+	    		next.prev=newValue;
+	    	}
+	    	//process old key value
+    		keyToValue.put(key, newValue);
+    		value.removeKey(key);
+	    	if(!value.hasKey()){
+    			removeValue(value);
+    		}
+
+	    }
+	    private void addNewSmallerValue(String key,Node value){
+	    	int prevValue = value.val-1;
+	    	Node newValue = null;
+	    	//value is tail, append new value
+	    	if(prevValue==0){
+	    		//remove key, after key is removed, value is still in linked list
+	    		keyToValue.remove(key);
+	    	}
+	    	else if(value.prev==null){
+	    		newValue = new Node(prevValue);
+	    		value.prev = newValue;
+	    		newValue.next = value;
+	    		head.next=newValue;
+	    		newValue.addKey(key);
+	    	}else if (value.prev.val==prevValue){
+	    		//next value is already there
+	    		newValue = value.prev;
+	    		newValue.addKey(key);
+	    	}
+	    	else{
+	    		//new value need to be inserted between value and its next
+	    		Node prev = value.prev;
+	    		newValue = new Node(prevValue);
+	    		newValue.addKey(key);
+	    		value.prev = newValue;
+	    		newValue.next = value;
+	    		newValue.prev = prev;
+	    		prev.next=newValue;
+	    	}
+	    	//process old key value
+	    	if(newValue!=null){
+	    		keyToValue.put(key, newValue);
+	    	}
+    		value.removeKey(key);
+	    	if(!value.hasKey()){
+    			removeValue(value);
+    		}
+
+	    }
+	    //dealing with removing value from linked list, map operation have been taken cared of
+	    //nodes in list do not point to head and tail
+	    private void removeValue(Node value){
+	    	if(value==null)return;
+	    	Node prev = value.prev;
+	    	Node next = value.next;
+	    	if(prev==null){
+	    		head.next = next;
+	    	}else{
+	    		prev.next = next;
+	    	}
+	    	if(next==null){
+	    		tail.prev=prev;
+	    	}else{
+	    		next.prev = prev;
+	    	}
+	    }
+	    
+		public void inc(String key) {
+			if(keyToValue.containsKey(key)){
+				Node value = keyToValue.get(key);
+				addNewBiggerValue(key, value);
 			}
-			//deal with new value
-			if(newValue.val==0){
-				//if newValue is 0, then remove key
-				keyToValue.remove(key);
-			}else{
-				keyToValue.put(key, newValue);
-				if(keyToValue.containsKey(newValue)){
-					valueToKeys.get(newValue).add(key);
+			else{
+				//new key
+				Node value = new Node(1);
+				if(head.next==null){
+					head.next=value;
+					tail.prev=value;
 				}else{
-					//create new value and adding it to list and everywhere
-					Node tmp = value.prev;
-					if(tmp==null){
-						head = newValue;
-						newValue.next=value;
-						value.prev=newValue;
+					//head contains value node
+					if(head.next.val==value.val){
+						value = head.next;
+
 					}else{
-						value.prev=newValue;
-						newValue.prev=tmp;
-						tmp.next=newValue;
-						newValue.next=value;
+						//new node
+						value.next=head.next;
+						head.next.prev=value;
+						head.next=value;
 					}
-					if(head.val==value.val){//this could also be address based
-						head = newValue;
-					}
-					valueToKeys.put(newValue, new HashSet<String>());
-					//we might do dupliate operation on set, but this makes code shorter
-					valueToKeys.get(newValue).add(key);
-				
 				}
+				keyToValue.put(key, value);
+				value.addKey(key);
 			}
-		}		
+		}
+		public void dec(String key) {
+
+			if(keyToValue.containsKey(key)){
+				Node value = keyToValue.get(key);
+				addNewSmallerValue(key,value);
+			}else{
+				//invalid key, ignore
+			}
+		}
+	    public static void main(String[] args){
+	    	Draft432_AllO1OperationsMine o = new Draft432_AllO1OperationsMine();
+	    	Scanner in = new Scanner(System.in);
+	    	List<String> instructions=new ArrayList<String>();
+	    	List<String> argus=new ArrayList<String>();
+	    	String line1 = in.nextLine();
+	    	String line2 = in.nextLine();
+	    	for(String s:line1.split(",")){
+	    		instructions.add(s);
+	    	}
+	    	for(String s:line2.split(",")){
+	    		argus.add(s);
+	    	}
+	    	for(int i=1;i<instructions.size();i++){
+	    		if("\"inc\"".equals(instructions.get(i))){
+	    			o.inc(argus.get(i));
+	    		}else if("\"dec\"".equals(instructions.get(i))){
+	    			o.dec(argus.get(i));
+	    		}else if("\"getMinKey\"".equals(instructions.get(i))){
+	    			System.out.println(o.getMinKey());
+	    		}
+	    		else if("\"getMaxKey\"".equals(instructions.get(i))){
+	    			System.out.println(o.getMaxKey());
+	    		}
+	    	}
+	    }
 	}
 
-}

@@ -6,10 +6,10 @@ import java.util.PriorityQueue;
 /**
  * two methods:
  * 1. supported with min heap. heaptify cost is log(k)
- * if maximum length of array is n, then cost is nk(lg(k))
+ * if maximum length of array is n, then cost is nk(lg(k)). there are nk heap operations.
  * <p>
  * 2.another simple way: copy all arrays to output array of size n*k, then sort
- * output array in nk(lg(nk))
+ * output array in nk(lg(nk)). this method can be used for k unsorted arrays
  * Created by Andrew Ma on 1/5/2017.
  */
 class ArrayAndIndex implements Comparable<ArrayAndIndex> {

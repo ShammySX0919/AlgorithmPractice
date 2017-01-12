@@ -1,6 +1,6 @@
 package basic.math;
 /**
- * one http://introcs.cs.princeton.edu/java/23recursion/Euclid.java.html
+ * from http://introcs.cs.princeton.edu/java/23recursion/Euclid.java.html
  * https://en.wikipedia.org/wiki/Greatest_common_divisor
  * The greatest common divisor is useful for reducing fractions to be in lowest terms
  * @author Andrew Ma
@@ -24,7 +24,7 @@ public class Euclid {
     }
     /**
      * if p and q are both non-zero, gcd(p,q)=p*q/lcm(p,q)
-     * but more commonly, lcm is computed one gcd
+     * but more commonly, lcm is computed from gcd
      * @param p
      * @param q
      * @return

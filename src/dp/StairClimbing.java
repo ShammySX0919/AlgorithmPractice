@@ -8,16 +8,16 @@ public class StairClimbing {
         //each dp[i] is an accumulation of ways to reach to there
         int dp[] = new int[n+1];
         //assuming you are at nth stair, to reach there
-        //you can step 1 one n-1th stair
-        //or step 2 one n-2th stair or
-        //step 3 one n-3th stair
+        //you can step 1 from n-1th stair
+        //or step 2 from n-2th stair or
+        //step 3 from n-3th stair
         //so you have that many ways to reach to nth stair. 
         //adding them up is the ways to reach to nth stair
         //dp[3]=dp[2]+dp[1]+dp[0];
         
         /*
         to reach to stair 1, you have one way:dp[1]=1=dp[0]
-        to reach to stair 2, you have: 1 one dp[0], that is 1 way,2. one dp[1], that's 1 way.
+        to reach to stair 2, you have: 1 from dp[0], that is 1 way,2. from dp[1], that's 1 way.
         to reach to stair 3, you can : 1. dp[0]->dp[3],2.dp[2]->dp[3],3. dp[1]->dp[3]
         whatever you use to reach dp[2] now contributes to dp[3]
         */

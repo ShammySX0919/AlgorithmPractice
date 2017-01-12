@@ -54,7 +54,7 @@ public class Draft432_AllO1Operations {
         }
     }
     
-    /** Decrements an existing key by 1. If Key's value is 1, remove it one the data structure. */
+    /** Decrements an existing key by 1. If Key's value is 1, remove it from the data structure. */
     public void dec(String key) {
         if (map.containsKey(key)) {
             KeyValuePair node = map.get(key);

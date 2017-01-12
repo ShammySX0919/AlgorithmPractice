@@ -11,7 +11,7 @@ public class Hard146_LRUCache {
     private Map<Integer, Integer> map;
 
     public Hard146_LRUCache(int capacity) {
-        map = new LinkedCappedHashMap(capacity);
+        map = new LinkedCappedHashMap<>(capacity);
     }
 
     public int get(int key) {

@@ -33,11 +33,11 @@ public class CoinChangeNumOfWays {
         /*
          * define dp[c][m] as accumulated solutions at c and m 
          * dp[c][m]=
-         * 			1. dp[c-1][m]. when money value is less than denom, then get solution one last denom
+         * 			1. dp[c-1][m]. when money value is less than denom, then get solution from last denom
          * 							--here it needs to have a 0 denom
          * 			2. dp[c-1][m]+1. when money value equals denom value, we get one more solution
          * 			3. dp[c-1][m] + dp[c][m-coins[c-1]]. when money valus is greater than denom value,
-         * 							it adds up accumulation one previous denom and same denom for meney value
+         * 							it adds up accumulation from previous denom and same denom for meney value
          * 							not including this denom.
          * shit, when did I become so able to analyze? I guess drawing it out and practice on paper or white board
          * really helped to see one's thoughts and then you just need to write the code to reflect the thoughts. 

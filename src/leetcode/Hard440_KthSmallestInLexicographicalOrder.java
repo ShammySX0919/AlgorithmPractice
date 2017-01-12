@@ -5,7 +5,7 @@ package leetcode;
  */
 public class Hard440_KthSmallestInLexicographicalOrder {
     public int findKthNumber(int n, int k) {
-        //starting one 1, you need to move k-1 steps to find the target
+        //starting from 1, you need to move k-1 steps to find the target
         int curr = 1;
         k = k - 1;//so k is k-1 after going through 1 (curr=1)
         while (k > 0) {
@@ -15,7 +15,7 @@ public class Hard440_KthSmallestInLexicographicalOrder {
             //if the steps/number of numbers between curr and curr+1 is smaller than k, we move to next single number
             if (steps <= k) {
                 curr += 1;//move to next index number(1-9)
-                k -= steps;//and deduct steps one k
+                k -= steps;//and deduct steps from k
             } else {
                 //if steps more than needed between curr and curr+1, it is between curr and curr+1
                 //then it needs to go to next level to check between curr*10 and (curr+1)*10

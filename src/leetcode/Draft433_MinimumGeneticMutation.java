@@ -39,7 +39,7 @@ public class Draft433_MinimumGeneticMutation {
                 if(curlevelChildren==0){
                     curlevelChildren=nextLevelChildren;
                     nextLevelChildren=0;
-                    minSteps++;//first loop set this to 0, so it counts properly one next level
+                    minSteps++;//first loop set this to 0, so it counts properly from next level
                 }
                 continue;
             }
@@ -63,7 +63,7 @@ public class Draft433_MinimumGeneticMutation {
             if(curlevelChildren==0){
                 curlevelChildren=nextLevelChildren;
                 nextLevelChildren=0;
-                minSteps++;//first loop set this to 0, so it counts properly one next level
+                minSteps++;//first loop set this to 0, so it counts properly from next level
             }
 
         }

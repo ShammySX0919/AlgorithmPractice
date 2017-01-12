@@ -27,7 +27,7 @@ public class Medium439_TernaryExpressionEvaluate {
             stack.push(expression.charAt(i));
         }
         //stop at size 1 becuase that'd be result:
-        //taking 5 one stack, push result back
+        //taking 5 from stack, push result back
         while(stack.size()>1){
             for(int i=4;i>=0;i--){
                 exp[i]=stack.pop();

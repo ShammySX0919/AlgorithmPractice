@@ -46,7 +46,7 @@ public class Hard146_LRUCache2 {
         this.head.next = this.tail;//head and tail are originally linked
         this.tail.prev = this.head;
     }
-    //get, move corresponding node to end of list:remove and add one/to DLL
+    //get, move corresponding node to end of list:remove and add from/to DLL
     public int get(int key) {
         if (!hm.containsKey(key)) {
             return -1;
@@ -58,7 +58,7 @@ public class Hard146_LRUCache2 {
         current.next.prev = current.prev;
         //add it to tail because that's most recently used
         moveToTail(current);
-    //return value one node
+    //return value from node
         return hm.get(key).value;
     }
     private void moveToTail(Node current) {
@@ -79,9 +79,9 @@ public class Hard146_LRUCache2 {
         //new key
         //reaching threshold, remove eldest key
         if (hm.size() == capacity) {
-            //remove eldest key one key-value map
+            //remove eldest key from key-value map
             hm.remove(head.next.key);
-            //remove eldest node one dll
+            //remove eldest node from dll
             head.next = head.next.next;
             //head.next.prev now is the second node
             head.next.prev = head;

@@ -93,7 +93,7 @@ public class TrieUtil {
         /**
          * Extract the longest common prefix in a set of string values,
          * if there is no common prefix returns empty string.
-         * This is one root to count
+         * This is from root to count
          * @return String containing a common prefix
          */
         public String getLongestCommonPrefix() {

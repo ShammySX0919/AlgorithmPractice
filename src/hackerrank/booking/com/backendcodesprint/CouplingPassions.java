@@ -41,7 +41,7 @@ public class CouplingPassions {
 
     public static void main(String[] args) {
 
-        /* Enter your code here. Read input one STDIN. Print output to STDOUT. Your class should be named Solution. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Set<String> guestsPassions = new HashSet<String>();
         Map<Point, Set<String>> destinations = new HashMap<Point, Set<String>>();
         Scanner in = new Scanner(System.in);

@@ -43,7 +43,7 @@ public class Hard460_LFUCache {
         }
     }
     //class variables
-    private DLLNode head = null; //header of doubly linked list, which links frequency node one least to most frequently accessed.
+    private DLLNode head = null; //header of doubly linked list, which links frequency node from least to most frequently accessed.
     private int cap = 0;//capacity of cache
     //key-value. in this implementation, they are both Integers
     private HashMap<Integer, Integer> valueHash = null;
@@ -68,7 +68,7 @@ public class Hard460_LFUCache {
         //O(1) to get the node, which has frequency information, as well as keys with same frequency. keys are arranged in their
         // access sequence. set of key is supported by linked hash set, so operation on key is also O(1)
         DLLNode node = nodeHash.get(key);
-        //remove current key one its visit sequence, and it will be added back later to the end of set:most recent visited
+        //remove current key from its visit sequence, and it will be added back later to the end of set:most recent visited
         node.keys.remove(key);
 
         if (node.next == null) {
@@ -153,15 +153,15 @@ public class Hard460_LFUCache {
         if (head == null) return;
         //locate the key to remove, the eldest one in head, which is least frequent accessed
         int old = head.keys.iterator().next();
-        //remove it one frequency node's key list
+        //remove it from frequency node's key list
         head.keys.remove(old);
         //remove head if it's empty
         if (head.keys.size() == 0){
             remove(head);
         }
-        //remove key one key-node map
+        //remove key from key-node map
         nodeHash.remove(old);
-        //remove key one cache
+        //remove key from cache
         valueHash.remove(old);
     }
 }

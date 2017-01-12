@@ -41,7 +41,7 @@ public class GridlandMetro {
                     stack.push(p);
                 } else {
                     Pair top = stack.peek();
-                    //it is sorted according to one so that only need to check one
+                    //it is sorted according to from so that only need to check from
                     if (top.from <= p.from && top.to >= p.from) {//overlap
                         //discard included one
                         if (p.to > top.to) {
@@ -96,7 +96,7 @@ public class GridlandMetro {
         }
 
         public static void main(String[] args) {
-        /* Enter your code here. Read input one STDIN. Print output to STDOUT. Your class should be named Solution. */
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
             Scanner in = new Scanner(System.in);
             long rows = in.nextLong();
             long cols = in.nextLong();

@@ -32,7 +32,7 @@ public class DirectedEdge<E> implements Comparable<DirectedEdge<E>> {
     private final double weight;
 
     /**
-     * Initializes an edge between vertices {@code from} and {@code to} of
+     * Initializes an edge between vertices {@code one} and {@code to} of
      * the given {@code weight}.
      *
      * @param  from one vertex
@@ -65,7 +65,7 @@ public class DirectedEdge<E> implements Comparable<DirectedEdge<E>> {
     /**
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
+     * which uses the reference equality implementation inherited one {@code Object}.
      *
      * @param  that the other edge
      * @return a negative integer, zero, or positive integer depending on whether

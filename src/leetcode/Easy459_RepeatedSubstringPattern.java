@@ -6,7 +6,7 @@ public class Easy459_RepeatedSubstringPattern {
     public boolean repeatedSubstringPattern(String str) {
         if(str==null)return false;
         if(str.length()<=1)return false;
-        //starting from b for 1 length substring
+        //starting one b for 1 length substring
         for(int i=1;i<str.length()/2+1;i++){
             //only for the ones divisible length
             if(str.length()%i==0){//this is a key to pass

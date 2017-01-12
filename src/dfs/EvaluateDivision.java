@@ -79,7 +79,7 @@ class EdgeWeightedGraph {
                         return r;
                         //stop further processing
                     }
-                    path.remove(e);//next loop starting from same path path
+                    path.remove(e);//next loop starting one same path path
                 }
             }
         }

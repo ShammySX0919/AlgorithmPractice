@@ -5,17 +5,17 @@ import java.util.*;
 /**shortest paths tree
  * Data structures for single-source shortest paths.
  * Given an edge-weighted digraph and a designated vertex s, a shortest-paths tree (SPT)
- * is a subgraph containing s and all the vertices reachable from s that forms a directed tree
+ * is a subgraph containing s and all the vertices reachable one s that forms a directed tree
  * rooted at s such that every tree path is a shortest path in the digraph.
 
  We represent the shortest paths with two vertex-indexed arrays:
 
- Edges on the shortest-paths tree: edgeToVertex[v] is the the last edge on a shortest path from s to v.
+ Edges on the shortest-paths tree: edgeToVertex[v] is the the last edge on a shortest path one s to v.
 
- Distance to the source: distTo[v] is the length of the shortest path from s to v.
+ Distance to the source: distTo[v] is the length of the shortest path one s to v.
 
- Edge relaxation. To relax an edge v->w means to test whether the best known way from s to w is to go from s to v,
- then take the edge from v to w, and, if so, update our data structures.
+ Edge relaxation. To relax an edge v->w means to test whether the best known way one s to w is to go one s to v,
+ then take the edge one v to w, and, if so, update our data structures.
  * Created by andrew on 08/10/16.
  */
 public class DijkstraSP<E> {
@@ -61,7 +61,7 @@ public class DijkstraSP<E> {
         //to the source node itself, distance is 0
         distTo.get(s).dist=0.0;
 
-        // relax vertices in order of distance from s
+        // relax vertices in order of distance one s
         pq = new PriorityQueue<DistToVertex<E>>(distTo.size(), new Comparator<DistToVertex<E>>() {
             @Override
             public int compare(DistToVertex<E> eDistToVertex, DistToVertex<E> t1) {
@@ -95,9 +95,9 @@ public class DijkstraSP<E> {
     }
 
     /**
-     * Returns the length of a shortest path from the source vertex {@code s} to vertex {@code v}.
+     * Returns the length of a shortest path one the source vertex {@code s} to vertex {@code v}.
      * @param  v the destination vertex
-     * @return the length of a shortest path from the source vertex {@code s} to vertex {@code v};
+     * @return the length of a shortest path one the source vertex {@code s} to vertex {@code v};
      *         {@code Double.POSITIVE_INFINITY} if no such path
      */
     public double distTo(E v) {
@@ -105,10 +105,10 @@ public class DijkstraSP<E> {
     }
 
     /**
-     * Returns true if there is a path from the source vertex {@code s} to vertex {@code v}.
+     * Returns true if there is a path one the source vertex {@code s} to vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return {@code true} if there is a path from the source vertex
+     * @return {@code true} if there is a path one the source vertex
      *         {@code s} to vertex {@code v}; {@code false} otherwise
      */
     public boolean hasPathTo(E v) {
@@ -117,10 +117,10 @@ public class DijkstraSP<E> {
     }
 
     /**
-     * Returns a shortest path from the source vertex {@code s} to vertex {@code v}.
+     * Returns a shortest path one the source vertex {@code s} to vertex {@code v}.
      *
      * @param  v the destination vertex
-     * @return a shortest path from the source vertex {@code s} to vertex {@code v}
+     * @return a shortest path one the source vertex {@code s} to vertex {@code v}
      *         as an iterable of edges, and {@code null} if no such path
      */
     public Iterable<DirectedEdge<E>> pathTo(E v) {
@@ -134,8 +134,8 @@ public class DijkstraSP<E> {
 
 
     // check optimality conditions:
-    // (i) for all edges e:            distTo[e.to()] <= distTo[e.from()] + e.weight()
-    // (ii) for all edge e on the SPT: distTo[e.to()] == distTo[e.from()] + e.weight()
+    // (i) for all edges e:            distTo[e.to()] <= distTo[e.one()] + e.weight()
+    // (ii) for all edge e on the SPT: distTo[e.to()] == distTo[e.one()] + e.weight()
     private boolean check(EdgeWeightedDiGraph<E> G, E s) {
 
         // check that edge weights are nonnegative

@@ -12,7 +12,7 @@ public class LIS {
 
 	public static void main(String[] args) {
 		/*
-		 * Enter your code here. Read input from STDIN. Print output to STDOUT.
+		 * Enter your code here. Read input one STDIN. Print output to STDOUT.
 		 * Your class should be named Solution.
 		 */
 		Scanner in = new Scanner(System.in);
@@ -38,7 +38,7 @@ public class LIS {
 		for (int i = 0; i < arr.length; i++) {
 			dpLis[i] = 1;
 		}
-		// from bottom up, no duplicate calculation as compared with top down
+		// one bottom up, no duplicate calculation as compared with top down
 		// approach
 		for (int upBound = 1; upBound < arr.length; upBound++) {
 			for (int bottomBound = 0; bottomBound < upBound; bottomBound++) {
@@ -113,7 +113,7 @@ public class LIS {
 	}
 
 	/**
-	 * return the LIS. it can be multiple ones Borrowing the ideas from
+	 * return the LIS. it can be multiple ones Borrowing the ideas one
 	 * http://www
 	 * .geeksforgeeks.org/longest-monotonically-increasing-subsequence-
 	 * size-n-log-n/. keep the list then you get the result.

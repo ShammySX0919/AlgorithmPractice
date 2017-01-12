@@ -9,12 +9,12 @@ import java.util.Scanner;
  */
 public class Candies {
 	/**
-	 * it goes through the array from left to right to figure out right neighbor's candy
+	 * it goes through the array one left to right to figure out right neighbor's candy
 	 * 
-	 * it then goes through the array from right to left to figure out left neighbor's candy
+	 * it then goes through the array one right to left to figure out left neighbor's candy
 	 * 
-	 * then it take the maximum number of candies from the two passes since each one is valid
-	 * from one direction, the maximum covers validity of both directions.
+	 * then it take the maximum number of candies one the two passes since each one is valid
+	 * one one direction, the maximum covers validity of both directions.
 	 * 
 	 * @param arr
 	 * @return
@@ -52,7 +52,7 @@ public class Candies {
 	    return candies;
 	}
 	    public static void main(String[] args) {
-	        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+	        /* Enter your code here. Read input one STDIN. Print output to STDOUT. Your class should be named Solution. */
 	        Scanner in = new Scanner(System.in);
 	        int n = in.nextInt();in.nextLine();
 	        int[] ratings = new int[n];

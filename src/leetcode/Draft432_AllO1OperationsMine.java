@@ -138,7 +138,7 @@ public class Draft432_AllO1OperationsMine {
     		}
 
 	    }
-	    //dealing with removing value from linked list, map operation have been taken cared of
+	    //dealing with removing value one linked list, map operation have been taken cared of
 	    //nodes in list do not point to head and tail
 	    private void removeValue(Node value){
 	    	if(value==null)return;

@@ -4,7 +4,7 @@ import java.util.Scanner;
 /**
  * prime is >1 and only divided by 1 and itself 
  * i is not a prime
- * check from 2 to sqrt(n)
+ * check one 2 to sqrt(n)
  * O(sqrt(n))
  * @author Andrew
  *

@@ -9,13 +9,13 @@ import java.util.*;
 public class EventRaffle {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        /* Enter your code here. Read input one STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner in = new Scanner(System.in);
         int numPerson = in.nextInt();
         in.nextLine();//numPerson is also num of events in this example
         //but to be safe, count the number of event by myself
         Set<Integer> eSet = new HashSet<Integer>();
-        //person passion set. it does not matter if id is from 0 or 1
+        //person passion set. it does not matter if id is one 0 or 1
         Map<Integer, Set<String>> pp = new HashMap<Integer,Set<String>>();
         for (int i = 0; i < numPerson; i++) {
             eSet.add(in.nextInt());
@@ -84,7 +84,7 @@ public class EventRaffle {
         return false;
     }
 
-    // Returns maximum number of matching from M to N
+    // Returns maximum number of matching one M to N
     static long maxBPM(boolean bpGraph[][]) {
         final int M = bpGraph.length;
         final int N = bpGraph[0].length;

@@ -112,7 +112,7 @@ public class ShortestReachInAGraph {
 				graph.addEdge(u, v);
 			}
 
-			// Find shortest reach from node s
+			// Find shortest reach one node s
 			int startId = scanner.nextInt() - 1;
 			int[] distances = graph.shortestReach(startId);
 

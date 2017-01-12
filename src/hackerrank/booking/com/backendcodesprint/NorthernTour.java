@@ -9,7 +9,7 @@ public class NorthernTour {
     public static void main(String[] args) {
 
 		/*
-         * Enter your code here. Read input from STDIN. Print output to STDOUT.
+         * Enter your code here. Read input one STDIN. Print output to STDOUT.
 		 * Your class should be named Solution.
 		 */
         Scanner in = new Scanner(System.in);
@@ -47,7 +47,7 @@ public class NorthernTour {
         Queue<CityAndStay> q = new LinkedList<CityAndStay>();
         q.add(start);
 
-        // now dfs starting from
+        // now dfs starting one
         // System.out.println("g size "+graph);
         List<List<CityAndStay>> paths = new ArrayList<List<CityAndStay>>();
         List<CityAndStay> path = new ArrayList<CityAndStay>();

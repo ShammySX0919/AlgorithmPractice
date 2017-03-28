@@ -11,7 +11,7 @@ public class TrieUtil {
  * TrieNode 
  * is basically a character, and its children.
  * With some more attributes to facilitate operations
- * a flag of isLeaf and isStopNode
+ * a flag of isWord and isStopNode
  * stop node reflects certain restriction we want to put on a trie tree, such as maximum deepth it supports
  * Children is implemented as a map of TrieNode mapping to its character
  * @author Andrew Ma
@@ -20,7 +20,7 @@ public class TrieUtil {
 	class TrieNode {
         char charValue;
         HashMap<Character, TrieNode> children = new HashMap<Character, TrieNode>();
-        boolean isLeaf = false;
+        boolean isWord = false;
         boolean isStopNode = false;
         int wordCnt = 0;//since everytime adding a , a character node will be touched, 
         //we can count number of words prefixed/below this node easily
@@ -49,7 +49,7 @@ public class TrieUtil {
         public void insert(final String value) {
         	TrieNode currentNode = root;//root contains no character
         	//R-way tree
-        	HashMap<Character, TrieNode> currentChildren = root.children;
+        	HashMap<Character, TrieNode> currentChildren = currentNode.children;
             
             // We would skip empty and null input values
             for(int i=0; i<value.length(); i++){
@@ -85,7 +85,7 @@ public class TrieUtil {
 
                 //set leaf node. mark it as an end of word
                 if(i==value.length()-1){
-                    nextNode.isLeaf = true;
+                    nextNode.isWord = true;
                 }
             }
         }
@@ -109,7 +109,7 @@ public class TrieUtil {
                     prefix +=entry.getKey();
                 }
                 //can only go as far as shortest word
-                if (currNode.isLeaf){break;}
+                if (currNode.isWord){break;}
                 children = currNode.children;
             }
             return prefix;
@@ -123,7 +123,7 @@ public class TrieUtil {
         	//this is a tree, there's no cycle to worry
         	while(!q.isEmpty()){
         		TrieNode curNode = q.poll();
-        		if(curNode.isLeaf)cnt++;
+        		if(curNode.isWord)cnt++;
         		for(Map.Entry<Character, TrieNode> e:curNode.children.entrySet()){
         			q.add(e.getValue());
         		}

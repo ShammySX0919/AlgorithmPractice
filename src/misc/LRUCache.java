@@ -41,7 +41,7 @@ public class LRUCache {
         if(map.containsKey(key)){
             Node n = map.get(key);
             remove(n);
-            setHead(n);
+            setAsHead(n);
             return n.value;
         }
 
@@ -62,7 +62,7 @@ public class LRUCache {
 
     }
 
-    public void setHead(Node n){
+    public void setAsHead(Node n){
         n.next = head;
         n.pre = null;
 
@@ -83,7 +83,7 @@ public class LRUCache {
             Node old = map.get(key);
             old.value = value;
             remove(old);
-            setHead(old);
+            setAsHead(old);
         }else{
             //for new key
             Node created = new Node(key, value);
@@ -94,7 +94,7 @@ public class LRUCache {
                 remove(end);
 
             }
-            setHead(created);
+            setAsHead(created);
             //define new key-node in map
             map.put(key, created);
         }

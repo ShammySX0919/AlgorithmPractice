@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.hard;
 
 /**
  * Created by andrew on 26/10/16.

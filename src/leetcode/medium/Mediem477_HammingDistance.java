@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.medium;
 
 /**
  * Created by Andrew Ma on 12/20/2016.

@@ -10,7 +10,20 @@ import java.util.Scanner;
  *
  */
 public class IsPrime {
-
+    private static boolean isPrime(int n){
+        boolean isPrime = false;
+        if(n==1){
+            isPrime=false;
+        }else{
+            for(int i=2;i*i<=n;i++){
+                if((n%i)==0){
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        return isPrime;
+    }
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int p = in.nextInt();
@@ -19,16 +32,7 @@ public class IsPrime {
         for(int a0 = 0; a0 < p; a0++){
             boolean isPrime = true;
             int n = in.nextInt();
-            if(n==1){
-                isPrime=false;
-            }else{
-                for(int i=2;i*i<=n;i++){
-                    if((n%i)==0){
-                        isPrime = false;
-                        break;
-                    }
-                }
-            }
+            isPrime = isPrime(n);
             System.out.println(isPrime?"Prime":"Not prime");
             //if(in.hasNextLine()){
               //  in.nextLine();

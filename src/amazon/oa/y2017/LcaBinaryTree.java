@@ -1,12 +1,5 @@
 package amazon.oa.y2017;
-//https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/#/description
 
-class TreeNode {
-	      int val;
-	      TreeNode left;
-	      TreeNode right;
-	      TreeNode(int x) { val = x; }
-}
 /**
  * it assumes p and q are in tree
  * @author Andrew

@@ -1,55 +1,137 @@
 package amazon.oa.y2017;
 
 /**
- * Given a list of unique integers, construct the binary tree by given order without rebalancing, then find out the distance between two nodes.
- *values= [5,6,3,1,2,4], n is the size of values, node1 is 2, node2 is 4, then function return 3
+ * Given a list of unique integers, construct the binary search tree by given order without rebalancing,
+ * then find out the distance between two nodes.
+ *values= [5,6,3,1,2,4], n is the size of values,
+ * node1 is 2, node2 is 4,
+ * then function return 3
+         *5
+ *      3   6
+ *    1    4
+ *      2
  * Created by andrew on 5/16/2017.
  */
-
-import sun.reflect.generics.tree.Tree;
-
-/**
- * algorithm: node1-root + node2-root - 2*lca-root
- */
-/*
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-*/
 public class BstDistance {
-    //public static int bstDistance(int[] values, int n, int node1, int node2){}
-    public static int bstDistance(TreeNode root, int val1, int val2){
-        int distTo1 = findHeight(root,val1);
-        int distTo2 = findHeight(root,val2);
-        TreeNode lca = findLCA(root,val1,val2);
-        int distToLca = findHeight(root,lca.val);
-        return distTo1+distTo2-2*distToLca;
+    /**
+     * build a BST using TreeNode according to given array, which is insertion sequence
+     * @param values
+     * @return
+     */
+    public static TreeNode buildBST(int[] values){
+        if(values==null||values.length==0)return null;
+        TreeNode root = null;
+        //sequentially insert value to BST
+        for(int v:values){
+            root = insertBst(root,v);
+        }
+        return root;
     }
-    public static int findHeight(TreeNode root, int val){
-        if(root==null)return -1;//-1 means not find
-        if(root.val==val)return 0;
-        int leftHeight = findHeight(root.left,val);
-        int rightHeight = findHeight(root.right,val);
-        if(leftHeight==-1 && rightHeight==-1)return -1;
-        return Math.max(leftHeight,rightHeight)+1;
-    }
-    public static TreeNode findLCA(TreeNode root, int val1, int val2){
-        if(root==null)return null;
-//if it is not bst, but binary tree instead, different method has to be used
-        if(root.val>val1 && root.val>val2){
-            return findLCA(root.left,val1,val2);
-        }else if(root.val<val1 && root.val<val2){
-            return findLCA(root.right,val1,val2);
-        }else
+
+    /**
+     * not used, practice purpose
+     * @param root
+     * @param v
+     * @return
+     */
+    private TreeNode search(TreeNode root, int v)
+    {
+        // Base Cases: root is null or key is find at current node
+        if (root==null || root.val==v)
             return root;
-        /*
-        if(root.val==val1 ||root.val=val2)return root;
-        TreeNode left = findLCA(root.left,val1,val2);
-        TreeNode right = findLCA(root.right,val1,val2);
+
+        // val is smaller than root's key
+        if (root.val > v)
+            return search(root.left, v);
+
+        // val is greater than root's key
+        return search(root.right, v);
+    }
+
+    /**
+     * insert value to BST
+     * @param root
+     * @param v
+     * @return
+     */
+    private static TreeNode insertBst(TreeNode root, int v) {
+        //reach leaf's child, create new node
+        if(root==null){
+            root = new TreeNode(v);
+            return root;
+        }
+        //less than current node value, insert to left tree
+        if(root.val>v){
+            root.left = insertBst(root.left,v);
+        }
+        //assuming no duplicate numbers in array
+        //greater than current node value, insert to right tree
+        if(root.val<v) {
+            root.right = insertBst(root.right, v);
+        }
+        //return the original root/current node
+        return root;
+    }
+
+    /**
+     * this method is under consumption of LCA in BST
+     * @param root
+     * @param node1
+     * @param node2
+     * @return
+     */
+    private static TreeNode findLCAInBST(TreeNode root, int node1, int node2){
+        if(root==null)return null;
+        //LCA can be one of the node
+        if(root.val==node1||root.val==node2)return root;
+        //find them in root's left tree and right tree
+        TreeNode left = findLCAInBST(root.left,node1,node2);
+        TreeNode right =  findLCAInBST(root.right,node1,node2);
+        //if both left and right are not null, then root is lca(each subtree contains one node)
+        //otherwise, try to use non-null one as lca
+        //if both are null, then no lca, return null
         return left!=null&&right!=null?root:left==null?right:left;
-        */
+    }
+
+    /**
+     * height between root and node with val
+     * @param root
+     * @param val
+     * @return
+     */
+    private static int distanceToRoot(TreeNode root,int val){
+        if(root==null)return -1;//not find
+        if(root.val==val)return 0;//find it, current height is 0
+        int leftHeight = distanceToRoot(root.left,val);
+        int rightHeight = distanceToRoot(root.right,val);
+        //it might not exist in tree
+        int height = Math.max(leftHeight,rightHeight);
+        //if -1, propagate up
+        return height==-1?-1:height+1;
+    }
+
+    /**
+     * distance between two nodes in BST.
+     * @param values
+     * @param n
+     * @param node1
+     * @param node2
+     * @return
+     */
+    public static int bstDistance(int[] values, int n, int node1, int node2){
+        TreeNode root = buildBST(values);//build BST according to given array
+        TreeNode lca = findLCAInBST(root,node1,node2);//find LCA of two nodes
+        if(lca==null)return -1;
+        int n1Distance = distanceToRoot(root,node1);//node 1 distance to root
+        int n2Distance = distanceToRoot(root,node2);//node 2 distance to root
+        int lcaDistance = distanceToRoot(root,lca.val);//lca distance to root
+        return n1Distance+n2Distance-2*lcaDistance;//formula
+    }
+    public static void main(String... args){
+        //test case 1
+        int[] values = new int[]{5,6,3,1,2,4};
+        System.out.println(3==bstDistance(values,values.length,2,4));
+        values = new int[]{1};
+        System.out.println(0==bstDistance(values,values.length,1,1));
     }
 }

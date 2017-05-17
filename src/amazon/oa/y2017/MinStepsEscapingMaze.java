@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * a maze, 0 is through, 1 is blocked, give exit as (x,y), find minimum steps to go out. if can not go out, return -1.
+ * a maze, 1 is through, 0 is blocked, give exit as (x,y), find minimum steps to go out. if can not go out, return -1.
  * Analyze: this is asking minimum steps of exit, so BFS will give us answer.
  *
  * it allows to move four directions in this implementation.
@@ -34,7 +34,8 @@ public class MinStepsEscapingMaze {
         return true;
     }
     public static int shortestStepsToReach(int ro,int co,int rd,int cd,int[][] matrix){
-        if(matrix==null||matrix.length==0)return 0;
+        if(matrix==null||matrix.length==0)return -1;
+        if(matrix[ro][co]==0)return -1;
         int R = matrix.length;
         int C = matrix[0].length;
         //false by default
@@ -56,31 +57,46 @@ public class MinStepsEscapingMaze {
             Cell next = null;
             //up
             next = new Cell(curCell.r-1,curCell.c);
-            if(isValidMove(next,R,C) && !visited[curCell.r-1][curCell.c]){
+            if(isValidMove(next,R,C) && !visited[curCell.r-1][curCell.c]&&matrix[curCell.r-1][curCell.c]==1){
                 next.dist = curCell.dist+1;
                 q.add(next);
             }
 
             //right
             next = new Cell(curCell.r,curCell.c+1);
-            if(isValidMove(next,R,C) && !visited[curCell.r][curCell.c+1]){
+            if(isValidMove(next,R,C) && !visited[curCell.r][curCell.c+1]&&matrix[curCell.r][curCell.c]==1){
                 next.dist = curCell.dist+1;
                 q.add(next);
             }
             //down
             next = new Cell(curCell.r+1,curCell.c);
-            if(isValidMove(next,R,C) && !visited[curCell.r+1][curCell.c]){
+            if(isValidMove(next,R,C) && !visited[curCell.r+1][curCell.c]&&matrix[curCell.r+1][curCell.c]==1){
                 next.dist = curCell.dist+1;
                 q.add(next);
             }
             //left
             next = new Cell(curCell.r,curCell.c-1);
-            if(isValidMove(next,R,C) && !visited[curCell.r][curCell.c-1]){
+            if(isValidMove(next,R,C) && !visited[curCell.r][curCell.c-1]&&matrix[curCell.r][curCell.c-1]==1){
 
                 next.dist = curCell.dist+1;
                 q.add(next);
             }
         }
         return -1;//not reachable after all searching
+    }
+    public static void main(String... args){
+        int mat[][] = new int[][]
+        {
+            { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+            { 1, 0, 1, 0, 1, 1, 1, 0, 1, 1 },
+            { 1, 1, 1, 0, 1, 1, 0, 1, 0, 1 },
+            { 0, 0, 0, 0, 1, 0, 0, 0, 0, 1 },
+            { 1, 1, 1, 0, 1, 1, 1, 0, 1, 0 },
+            { 1, 0, 1, 1, 1, 1, 0, 1, 0, 0 },
+            { 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
+            { 1, 0, 1, 1, 1, 1, 0, 1, 1, 1 },
+            { 1, 1, 0, 0, 0, 0, 1, 0, 0, 1 }
+        };
+        System.out.println(shortestStepsToReach(0,0,3,4,mat));
     }
 }

@@ -4,7 +4,7 @@ package amazon.oa.y2017;
  * public class Movie
  {
  int movieId;.
- float rating; 鏉ユ簮涓€浜�.涓夊垎鍦拌鍧�.
+ float rating;
  List<Movie> similarMovies
  other getters
 

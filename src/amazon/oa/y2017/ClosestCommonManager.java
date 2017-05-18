@@ -61,6 +61,7 @@ public class ClosestCommonManager {
 			if(firstPath.get(i).id!=secondPath.get(i).id)
 				return firstPath.get(i-1)==ceo?null:firstPath.get(i-1);
 		}
+		//no difference was found, return firstPath's last element. checking if it is ceo
 	    return firstPath.get(firstPath.size()-1)==ceo?null:firstPath.get(firstPath.size()-1);
 	}
 }

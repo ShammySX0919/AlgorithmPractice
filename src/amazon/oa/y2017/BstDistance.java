@@ -34,7 +34,7 @@ public class BstDistance {
      * @param v
      * @return
      */
-    private TreeNode search(TreeNode root, int v)
+    private static TreeNode search(TreeNode root, int v)
     {
         // Base Cases: root is null or key is find at current node
         if (root==null || root.val==v)
@@ -120,18 +120,27 @@ public class BstDistance {
      */
     public static int bstDistance(int[] values, int n, int node1, int node2){
         TreeNode root = buildBST(values);//build BST according to given array
+        //make sure both of them are in bst
+        if(search(root,node1)==null||search(root,node2)==null){
+            return -1;
+        }
         TreeNode lca = findLCAInBST(root,node1,node2);//find LCA of two nodes
         if(lca==null)return -1;
         int n1Distance = distanceToRoot(root,node1);//node 1 distance to root
         int n2Distance = distanceToRoot(root,node2);//node 2 distance to root
         int lcaDistance = distanceToRoot(root,lca.val);//lca distance to root
-        return n1Distance+n2Distance-2*lcaDistance;//formula
+        int res = n1Distance+n2Distance-2*lcaDistance;
+        //make sure invalid values are converted to -1
+        return res<0?-1:res;
     }
     public static void main(String... args){
         //test case 1
-        int[] values = new int[]{5,6,3,1,2,4};
-        System.out.println(3==bstDistance(values,values.length,2,4));
-        values = new int[]{1};
-        System.out.println(0==bstDistance(values,values.length,1,1));
+        int[] values ;
+//        values = new int[]{5,6,3,1,2,4};
+//        System.out.println(3==bstDistance(values,values.length,2,4));
+//        values = new int[]{1};
+//        System.out.println(0==bstDistance(values,values.length,1,1));
+        values = new int[]{9,7,5,3,1};//only having left tree, and 20 is not within the bst
+        System.out.println(bstDistance(values,5,7,20));
     }
 }

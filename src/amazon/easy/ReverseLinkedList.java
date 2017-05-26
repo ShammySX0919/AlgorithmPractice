@@ -1,4 +1,4 @@
-package misc;
+package amazon.easy;
 class Node{
 	    int val;
 	    public Node(int val){
@@ -13,15 +13,18 @@ public class ReverseLinkedList {
 	    if(head == null)return null;
 	    //dummy head
 	    Node newHead = new Node(-1);
-	    
-	    Node tn = head;
-	    while(tn!=null){
+	    //nextNode is used to traverse the linked list
+	    Node nextNode = head;
+	    while(nextNode!=null){
 	        Node oldHeader = newHead.next;
 	        //not destroying old 
-	        Node curNode = new Node(tn.val);
+	        Node curNode = new Node(nextNode.val);
+	        //new head points to new node
 	        newHead.next = curNode;
+	        //new node points to old header
 	        curNode.next = oldHeader;
-	        tn = tn.next;
+	        //ready to process next node
+	        nextNode = nextNode.next;
 	    }
 	    return newHead.next;
 	}

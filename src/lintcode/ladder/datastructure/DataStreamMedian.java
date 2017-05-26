@@ -12,8 +12,9 @@ Clarification
  - Median is the number that in the middle of a sorted array. If there are n numbers in a sorted array A, the median is A[(n - 1) / 2]. For example, if A=[1,2,3], median is 2. If A=[1,19], median is 1.
 method 1:
  Brute force: keep an array, sort it, get a[(n-1)/2], where n is current number of elements
-method 2:two priority queue, priority queue's time complexity is lgn
+method 2:two priority queue, priority queue's time complexity is O(lgn)
  one minimum, one maximum, try to balance the two, median is the one with bigger size or maximum queue if size is same
+
  * Created by andrew on 22/11/16.
  */
 public class DataStreamMedian {

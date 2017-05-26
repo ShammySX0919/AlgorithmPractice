@@ -25,6 +25,24 @@ public class ReverseLinkedList {
 	    }
 	    return newHead.next;
 	}
+//old list was changed to have only one left
+	Node reverseInPlace(Node head){
+		if(head == null)return null;
+		//dummy head
+		Node newHead = new Node(-1);
+
+		Node curNode = head;
+		while(curNode!=null){
+			//keep old information
+			Node oldHeader = newHead.next;
+			Node nextNode = curNode.next;
+			//adding current node to head of reversed list
+			newHead.next = curNode;
+			curNode.next = oldHeader;
+			curNode = nextNode;
+		}
+		return newHead.next;
+	}
 	public static void main(String... args){
 		Node one = new Node(1);
 		Node two = new Node(2);
@@ -37,5 +55,16 @@ public class ReverseLinkedList {
 			System.out.println(head.val+"-->");
 			head = head.next;
 		}
+		head = one;
+		while(head!=null){
+			System.out.println(head.val+"-->");
+			head = head.next;
+		}
+		head = o.reverseInPlace(one);
+		while(head!=null){
+			System.out.println(head.val+"-->");
+			head = head.next;
+		}
+
 	}
 }

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
+ * longest increasing Subsequence
  * Created by andrew on 30/09/16.
  */
 public class LIS {

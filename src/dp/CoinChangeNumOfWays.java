@@ -8,11 +8,13 @@ import java.util.Scanner;
  * Them came up a acceptable solution within 15 minutes.
  * Cheers to myself.
  *
- * Thinking ways of solutions with 0 coins, then 1 coins, then 2 coins... until with coins.length coins
- * money wise, starting from 0, to 1 , to 2, ... to amount
+ * Thinking ways of solutions towards amount with 0 coins, then 1 coins, then 2 coins... until with coins.length coins
+ * money amount wise, starting from 0, to 1 , to 2, ... to amount.
+ * that is, accumulate the effect of both coins and amount.
  *
  * define dp[c][m] as accumulated solutions of c coins and m amount
- *
+ * because dp is based on previous result, so that first one dp[0][] and dp[][0] are defined
+ * according to formula needs
  *
  * @author Andrew Ma
  *
@@ -20,13 +22,14 @@ import java.util.Scanner;
 public class CoinChangeNumOfWays {
 	
     public static long makeChange(int[] coins, int money) {
-    	//I assumes 0 denom having 0 solutions to any amount of money
+    	//I assumes 0 denom (no coin) having 0 solutions to any amount of money
     	//also assumes any denom having 0 solution to 0 amount of money
     	//it turns out to be right! to be brave to make assumptions!
 
-    	//making room for 0 denom and 0 amount of money
+    	//making room for 0 denom and 0 amount of money for formula needs
         long dp[][] = new long[coins.length+1][money+1];
-        //initialization the known solutions
+
+        //initialization the known solutions. these are base of formula
         //0 denom, 0 solution to any amount of money
         for(int i=0;i<money+1;i++){
             dp[0][i]=0;//no solution for each money value
@@ -39,7 +42,26 @@ public class CoinChangeNumOfWays {
         //then build up values towards to final solution
         //c and m here are for dp array's dimensions
         /*
-         * define dp[c][m] as accumulated solutions at c and m, real number of coins(order according to array), and real money amount
+         * define dp[c][m] as accumulated solutions at c and m, up to denom indexed by c(order according to array),
+         * and real money amount as denoted by m.
+         *
+         * now imagine first row with no coin, for each amount, no solution. 0 ways of solution.
+         * second row with first denom of coin, for each amount.
+         *              when amount==denom, you have one method, when amount==n*denom,
+         *                                  you still have one method, meaning multiple coins with that denom
+         *                                  (if on same row, positions apart of same denom is same solution)
+         *              when amount is less than coin's denom, current denom makes no solution, solution could be
+         *                                  from previous row's solution
+         *              when amount is greater than coin's denom, you get previous row's solution, plus, from current row, positioned at
+         *                          m-coints[c]
+         * third row with second denon of coin, for each amount. now, when amount=n*denom, you have one method, plus
+         *                                                  the solution from above row for same amount! that makes this solution aa
+         *                                                  accumulation of above rows
+         * forth row with third.....
+         *
+         * it grows/accumulates from both vertical and horizontal directions. vertical is last denom's solution, horizontal is one solution os
+         * multiple coins with denom of coins[c].
+         *
          * since we need to build it up from previous, so making c=0 and m=0 for that purpose
          * dp[c][m]=
          * 			1. dp[c-1][m]. when money value is less than denom, then get solution from last denom
@@ -48,7 +70,7 @@ public class CoinChangeNumOfWays {
          * 			3. dp[c-1][m] + dp[c][m-coins[c-1]]. when money value is greater than denom value,
          * 							it adds up accumulation from previous denom and same denom for money value
          * 							not including this denom.
-         * shit, when did I become so able to analyze? I guess drawing it out and practice on paper or white board
+         * I guess drawing it out and practice on paper or white board
          * really helped to see one's thoughts and then you just need to write the code to reflect the thoughts. 
          * and you are confident that you are able to write code to reflect your thoughts.
          */

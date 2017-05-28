@@ -15,8 +15,8 @@ public class EliminateOwels {
         for(char c:v.toCharArray()){
             vowels.add(c);
         }
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
             if (!vowels.contains(c))
                 sb.append(c);
         }

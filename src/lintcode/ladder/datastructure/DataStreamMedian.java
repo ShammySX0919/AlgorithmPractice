@@ -38,6 +38,8 @@ public class DataStreamMedian {
         return nums[(end-1)/2];
     }
 //better solution here
+// when using two priority queues, thinking to add new element to max queue, then poll the max from it and
+//then adding to min queue. that is to make every element go through the first queue the first.
     public PriorityQueue<Integer> minheap, maxheap;
     public int[] medianIIBetter(int[] nums) {
         maxheap = new PriorityQueue<Integer>(Collections.reverseOrder());
@@ -72,14 +74,20 @@ public class DataStreamMedian {
     }
 
     /**
-     * this problem pickes the left value if there are even number of numbers
+     * this problem picks the left value if there are even number of numbers
      * @return
      */
     public int findMedian2() {
-        if (maxheap.size() == minheap.size()) {
-            return  minheap.peek();
-        } else {
-            return maxheap.peek();
-        }
+        //if (maxheap.size() >= minheap.size()) {
+            return  maxheap.peek();
+        //}
+        //else {//this branch is not reachable
+          //  return minheap.peek();
+        //}
+    }
+    public static void main(String[] args){
+        int[] data = new int[]{1,2,3,4,5};
+        DataStreamMedian o = new DataStreamMedian();
+        System.out.println(o.medianIIBetter(data));
     }
 }

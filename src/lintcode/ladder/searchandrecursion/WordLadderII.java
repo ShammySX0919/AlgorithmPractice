@@ -24,15 +24,14 @@ public class WordLadderII {
         //
         Map<String, Integer> distance = new HashMap<String, Integer>();
 
-        //dict.add(start);
-        ///dict.add(end);//totally not necessary
-        //bfs pprepare adjacency list of each possible starting dict word
+        //bfs prepare adjacency list of all possible transitions dict words
         //distance here is rather a hashset to avoid cycle
         bfs(map, distance, start, end, dict);
 
-        List<String> path = new ArrayList<String>();
-        Set<String> visited = new HashSet<String>();
-        dfs(ladders, path, start, end, map,visited);
+        List<String> path = new ArrayList<String>();//to capture the paths
+        Set<String> visited = new HashSet<String>();//mark visited
+
+        dfs(ladders, path, start, end, map,visited);//
         //above algorithm added all possible paths
         //let's keep just shorted paths
         Map<Integer,ArrayList<List<String>>> sorting = new HashMap<Integer,ArrayList<List<String>>>();
@@ -49,7 +48,7 @@ public class WordLadderII {
         }
         return sorting.get(minLen);
     }
-
+    //using dfs to figure out all of paths between start and end
     void dfs(List<List<String>> ladders, List<String> path,
              String start, String end,
              Map<String, List<String>> map,
@@ -62,17 +61,20 @@ public class WordLadderII {
             ladders.add(new ArrayList<String>(path));
         }
         else {
+            //do dfs for each neighbors
             for (String next : map.get(start)) {
 
                 dfs(ladders, path, next, end, map,visited);
 
             }
         }
+        //reset status so that same position can be revisited for different starting points.
+        //path and visited need to avoid cycle only in each of single traversal
         path.remove(path.size() - 1);
         visited.remove(start);
     }
     //forget about distance fow now
-//then this bfs is to prepare an adjacency list
+    //then this bfs is to prepare an adjacency list
     void bfs(Map<String, List<String>> map, Map<String, Integer> distance,
              String start, String end, Set<String> dict) {
         //use queue to assist bfs

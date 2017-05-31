@@ -90,4 +90,5 @@ public class DataStreamMedian {
         DataStreamMedian o = new DataStreamMedian();
         System.out.println(o.medianIIBetter(data));
     }
+
 }

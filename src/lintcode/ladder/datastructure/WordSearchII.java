@@ -80,7 +80,7 @@ public class WordSearchII {
         // write your code here
 
     }
-//valid steps to find neighbors
+//valid steps to preorderFind neighbors
     public int [] rd = {1, 0, -1, 0};
     public int [] cd = {0, 1, 0, -1};
     private boolean isNotValidMove(char[][] board,int x,int y){

@@ -25,6 +25,7 @@ public class LeetCode3_LongestSubstringWithoutRepeatChar {
             //that also marks end of substring currently being checked
             //it start from header+number of characters between the repeated characters
             t=h+charSet.size();
+            //scan more from t and move t towards tail
             while(t<s.length() && !charSet.contains(s.charAt(t))){
                 charSet.add(s.charAt(t));
                 t++;

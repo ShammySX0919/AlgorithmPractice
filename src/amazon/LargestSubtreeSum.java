@@ -4,7 +4,7 @@ package amazon;
  * Given a binary tree, every node has a int value,
  * return the root node of subtree with the largest sum up value
  *
- * We can use post-order traversal to find the sum of left and right subtree
+ * We can use post-order traversal to preorderFind the sum of left and right subtree
  and sum of leftsum + rightsum +rootdata is passed above to the parent of tree.
  Maintain a node to root of largest subtree found so far and update it whenever
  greater sum is found.

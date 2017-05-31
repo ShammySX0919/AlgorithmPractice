@@ -11,8 +11,8 @@ public class No573_SquirrelSimulation {
             int dist = Math.abs(tree[0] - nut[0]) + Math.abs(tree[1] - nut[1]);
             sum += 2*dist;
             //I did similiar but minDiff
-            //this considered both distance between nut and tree, nut and squirrel. it is not to find a nut that is closest to squirrel
-            //it is to find one that saves most of distance
+            //this considered both distance between nut and tree, nut and squirrel. it is not to preorderFind a nut that is closest to squirrel
+            //it is to preorderFind one that saves most of distance
             maxDiff = Math.max(maxDiff, dist - Math.abs(squirrel[0] - nut[0]) - Math.abs(squirrel[1] - nut[1]));
         }
         return sum - maxDiff;

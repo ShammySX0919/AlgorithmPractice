@@ -3,7 +3,7 @@ package basic.string;
 import java.util.Objects;
 
 /**
- * find longest common prefix
+ * preorderFind longest common prefix
  * Created by andrew on 19/10/16.
  */
 public class LCP {

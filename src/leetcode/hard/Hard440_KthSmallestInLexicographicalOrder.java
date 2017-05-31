@@ -5,11 +5,11 @@ package leetcode.hard;
  */
 public class Hard440_KthSmallestInLexicographicalOrder {
     public int findKthNumber(int n, int k) {
-        //starting from 1, you need to move k-1 steps to find the target
+        //starting from 1, you need to move k-1 steps to preorderFind the target
         int curr = 1;
         k = k - 1;//so k is k-1 after going through 1 (curr=1)
         while (k > 0) {
-            //find out count of numbers between curr and curr+1
+            //preorderFind out count of numbers between curr and curr+1
             //e.g. between 1 and 2, under the context of n, how many numbers are in between 1 and 2 in lexicographical order
             int steps = calSteps(n, curr, curr + 1);
             //if the steps/number of numbers between curr and curr+1 is smaller than k, we move to next single number
@@ -30,7 +30,7 @@ public class Hard440_KthSmallestInLexicographicalOrder {
     //use long in case of overflow
 
     /**
-     * find out how many numbers are between n1 and n2 under context of n in lexicographical order.
+     * preorderFind out how many numbers are between n1 and n2 under context of n in lexicographical order.
      * for example, if n is 99, imaging a denary tree,
      * betweeen 1 and 2, there would be all numbers starting with 1
      * 10-19, 10numbers

@@ -6,7 +6,7 @@ import java.util.Set;
 
 /**
  * Given two words (beginWord and endWord), and a dictionary's word list,
- * find the length of shortest transformation sequence from beginWord to endWord,
+ * preorderFind the length of shortest transformation sequence from beginWord to endWord,
  * such that:
 
  Only one letter can be changed at a time.
@@ -65,7 +65,7 @@ public class Medium127_WordLadder {
                         String tmp = replace(current, j, c);
                         //only process when word is in dict
                         if (dict.contains(tmp)){
-                            //if find end word, return length
+                            //if preorderFind end word, return length
                             if (tmp.equals(end)) {
                                 return length + 1;
                             }

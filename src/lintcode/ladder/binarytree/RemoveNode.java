@@ -28,7 +28,7 @@ class TreeNode {
 delete the node,把parent对node的reference link到node的child
 
     Node with 2 children
-        find the minimum node of right subtree
+        preorderFind the minimum node of right subtree
         replace the value of found node
         delete the old duplicate node(case 1/2, cause minimum node should not have left child)
 */

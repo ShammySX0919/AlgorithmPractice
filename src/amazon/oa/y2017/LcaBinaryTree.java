@@ -15,6 +15,6 @@ public class LcaBinaryTree {
 	}
 }
 /**
-in a graph, you can dfs to find path to node1, then dfs to find path to node 2.
-then find the last common node in both path
+in a graph, you can dfs to preorderFind path to node1, then dfs to preorderFind path to node 2.
+then preorderFind the last common node in both path
 */

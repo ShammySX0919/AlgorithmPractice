@@ -121,7 +121,7 @@ love the city the vity of love
 23  1468362620
 you can&#39;t visit paris without eating macaron from ladure and visiting the moulin rouge it&#39;s fabulous
 59  1468364835
-paris stores close at 7:00 pm and champ lesee may be 2 hr late but still too early to enjoy the nice weather     transportation is  relatively  expensive and food as well  the good issue is you will find most of sales people at stores they speak english
+paris stores close at 7:00 pm and champ lesee may be 2 hr late but still too early to enjoy the nice weather     transportation is  relatively  expensive and food as well  the good issue is you will preorderFind most of sales people at stores they speak english
 52  1468365845
 had great times visiting opera garnier the eiffel tower and the catacombs all made so much easier by excellent public transport links   we also walked a great deal and saw so much more of this stunningly beautiful city   numerous very good quality restaurants and bars abound which enable you to sample pretty much any cuisine you fancy
 63  1468382167
@@ -141,7 +141,7 @@ shopping when the sales are on last week of june as genuine first and then secon
 67  1468398066
 as this was a trip to visit our daughter we didn&#39;t do the usual sightseeing trips went to a lovely evening show at the place de les invalides travelled from paris to vernon and then a shuttle bus to giverny beautiful village which was the home of claude monet visited his house and gardens well worth a visit went to a lovely restaurant in l&#39;auteil district - le mouton blanc would advise the Ã¢â€šÂ¬32 menu excellent choices and friendly staff
 36  1468398495
-very easy to get around - i walked everywhere!i would recommend learning the language before you go  i wish i knew a bit more as it was often hard to find locals willing to speak in english
+very easy to get around - i walked everywhere!i would recommend learning the language before you go  i wish i knew a bit more as it was often hard to preorderFind locals willing to speak in english
 14  1468399167
 i was in town for a springsteen show so didnt go sight seeing paris in general is very expensive and not the cleanest of cities
 12  1468401855
@@ -167,7 +167,7 @@ culturally rich historically layered wonderful city not to be missed in one&#39;
 37  1468418098
 stay on a hotel or place near the city to really maximize your time
 27  1468418277
-this visit to paris was the sixth time do to we visit to our daughters who live there  paris is a city that you never finish to visit very attractive places  walking through the city always you will find new attractions and beautiful places
+this visit to paris was the sixth time do to we visit to our daughters who live there  paris is a city that you never finish to visit very attractive places  walking through the city always you will preorderFind new attractions and beautiful places
 31  1468419367
 all paris
 12  1468421589
@@ -207,7 +207,7 @@ simply paris!
 19  1468473211
 easy to travel around liked the bus&#47;batteau trips
 20  1468475692
-i been here several times  still like it a lot every time you will find surprise and meet nice people
+i been here several times  still like it a lot every time you will preorderFind surprise and meet nice people
 28  1468475855
 paris is wonderful and the weather was great for our stay euro 16 made it a bit more crowded than we expected but it was a very vibrant atmosphere
 30  1468477748
@@ -335,7 +335,7 @@ paris is vast and complex and delightfully easy to get around   buying a carnet 
 89  1461194848
 i have been to paris several times and it never fails to enchant  i love to look up and see the eiffel tower (even if i dont particularly want to go up it again) to walk alongside the seine and over the bridges it doesn&#39;t feel like paris until you have walked by the river  highlights of the trip were the rodin museum and the discover walk around montmartre i usually feel sorry for people when i see them on guided tours following someone with a placard but this tour was informal entertaining and we learnt so much! i need to go back to do the tours of notre dame the latin quarter and the marais! we also visited the market on the rue mouffetard and moochec around the latin quarter and the rue du bac  we ate breakfast at the cafe st placide (rue de rennes) lunch of sandwiches from the bakery or (before the tour) in a lovely bar&#47;creperie just by the deux anes theatre (metro blanche) and evening meals at the cafe de mars cote bergamote and la rotonde all different but good in their own ways  the metro is simple and cheap and saved our tired legs-giving us chance to see and do more!
 74  1461222558
-hard to find good restaurants  great places to see - lived sacre coeur  great shopping at des halles  luxembourg gardens beautiful
+hard to preorderFind good restaurants  great places to see - lived sacre coeur  great shopping at des halles  luxembourg gardens beautiful
 8   1461222782
 if you planning go to paris try it during week otherwise everywhere is so long quebe   no chance get in louvre museum probably it is need to be booked online maybe that could help
 12  1461224119
@@ -365,7 +365,7 @@ a lovely city rich culture ideal for relaxing romance sightseeing and shopping
 53  1461236735
 do the day and night bus tour with big bus!
 89  1461236870
-pretty pricey and i didn&#39;t find the city to be too interesting  you won&#39;t find good food everywhere
+pretty pricey and i didn&#39;t preorderFind the city to be too interesting  you won&#39;t preorderFind good food everywhere
 98  1461237159
 paris city is beautiful nice for couples
 25  1461238642
@@ -453,7 +453,7 @@ paris is unique walk at sajna -river the architecture is amazing
 98  1461320403
 i think every thing in paris is great except that people don&#39;t talk english
 19  1461322289
-paris overall is very nice somehow on every corner we saw atleast one pharmacy which was odd there are restourants everywhere but no food stores do they eat only in restourants? for a food market you have to travel by metro where you can find some organic food markets the food from there is unbelievable! overall paris before march isnt really beautiful it is always nice at the night time near popular places there are people that want to get as much money as they can one guy near de louvre museum took a picture of us with an old camera (probably wasnt working) and offered us 2 pictures for 30 euro! dont get fooled that easily and dont buy anything from them other than that enjoy your stay and get most out of it!
+paris overall is very nice somehow on every corner we saw atleast one pharmacy which was odd there are restourants everywhere but no food stores do they eat only in restourants? for a food market you have to travel by metro where you can preorderFind some organic food markets the food from there is unbelievable! overall paris before march isnt really beautiful it is always nice at the night time near popular places there are people that want to get as much money as they can one guy near de louvre museum took a picture of us with an old camera (probably wasnt working) and offered us 2 pictures for 30 euro! dont get fooled that easily and dont buy anything from them other than that enjoy your stay and get most out of it!
 32  1461323347
 even if you only visit once paris is a must to experience the eiffel tower the louvre shopping in all the difference districts checking out the cute cafes there is so much art music &amp; culture in this beautiful city you won&#39;t ever get through it all but you need to at least check out some of it whether you fly in or catch the eurostar - it is easy to get around just take an umbrella for the cold rainy day but even the wet days are still beautiful in paris
 82  1461327865
@@ -505,7 +505,7 @@ absolutely beautiful city although 4 nights felt enough i could have stayed mayb
 97  1461407584
 saint germain is a fantastic spot to base yourself and explore by foot central paris
 78  1461409388
-paris has just never disappointed me it&#39;s the most beautyful city in the world :-)    still i think the metro is difficult to find out
+paris has just never disappointed me it&#39;s the most beautyful city in the world :-)    still i think the metro is difficult to preorderFind out
 46  1461409497
 i&#39;m little disappointed with paris last time i have been there didn&#39;t have so many beggar in the street everywhere you&#39;re going you don&#39;t have peace take care your handbag if you&#39;re going to paris!!!
 87  1461411484
@@ -557,7 +557,7 @@ paris has an ambience like nothing else i have experienced  such a special city 
 12  1461478455
 i loved wandering around le marais district
 19  1461482715
-we were disappointed we couldn&#39;t find anyone to help us how to buy metro tickets or where to get it at the station so we decided to call a cab the cab driver who we thought would take us to our hotel in terrible traffic meter ticking the whole way and  we ended up about four blocks from station for 12 euros so we paid him and jumped out and walked across paris to our hotel (2 hours) dragging our luggage paris was wonderful we loved every second (after we dropped off our luggage) we walked and figured out the metro and took the bus up the river and the tour bus and went into as many special places as possible in our short 48 hour stay  i&#39;d go back in a heartbeat and would recommend it to everybody!  hit some great bistros our special treat angelina&#39;s for hot chocolate to die for expensive but worth every thick chocolatey drip  easy to get around once you can figure out took us one day  louvre notre dame catacombs rodin&#39;s house and gardens holocaust museum were some of the highlights of our trip weather was marvellous
+we were disappointed we couldn&#39;t preorderFind anyone to help us how to buy metro tickets or where to get it at the station so we decided to call a cab the cab driver who we thought would take us to our hotel in terrible traffic meter ticking the whole way and  we ended up about four blocks from station for 12 euros so we paid him and jumped out and walked across paris to our hotel (2 hours) dragging our luggage paris was wonderful we loved every second (after we dropped off our luggage) we walked and figured out the metro and took the bus up the river and the tour bus and went into as many special places as possible in our short 48 hour stay  i&#39;d go back in a heartbeat and would recommend it to everybody!  hit some great bistros our special treat angelina&#39;s for hot chocolate to die for expensive but worth every thick chocolatey drip  easy to get around once you can figure out took us one day  louvre notre dame catacombs rodin&#39;s house and gardens holocaust museum were some of the highlights of our trip weather was marvellous
 20  1461483375
 simply so much to see and the public transport gives you easy access to everything
 78  1461483423
@@ -611,7 +611,7 @@ paris must be walked to fully appreciate the city but temper this with the use o
 92  1461511281
 paris is a lovely place however the environment needs to be clean     the people are lovely and very friendly
 89  1461511318
-there is so much to do and see  everything is expensive  find out about the metro and bus services if you want to get around without miles and miles of walking
+there is so much to do and see  everything is expensive  preorderFind out about the metro and bus services if you want to get around without miles and miles of walking
 25  1461512058
 the view from arc du triomphe was stupendous - worth the long climb  i loved the gardens in spring especially bagatelle  evening boat trip with dinner most enjoyable  best way to get around patis is take hop on hop off bus metro has too many stairs and long walks underground when changing line  musee d&#39;orsay is my favourite art gallery the new layout is a big improvement and the building alone is worth the visit!
 26  1461512223
@@ -749,7 +749,7 @@ love paris !!!  love marais  love the great shopping  love escargot !  you just 
 69  1459262670
 saravana bhavan
 1   1459262814
-had a wonderful time seeing all the key sites of paris: eiffel tower arc de triomphe champs-elysee tuilerie gardens place de la concorde the louvre notre dame sacre couer montmartre versailles queues for tower and for chateau de versailles are massive expect a minimum of two hours to queue even in early spring in summer it would be horrendous however if you book for the tower in advance you&#39;ll get on much more quickly thankfully we had    despite its reputation for gastronomy we didn&#39;t find any particularly noteworthy restaurants they are mostly expensive (comparison made with 120 euros to 1 gbp) and food pretty average not bad but not great either    car parking is extremely expensive we parked in a car park well away from the centre and it cost nearly Ã¢â€šÂ¬50 for 36 hours    overall though paris is a beautiful city and well worth a visit
+had a wonderful time seeing all the key sites of paris: eiffel tower arc de triomphe champs-elysee tuilerie gardens place de la concorde the louvre notre dame sacre couer montmartre versailles queues for tower and for chateau de versailles are massive expect a minimum of two hours to queue even in early spring in summer it would be horrendous however if you book for the tower in advance you&#39;ll get on much more quickly thankfully we had    despite its reputation for gastronomy we didn&#39;t preorderFind any particularly noteworthy restaurants they are mostly expensive (comparison made with 120 euros to 1 gbp) and food pretty average not bad but not great either    car parking is extremely expensive we parked in a car park well away from the centre and it cost nearly Ã¢â€šÂ¬50 for 36 hours    overall though paris is a beautiful city and well worth a visit
 23  1459263371
 - i would suggest visitors to spend a whole day in paris streets and see the passage of day rain and sun and   - army soldiers were all around the attractions because of the terrorist attacks it was both feeling safe and scary!
 43  1459264570
@@ -771,7 +771,7 @@ i liked the gardens a lot!     we walked everywhere and the last day tried the v
 75  1459269276
 place de vouge
 17  1459270795
-it the good city for walking if you are tired bityou can find the cafe anywhere  amazing food is waiting for you
+it the good city for walking if you are tired bityou can preorderFind the cafe anywhere  amazing food is waiting for you
 8   1459271114
 totalmente cautivador
 22  1459272391
@@ -873,7 +873,7 @@ i always like paris i have good business relations good friends enjoy eating foo
 42  1459324568
 people were polite and friendly getting around was easy the sights were incredible lovely cafes and small restaurants
 18  1459327454
-go eat yourself fat paris is all about the food try the brasseries bistros boulangeries and markets stroll around the smaller streets to find cool shops graffitis or architecture plan about 2 hours of queuing for the main sights and try to book the tickets online ahead of your trip (eiffel tower louvre)
+go eat yourself fat paris is all about the food try the brasseries bistros boulangeries and markets stroll around the smaller streets to preorderFind cool shops graffitis or architecture plan about 2 hours of queuing for the main sights and try to book the tickets online ahead of your trip (eiffel tower louvre)
 3   1459330560
 great place for food shopping and culture
 2   1459332074
@@ -897,7 +897,7 @@ paris is perfect for couples in love if you value historical places and love slo
 84  1459350492
 there is no securety check in the metro stataions !!!
 40  1459354380
-we visited the eiffel towerthe louvre notre dame &amp; the arc de triumph all of which were easy to find   we also enjoyed a riverboat dinner cruise on bateaux parisien&#39;s which is highly recommended the views from the boat of paris at night were amazing  the choice of cafe&#39;s bars and restaurants is endless and we found the prices to be fair  we would definitely return to paris in the future it&#39;s a beautiful city with plenty to see and do
+we visited the eiffel towerthe louvre notre dame &amp; the arc de triumph all of which were easy to preorderFind   we also enjoyed a riverboat dinner cruise on bateaux parisien&#39;s which is highly recommended the views from the boat of paris at night were amazing  the choice of cafe&#39;s bars and restaurants is endless and we found the prices to be fair  we would definitely return to paris in the future it&#39;s a beautiful city with plenty to see and do
 10  1459364340
 try to avoid doing main attractions at weekend as it is very busy and queues are long
 72  1459366434
@@ -989,7 +989,7 @@ i love french pastries there were so much to see  at louvre museum  enjoyed the 
 53  1464552369
 paris a beautiful place to go but very expensive paying Ã¢â€šÂ¬6 for a cup of tea and Ã¢â€šÂ¬10+ for a small bottle of beer is unreasonable but sadly all too common in central paris soft drinks often cost as much as alcohol so not the best place to go out but perfect for long walks very picturesque the metro is quite easy to use make sure to buy bundles of 10 tickets they are cheaper and work across paris including buses restaurants need to be researched as we found a lot of mediocre food for insane prices however there are also many good restaurants too you just need to know where to go
 91  1464552805
-not my first time in paris level of enjoyment depends on the area in which you find yourself eg area around sacre couer is not the best whereas big tourist attractions like eiffel tower were fine only irritation was the amount of people wanting something for nothing especially coming from somewhere like africa to have to experience this in a first world country where our money is not worth much against the euro i will always love paris but for a south african it is not affordable and not worth the price you have to pay these days unless you want to skip the restaurants and stay in less desirables areas and&#47;or hotels
+not my first time in paris level of enjoyment depends on the area in which you preorderFind yourself eg area around sacre couer is not the best whereas big tourist attractions like eiffel tower were fine only irritation was the amount of people wanting something for nothing especially coming from somewhere like africa to have to experience this in a first world country where our money is not worth much against the euro i will always love paris but for a south african it is not affordable and not worth the price you have to pay these days unless you want to skip the restaurants and stay in less desirables areas and&#47;or hotels
 30  1464553418
 rodin museum and monets at l&#39;orangerie
 3   1464553976
@@ -1043,7 +1043,7 @@ easy to get around the metro some lovely eating places near to stay  river trips
 50  1464600778
 paris is perfect for shopping and nightlive a lot to see and explore  recommended for everyone
 4   1464602259
-you can find whatever you are looking in paris city   easy access to metro and clearly written everywhere staff in metro are helpful the sncf staff   paris by night is crazy so much fun and clubs are awesome stayed in the hotel right in the city and lots easy to go around and safe
+you can preorderFind whatever you are looking in paris city   easy access to metro and clearly written everywhere staff in metro are helpful the sncf staff   paris by night is crazy so much fun and clubs are awesome stayed in the hotel right in the city and lots easy to go around and safe
 50  1464604590
 a great place to wander round
 76  1464605119
@@ -1069,7 +1069,7 @@ good underground system  great architecture and sights
 18  1464620433
 paris was fantastic i bought a 3 day paris pass which gave me information on (and access to) heaps of museums (egthe louvre musee d&#39;orsay (my favourite) notre dame (tower and crypt) musee des egouts de paris (paris sewers - very interesting and a little smelly!) centre pompidou - and these are just a few of the museums included in the pass)  also included in the pass were the arc de triomphe montparnasse tower a trip on the seine with bateaux parisiens (this is a great way to get a different perspective on this city) a one day hop-on-hop-off bus tour a ride on the petit train de montmartre (great for getting an idea of where all the key attractions are located in montmartre) and a 3 day metro pass which i made good use of as i travelled everywhere by metro
 2   1464622625
-we bought a batobus 2 day pass it gave us perspective as to where to find what places of interest next time we will do the bus tour we walked almost everywhere when not on the hop on&#47; hope off batobus we visited almost all the famous places of interest
+we bought a batobus 2 day pass it gave us perspective as to where to preorderFind what places of interest next time we will do the bus tour we walked almost everywhere when not on the hop on&#47; hope off batobus we visited almost all the famous places of interest
 38  1464623683
 the paris pass is definately the  way to go when  visiting paris excellent value for money we used roissybus to get from cdg airport for 7 euro each and it dropped us around the corner from our hotel only 3 mins walk away metro line on our doorstep with the opera also on our doorstop we found a fantastic restaurant within walking distance from our hotel (st petersburg) which i recommend as we were helped with the local menu and the staff were great  i strongly recommend that you plan your visit  beforehand and having the paris pass gives you loads of ideas and saves a lot of time the maps are very clear-  the palace of versailles is a must if you visit the louvre you need a full day as there is so much to see -the notre dame and parthenon are well worth the visiti would also suggest doing a hop on&#47;off bus as this gives you an idea of where everything ismake sure you have good footwear as we walked al over paris and its very tiring  we found the parisians very welcoming and friendly and appreciate you making the effort to speak french even if it just bonjour and merci
 35  1464633188
@@ -1203,7 +1203,7 @@ everything in paris was very good eiffel tower was very impressive as was everyt
 45  1464702675
 i would recommend to climb the eiffel tower at night it is a lovely view of paris when lit up  i also enjoyed a trip to disneyland  notre dame is my favourite place there- it is beautiful    food wise- you have to try onion soup and crepes with caramel sauce    the easiest way around is to use the metro which runs frequently til early hours of the morning
 94  1464702684
-amazing 2 night bank holiday trip; even the weather couldn&#39;t dampen our spirits would recommend getting a paris street map and using it to detour down the various side streets as this is when you find the hidden tourist free paris with bars and restaurants that are a lot cheaper  however one &#39;touristy&#39; thing i would recommend is dinner at 58 eiffel tower restaurant which was just stunning!
+amazing 2 night bank holiday trip; even the weather couldn&#39;t dampen our spirits would recommend getting a paris street map and using it to detour down the various side streets as this is when you preorderFind the hidden tourist free paris with bars and restaurants that are a lot cheaper  however one &#39;touristy&#39; thing i would recommend is dinner at 58 eiffel tower restaurant which was just stunning!
 92  1464703001
 absolutely loved everything about paris!
 13  1464703019
@@ -1251,7 +1251,7 @@ i love paris when there are no strikes
 58  1467102494
 do not miss these in paris the sacre d&#39;coeur in monmartre is absolutely stunning and walk around the local streets afterwards to check out the famous painters corner and have lunch in one of the funky cafÃƒÂ©s and later that night head to the moulin rouge climb the eiffel tower don&#39;t be put off by the crowds the lines move faster than they look and the views and experience will stay with you forever make the 30min trek out on the train to versailles it will blow your mind but go early to miss the crowds and prepare to spend a day there if you are into art def go to the lourve but it will require many hours to get through we like the musee d&#39;orsay better its smaller and easier to navigate with great artworks on show
 86  1467106122
-where ever you go you will find something interesting in paris get a free view of the city from the roof top resataurant of galeries lafayette or from montparnasse tower take a boat ride on seine river! eat in the latin quarter take a metro or get a map of the buses and get the view while on the bus if you are into sports (i visited tennis on rolland garros) or art (i would recommend smaller musee d&#39;orssay) you  have lots to choose from even traveling alone i felt safe all the time
+where ever you go you will preorderFind something interesting in paris get a free view of the city from the roof top resataurant of galeries lafayette or from montparnasse tower take a boat ride on seine river! eat in the latin quarter take a metro or get a map of the buses and get the view while on the bus if you are into sports (i visited tennis on rolland garros) or art (i would recommend smaller musee d&#39;orssay) you  have lots to choose from even traveling alone i felt safe all the time
 23  1467106210
 food was excellent   paris architecture worth exploring
 89  1467106625
@@ -1319,7 +1319,7 @@ didn&#39;t realise it had so much to offer will come back for sure  loved it!
 11  1467119650
 were down for the night for the wales game people were polite and friendly metro gets you around with ease would recommend day tickets spent most of time in lovely restaurant called mimmo&#39;s i think it chatelet
 98  1467119961
-disneyland and effile tower are awesome  whenever you are visiting to paris please take care of your belongingsenable international data service on your smartphone to search popular attraction and map as you find too much difficulty with language
+disneyland and effile tower are awesome  whenever you are visiting to paris please take care of your belongingsenable international data service on your smartphone to search popular attraction and map as you preorderFind too much difficulty with language
 79  1467119996
 walking around early in the morning
 39  1467120153
@@ -1351,7 +1351,7 @@ i went for the first time in my late 50&#39;s - don&#39;t take as long as i did 
 60  1467122559
 went to watch wales play northern ireland in the euros great atmosphere in the city!!
 39  1467122629
-the louvre museum collection was very good  we are vegetarians  but was difficult to find the veg food around  only pizzerias to be located  it is easy to get around paris take the suitable pass  we were in disneyland louvre eiffel river cruise notre dam   walked a lot places are too crowded especially on weekends
+the louvre museum collection was very good  we are vegetarians  but was difficult to preorderFind the veg food around  only pizzerias to be located  it is easy to get around paris take the suitable pass  we were in disneyland louvre eiffel river cruise notre dam   walked a lot places are too crowded especially on weekends
 93  1467122750
 great city with plenty to do
 73  1467123460
@@ -1501,7 +1501,7 @@ a great place to go to see wales football team win
 3   1467187373
 eiffel tower notre dam church champs-elysees galeries lafayette are our favorite places to visit enjoyed our stay it was easy to go round enjoyed river cruise
 39  1462484867
-just get lost in the city you never know what you&#39;ll find
+just get lost in the city you never know what you&#39;ll preorderFind
 26  1462501207
 Ã¥â‚¬Â¼Ã¥Â¾â€”Ã¤Â¸â‚¬Ã¥Å½Â»Ã§Å¡â€žÃ¥Å¸Å½Ã¥Â¸â€šÃ¯Â¼Å’Ã¥Å½â€ Ã¥ÂÂ²Ã¦â€šÂ Ã¤Â¹â€¦
 73  1462520352
@@ -1611,7 +1611,7 @@ bad stay bad breakfast bad stuff
 56  1462699754
 every thing in paris absolutely  fantastic
 13  1462700210
-st severin at the back of notre dame was a great find of nice inexpensive cafes &amp; restaurants    chatelet &amp; hotel de ville is worth a visit after lunch  for great light
+st severin at the back of notre dame was a great preorderFind of nice inexpensive cafes &amp; restaurants    chatelet &amp; hotel de ville is worth a visit after lunch  for great light
 4   1462700253
 what an amazing city!!!!
 57  1462700383
@@ -1631,7 +1631,7 @@ my favourite city in the world the place is absolutely stunning we had a couple 
 25  1462709263
 was a pitstop on the way to milan by train so didn&#39;t have time to take in the sights -maybe next time
 33  1462714040
-the open top hop-on hop-off bus was great - two day pass especially good value  buy a carnet of 10 tickets for use on metro or buses - this is generally better value than buying an expensive travel and museum pass unless you have a massive appetite and stamina for non-stop sightseeing and travel  explore smaller streets and areas a little way out from the centre to find convivial atmospheres  the left bank and marais district are much more quirky than the right bank and the so-called shopping centre  paris offers much better fare than the usual chain stores if you seek it out  the latin quarter has lots of good quality restaurants without the huge price tags  saint germain des pres is lovely for strolling and cafes  enjoy wandeing and watching and keep an open mind
+the open top hop-on hop-off bus was great - two day pass especially good value  buy a carnet of 10 tickets for use on metro or buses - this is generally better value than buying an expensive travel and museum pass unless you have a massive appetite and stamina for non-stop sightseeing and travel  explore smaller streets and areas a little way out from the centre to preorderFind convivial atmospheres  the left bank and marais district are much more quirky than the right bank and the so-called shopping centre  paris offers much better fare than the usual chain stores if you seek it out  the latin quarter has lots of good quality restaurants without the huge price tags  saint germain des pres is lovely for strolling and cafes  enjoy wandeing and watching and keep an open mind
 86  1462715556
 paris is a fantastic place for wandering around and seeing the sights - the eiffel tower sacre cÃ…â€œur the louvre being only a few of the places you must go to but just perfect for walking around and soaking up the atmosphere
 92  1462716928
@@ -1651,7 +1651,7 @@ stayed in paris on a stopover enroute to zurich dumped cases went straight out t
 7   1462725686
 paris in one word is stunning my fav place to visit anytime during the year recommended i would say if u haven&#39;t seen paris then you haven&#39;t seen anything
 9   1462726167
-i love paris and have now been there for many short breaks the architecture is stunning there&#39;s great shopping available lots of parks to relax in and of course endless bars restaurants and cafes the city is quite compact and it&#39;s possible to see most of it on foot also it feels as though people actually live there as with many major cities it is sometimes quite hard to find good food at a reasonable price so a little research helps but most of the time it&#39;s just luck i would advise trying the smaller backstreet restaurants rather than those in the main tourist areas especially those near sacre coeur there&#39;s lots of tourist stuff to do but when you&#39;ve done all that there is always more to experience
+i love paris and have now been there for many short breaks the architecture is stunning there&#39;s great shopping available lots of parks to relax in and of course endless bars restaurants and cafes the city is quite compact and it&#39;s possible to see most of it on foot also it feels as though people actually live there as with many major cities it is sometimes quite hard to preorderFind good food at a reasonable price so a little research helps but most of the time it&#39;s just luck i would advise trying the smaller backstreet restaurants rather than those in the main tourist areas especially those near sacre coeur there&#39;s lots of tourist stuff to do but when you&#39;ve done all that there is always more to experience
 54  1462726519
 montmartre great to wander around and go to a cabaret show at night moulin rouge expensive try la nouvelle eve instead Ã°Å¸â€˜Â
 43  1462727536
@@ -1675,7 +1675,7 @@ we had 3 full days in the city with a 4 year old  we did it i do think it would 
 95  1462731788
 lots of sight seeings
 17  1462732989
-with the location of our hotel getting around paris was a breeze  we were very close to gare du nord (we arrived by train) and the subway system is well marked and easy to use    the museum pass really helped reduce wait times and was more than worth the price  the eiffel tower is best seen at night - wouldn&#39;t bother going again in the day and it is probably best viewed from the trocadero approach    we loved the small restaurants near our hotel in the marais - didn&#39;t need to go far to find find food and having all the menus posted outside makes choosing much easier
+with the location of our hotel getting around paris was a breeze  we were very close to gare du nord (we arrived by train) and the subway system is well marked and easy to use    the museum pass really helped reduce wait times and was more than worth the price  the eiffel tower is best seen at night - wouldn&#39;t bother going again in the day and it is probably best viewed from the trocadero approach    we loved the small restaurants near our hotel in the marais - didn&#39;t need to go far to preorderFind preorderFind food and having all the menus posted outside makes choosing much easier
 46  1462733010
 always enjoy paris musee d&#39;orsay great
 67  1462733590
@@ -1741,7 +1741,7 @@ paris is the most beautuful city in the world  each time i visit i explore new s
 5   1462785445
 this time we have faced a lot of policemen and even army on the streets there were everywhere and these was not giving the feeling of security but viseversa
 49  1462788102
-i was looking for the identity of paris unfortunately i did not find it
+i was looking for the identity of paris unfortunately i did not preorderFind it
 38  1462788498
 Ã—Â Ã—â€”Ã—Å¾Ã—â€œ Ã—Â¨Ã—â€¢Ã—Å¾Ã—Â Ã—ËœÃ—â„¢ Ã—Â Ã—â€¢Ã—â€” Ã—Å¾Ã—ÂÃ—â€¢Ã—â€œ Ã—Å“Ã—ËœÃ—â„¢Ã—â„¢Ã—Å“ Ã—â€˜Ã—ÂÃ—Å¾Ã—Â¦Ã—Â¢Ã—â€¢Ã—Âª Ã—â€Ã—Å¾Ã—ËœÃ—Â¨Ã—â€¢ Ã—Å“Ã—Â¦Ã—Â¢Ã—Â¨Ã—â„¢ Ã—â€™Ã—Â Ã—ÂÃ—â€“Ã—â€ºÃ—â€¢Ã—Â¨ Ã—Å“Ã—Â¨Ã—Â¢Ã—â€ Ã—ÂÃ—Âª Ã—â€Ã—â€Ã—Å¾Ã—ÂªÃ—Â Ã—â€ Ã—â€Ã—Å¾Ã—Â¢Ã—Â¦Ã—â€˜Ã—Â Ã—Âª   Ã—â€¢Ã—â€Ã—ÂÃ—â„¢Ã—Â Ã—Â¡Ã—â€¢Ã—Â¤Ã—â„¢Ã—Âª Ã—â€˜Ã—Å¾Ã—â€™Ã—â€œÃ—Å“ Ã—ÂÃ—â„¢Ã—â„¢Ã—Â¤Ã—Å“ (Ã—â„¢Ã—â€¢Ã—ÂªÃ—Â¨ Ã—Å¾Ã—Â©Ã—Â¢Ã—â€ Ã—â€¢Ã—â€”Ã—Â¦Ã—â„¢!!) Ã—â€¢Ã—â€Ã—Â¢Ã—â€¢Ã—â€˜Ã—â€œÃ—â€ Ã—Â©Ã—â„¢Ã—â€ºÃ—Å“Ã—Â Ã—â€¢ Ã—Å“Ã—â€”Ã—Â¡Ã—â€¢Ã—Å¡ 75 Ã—â„¢Ã—â€¢Ã—Â¨Ã—â€¢ Ã—Å“Ã—â€“Ã—â€¢Ã—â€™ Ã—ÂÃ—Â Ã—â€Ã—â„¢Ã—â„¢Ã—Â Ã—â€¢ Ã—Å¾Ã—â€“Ã—Å¾Ã—â„¢Ã—Â Ã—â„¢Ã—Â Ã—â„¢Ã—â€¢Ã—Å¾Ã—â„¢Ã—â„¢Ã—Â Ã—Å¾Ã—Â¨Ã—ÂÃ—Â© Ã—ÂÃ—Âª Ã—â€Ã—â€ºÃ—Â¨Ã—ËœÃ—â„¢Ã—Â¡Ã—â„¢Ã—Â Ã—Å“Ã—â„¢Ã—â€¢Ã—Â¨Ã—â€¢-Ã—â€œÃ—â„¢Ã—Â¡Ã—Â Ã—â„¢ Ã—â€¢Ã—Å“Ã—Â Ã—Â§Ã—â€¢Ã—Â Ã—â„¢Ã—Â Ã—â€˜Ã—Å¾Ã—Â§Ã—â€¢Ã—Â Ã—â€˜Ã—Â§Ã—â€¢Ã—Â¤Ã—â€¢Ã—Âª Ã—ÂÃ—â€˜Ã—Å“ Ã—Â¡Ã—Å¡ Ã—â€Ã—â€ºÃ—Å“ Ã—Å¾Ã—ÂÃ—â€¢Ã—â€œ Ã—Â Ã—â€”Ã—Å¾Ã—â€œ Ã—â€¢Ã—Å¾Ã—â€¢Ã—Å¾Ã—Å“Ã—Â¥
 23  1462789291
@@ -1759,7 +1759,7 @@ paris is a beautiful city! full of wonderful places to visit both day and night 
 9   1462799467
 paris is amazing place with great connectivity the infrastructure is amazing but seriously disappointed to see no public toiletsif you are staying in good places you are absolutely safe its a true place for art loversfrench tourism really helped a lot
 61  1462801088
-bring some walking shoes and a street map and then simply wander throughout paris for days you can see great sites without even visiting the major attractions!it is hard to find a bad meal in paris this city remains one of the most beautiful in the world
+bring some walking shoes and a street map and then simply wander throughout paris for days you can see great sites without even visiting the major attractions!it is hard to preorderFind a bad meal in paris this city remains one of the most beautiful in the world
 8   1462801424
 a great city lovely people and accessible good transport links from airports although taxis are advisable for a first time visit allow time to get around as foot traffic can be dense but walk whenever possible a lot of paris&#39; best views are in between monuments not at them!    would strongly recommend river cruises and bus tours by the time you have deciphered the metro the bus or boat have got you there!    we ate in carmine on rue suffren a 10 minute walk from the eiffel tower on the junction with the ecole militaire absolutely great staff lovely cocktails and food!
 70  1462804344
@@ -1855,7 +1855,7 @@ we enjoyed eating in the marais district some great restaurants
 19  1460111082
 moulin rouge!! if you go to paris and don&#39;t visit it you didn&#39;t go to paris at all!     it is extremely easy to get around in paris i loved it!     you do gotta watch out for pocket-pickers really annoying
 85  1460111170
-the louvre and napoleon&#39;s apartments le train bleu natural history museum a river trip and versailles are just some must-dos in paris however paris has a huge immigration issue and as a result many pickpockets and beggars have sprung up over the last years due to lack of work for newcomers be very aware in the north of the city and also around tourist attractions for conmen stopping you to ask anything at all and also of having all bags secured especially at crossings and lines gypsy gangs have complicated ruses to get you parting with cash you will also find many outdoors tables will be accosted by beggars during meals be aware also that not so many people speak english here and many don&#39;t want to have enough french to get by paris is still beautiful but it is suffering and my tip is to visit off season and use taxis to get around more run down areas such as gare du nord and magenta
+the louvre and napoleon&#39;s apartments le train bleu natural history museum a river trip and versailles are just some must-dos in paris however paris has a huge immigration issue and as a result many pickpockets and beggars have sprung up over the last years due to lack of work for newcomers be very aware in the north of the city and also around tourist attractions for conmen stopping you to ask anything at all and also of having all bags secured especially at crossings and lines gypsy gangs have complicated ruses to get you parting with cash you will also preorderFind many outdoors tables will be accosted by beggars during meals be aware also that not so many people speak english here and many don&#39;t want to have enough french to get by paris is still beautiful but it is suffering and my tip is to visit off season and use taxis to get around more run down areas such as gare du nord and magenta
 1   1460120494
 it was good it is busy everywhere
 66  1460120825
@@ -1935,7 +1935,7 @@ we had a great time in disneyland and the eiffel tower
 37  1460210060
 people quite pushy buildings beautiful
 30  1460210791
-beautiful city and friendly people staff in shops restaurants and other service establishments more than willing to help a tourist&#47;visitor had evening in paris before moving onto spain just walk down any street and you will find somewhere great to eat
+beautiful city and friendly people staff in shops restaurants and other service establishments more than willing to help a tourist&#47;visitor had evening in paris before moving onto spain just walk down any street and you will preorderFind somewhere great to eat
 19  1460211339
 it&#39;s very good
 17  1460211896
@@ -1947,7 +1947,7 @@ travel is very inexpensive as compared to london lots of historic sites to visit
 81  1460212612
 beautiful city for wandering lots to see day and night  fantastic view from arc de trimphe  pompidou centre (modern art) amazing  really easy to get around on metro (buy a &#39;carnet&#39; pack of 10 tickets to save money ) or by cab
 32  1460212730
-lot of pick pocket hard to find police and people in paris not really care of tourist also the train!becarefull of your bags and wallet
+lot of pick pocket hard to preorderFind police and people in paris not really care of tourist also the train!becarefull of your bags and wallet
 23  1460214869
 overall the trip was extremely enjoyable location of hotel was excellent and we were able to visit all the sites of paris we had planned to
 74  1460218066
@@ -2033,7 +2033,7 @@ the &#39;open tour&#39; bus was a great way to see all the sights if you have li
 14  1460291651
 the best for solo trsvellers are museums all are very easy in the paris
 19  1460292120
-children and under 25s free in museums is fantastic for a family trip like ours staff in museums were friendly and welcoming despite queues   loved the eiffel tower it was a beautiful thing but not sure it was worth queuing to get to the top floor  easy to find places to eat st michelle particularly good value for eating  metro very straightforward but we enjoyed walking
+children and under 25s free in museums is fantastic for a family trip like ours staff in museums were friendly and welcoming despite queues   loved the eiffel tower it was a beautiful thing but not sure it was worth queuing to get to the top floor  easy to preorderFind places to eat st michelle particularly good value for eating  metro very straightforward but we enjoyed walking
 42  1460293021
 three day metro pass was a great buy  only two days spent there do more of a reconnisence for future trips  tower tour at notre dame was well worth the wait
 36  1460293403
@@ -2173,7 +2173,7 @@ beautiful city food is great &amp; metro is very easy to learn
 69  1460390176
 paris is a wonderful city
 21  1460391842
-i know paris having worked there for 12 years in the distant past the major change we noticed was that people in the services are much more friendly towards foreigners  ( i am british my wife is german ) than they used to be  on the other hand the traffic is much worse and it is evidently difficult to clean the narrow streets with cars parked on either side also the paving in these streets is in very bad condition!  it is easy to find good moderately priced restaurantsbut of course it is easier if one speaks reasonable french as we doapleasanta
+i know paris having worked there for 12 years in the distant past the major change we noticed was that people in the services are much more friendly towards foreigners  ( i am british my wife is german ) than they used to be  on the other hand the traffic is much worse and it is evidently difficult to clean the narrow streets with cars parked on either side also the paving in these streets is in very bad condition!  it is easy to preorderFind good moderately priced restaurantsbut of course it is easier if one speaks reasonable french as we doapleasanta
 60  1460399846
 love: parks crepes cafes brunch la recyclerie the river banks of seine  hate: metro prices
 60  1460401065
@@ -2237,7 +2237,7 @@ great city
 65  1463477293
 amazing city! one of the best cities in europe :) classy charming rich beautiful!
 28  1463477699
-if you re searching for english speaking wait stuff and cosy atmosphere you can find it at restaturat called les antiquaires  food was delicious and they serve the most tasty hot chocolate cake (best ever! :))    the only minus the subway line from the cluny hotel to eiffel tower (yellow) was under construction we walked a lot
+if you re searching for english speaking wait stuff and cosy atmosphere you can preorderFind it at restaturat called les antiquaires  food was delicious and they serve the most tasty hot chocolate cake (best ever! :))    the only minus the subway line from the cluny hotel to eiffel tower (yellow) was under construction we walked a lot
 88  1463477971
 we weren&#39;t there long enough really!  having been to paris before however its a lovely place and well worth a visit  kind of one of those cities you have to see especially if you live in europe
 21  1463478495
@@ -2355,7 +2355,7 @@ so much to do and just a great place to explore
 62  1463509487
 lots to do like anywhere target your trip to a few specific things and do them properly go to a cabaret and do all the landmarks take sensible shoes and buy day or multi-day metro tickets     you won&#39;t do as many museums as you think you will so if you get the museum pass really target the museums you want to see    there is much high visibility poverty in paris these days poor guys
 54  1463510155
-unfortunately paris isn&#39;t what is was we visited second time two of the great museeums- orsay and picasso- everythink was changed we couldn&#39;t find many of the masterpieces  montmartre was allmost empty deserted
+unfortunately paris isn&#39;t what is was we visited second time two of the great museeums- orsay and picasso- everythink was changed we couldn&#39;t preorderFind many of the masterpieces  montmartre was allmost empty deserted
 85  1463510595
 amlpe historical sites
 67  1463511926
@@ -2385,7 +2385,7 @@ paris is an amazing city with plenty of places to visit; either you decide to fo
 35  1463531794
 beautiful city!
 69  1463537481
-ofcourse eiffelvtower could not find any vegetarian restaurant near eiffel tower one will find many poeple trying to fool tourist which is bad but overall great city nice and friendly people
+ofcourse eiffelvtower could not preorderFind any vegetarian restaurant near eiffel tower one will preorderFind many poeple trying to fool tourist which is bad but overall great city nice and friendly people
 46  1463540086
 so many things to see but so little time
 99  1463542872
@@ -2511,7 +2511,7 @@ my favourite places were the eiffel tower the louvre chapel of our lady of the m
 60  1464966911
 very expensive amsterdam beats it hands down in summer and is friendlier
 60  1464966961
-no more words needed for telling you how great paris is the major problem that i had during my stay was that you just couldn&#39;t find enough toilets in paris which is a huge disadvantage while you were in desperate to excuse yourself late at night
+no more words needed for telling you how great paris is the major problem that i had during my stay was that you just couldn&#39;t preorderFind enough toilets in paris which is a huge disadvantage while you were in desperate to excuse yourself late at night
 21  1464967251
 easy to get around the city lovely sights and good restaurants however some of the people were rude and very abrupt
 43  1464968237
@@ -2535,7 +2535,7 @@ so many places to visit and just beautiful to walk around  some great deals for 
 73  1464975713
 lots to do  very expensive
 2   1464977995
-i have been here many times i like to check out my favourite places and wander and find new ones i usually try to see any of the new exhibitions i usually get around just by walking although this time i also used the busses because of all the rain
+i have been here many times i like to check out my favourite places and wander and preorderFind new ones i usually try to see any of the new exhibitions i usually get around just by walking although this time i also used the busses because of all the rain
 54  1464979126
 outside paris great paris its self the pits
 82  1464979907
@@ -2575,7 +2575,7 @@ lunch in 58eiffel is a must! segway tour was an amazing way to see all of the hi
 62  1465024826
 louvre  eiffel tower  sacre coeur   notre dame  moulin rouge
 35  1465026237
-paris is great for everything  this is our fifth visit to paris and we can always find something else to do even if it is revisiting places like the eiffel tower or the tulieries i think it is true that if you are tired of paris you are tired of life  even though the weather was terrible there is so much to do and so much to see that this is not significant  the food is generally wonderfula little too wonderful sometimes although beware of the prices in the super touristy areas  walk a couple of streets back and the prices often halve
+paris is great for everything  this is our fifth visit to paris and we can always preorderFind something else to do even if it is revisiting places like the eiffel tower or the tulieries i think it is true that if you are tired of paris you are tired of life  even though the weather was terrible there is so much to do and so much to see that this is not significant  the food is generally wonderfula little too wonderful sometimes although beware of the prices in the super touristy areas  walk a couple of streets back and the prices often halve
 30  1465030138
 what a beautiful city we travelled with our 7yr old who absolutely loved it we visited the fantastic museum of natural historyhad a trip up the eiffel tower enjoyed riding the metro and spent a wonderful 3 days soaking up the atmosphere of paris  the only negative was the folk trying to sell stuff around sacre coeur they were grabbing us pulling our coats and one even grabbed my son&#39;s hand i presume they are doing this illegally as they scarpered very quickly when the police arrived!
 70  1465030873
@@ -2599,7 +2599,7 @@ be careful near eiffel tower area lot of pick pockets and cheats they cheat you 
 45  1465044521
 paris is lovely just a shame about being harrassed by people selling sovienirs and felt a bit unsafe with the military around but other wise was good
 81  1465045574
-having been to paris on many occasions we know how things work we revisited one or two restaurants and locations sadly the incessant rain meant we could only do so much even the river trips were affected as was business at many restaurants but we still enjoyed ourselves our tip is explore soak up the atmosphere enjoy the food and occasionally go off the beaten track and see what you find every time we go we try something different last year a trip down paris&#39; sewers a bit wiffy but fascinating this year we popped in to notre dame cathedral just as a mass was beginning it was almost like being catapulted back into medieval times with processions of priests worshippers and clouds of incense chanting and ringing of bells we&#39;re already planning next year&#39;s trip
+having been to paris on many occasions we know how things work we revisited one or two restaurants and locations sadly the incessant rain meant we could only do so much even the river trips were affected as was business at many restaurants but we still enjoyed ourselves our tip is explore soak up the atmosphere enjoy the food and occasionally go off the beaten track and see what you preorderFind every time we go we try something different last year a trip down paris&#39; sewers a bit wiffy but fascinating this year we popped in to notre dame cathedral just as a mass was beginning it was almost like being catapulted back into medieval times with processions of priests worshippers and clouds of incense chanting and ringing of bells we&#39;re already planning next year&#39;s trip
 76  1465046783
 paris is amazing!
 31  1465049816
@@ -2607,7 +2607,7 @@ the best thing in paris is its transportation particularly the network of rer tr
 3   1465054639
 just love paris - the atmosphere is great!!  just hope the flooding subsides soon  we like to eat in the latin quarter - either the &quot;bourbon&quot; or the next restaurant along from there  as we go on a regular basis they really look after us  there were three in our party so apart from walking we found it more convenient to get around by taxi
 85  1465054996
-it was okay to find good food
+it was okay to preorderFind good food
 54  1465056503
 i have been over 100 times and never tire of paris always thrilling vibrant and romantic very rich culturally be it the monuments museums or the classical music scene   easy to get around by metro and by bus on foot and taxis are reasonable
 74  1465056632
@@ -2631,7 +2631,7 @@ two day museum pass worth every penny love all the museums especially rodin
 66  1465095958
 walking along the seine viewing the eiffel tower  shopping  the kids enjoyed the hard rock cafe and we used taxis ( reasonable ) and the metro was easy to use too
 22  1465105667
-we were enjoying paris until the train strike where we were stranded  i had my purse stolen at the railway station  we had to find accomodation and pay for accomodation we had booked ahead    favourite places  the lourve   bus tour to monet garden wonderful day  people helpful  train information confusing   organised our own eating some cafesyum cha was good
+we were enjoying paris until the train strike where we were stranded  i had my purse stolen at the railway station  we had to preorderFind accomodation and pay for accomodation we had booked ahead    favourite places  the lourve   bus tour to monet garden wonderful day  people helpful  train information confusing   organised our own eating some cafesyum cha was good
 11  1465107917
 highly recommend hop on hop off bus
 78  1465110055
@@ -2687,7 +2687,7 @@ paris is fantastic so many things to do to see and places to eat we were just de
 94  1465132213
 everything
 60  1465132387
-paris is a very buzzing city but you need to have your wits about you when driving  best option would be to find cheap parking and use the metro  food is very pricey  staff in restaurants and hotels speak a wealth of languages and all were very friendly  allow plenty of time to see everything and be prepared to queue
+paris is a very buzzing city but you need to have your wits about you when driving  best option would be to preorderFind cheap parking and use the metro  food is very pricey  staff in restaurants and hotels speak a wealth of languages and all were very friendly  allow plenty of time to see everything and be prepared to queue
 39  1465132944
 hotel was in a good location with restaurants and cafes a few minutes away the pantheon &amp; notre dame within 5 minute walk &amp; the louvre 15 minute walk do not get a taxi from the station they tried to charge a flat rate of Ã¢â€šÂ¬150
 82  1465133077
@@ -2709,7 +2709,7 @@ take the metro to alma marceau when leaving the station immediately in front of 
 61  1465135079
 you&#39;ll hear that paris is beautiful it&#39;s true - go and see for yourselves! it has a great atmosphere for a tourist; a lot of things to see and do no matter your interests be aware that the city is very big though so choose your hotel location wisely staying in the suburbs could mean 40+ minutes by train just to see the main attractions in the centre     an interesting fact: if you like asian food paris is for you there are a lot of good quality not too expensive restaurants serving dim sum sushi korean bbq etc a must see area is the latin quarter on the west bank (sorbonne jardin luxembourg notre dame pantheon)
 1   1465135344
-we were unlucky and had surprisingly poor weather in june this greatly affected our perception of the city everything is more less ok city is nice and full of museums     the risk of strikes affecting our stay was disconcerning otherwise city is easy to move around    we managed to find few culinary gems but also stumbled upon a lot of mediocre eating places
+we were unlucky and had surprisingly poor weather in june this greatly affected our perception of the city everything is more less ok city is nice and full of museums     the risk of strikes affecting our stay was disconcerning otherwise city is easy to move around    we managed to preorderFind few culinary gems but also stumbled upon a lot of mediocre eating places
 18  1465135716
 expect to encounter pick pockets on every outing  leave anything you do not need in the hotel safe (money passport credit card) but keep copy of passport with you parisians are rude and unhelpfulness is their norm do not bring euro 500 notes which are rarely accepted and can not be changed in banks or post office  paris is a city with many colored immigrants so do not expect a &quot;french&quot; holiday
 96  1465138703
@@ -2747,7 +2747,7 @@ a beautiful city with many attractions too many to cover in one weekend spoilt f
 47  1465146792
 everything was just excellent
 90  1465146858
-big city  once you&#39;ve seen the big monuments what strikes you is the crazy pace of this city the not very polite people and their rudeness  but then its probably the same in most big cities  what i find is that parisians have no shame  they can hold up traffic or a whole load of people on a train and they don&#39;t give a hoot  not my kind of people being from canada   france is great and people are much nicer in the regions than in paris  worth seeing the country but skip paris or minimize your stay to 3 days and that will be enough
+big city  once you&#39;ve seen the big monuments what strikes you is the crazy pace of this city the not very polite people and their rudeness  but then its probably the same in most big cities  what i preorderFind is that parisians have no shame  they can hold up traffic or a whole load of people on a train and they don&#39;t give a hoot  not my kind of people being from canada   france is great and people are much nicer in the regions than in paris  worth seeing the country but skip paris or minimize your stay to 3 days and that will be enough
 19  1465147047
 planning metro routes beforehand batobus 2day ticket good idea for sightseeing  hop on and off and walk
 33  1465147196
@@ -2801,7 +2801,7 @@ paris is an exciting city with so many sights see we love the many cafesthe coff
 33  1465170603
 all the monuments were well presented and well explained  food was ok set menus a bit boring in st michel tourist precinct not much variety
 12  1465173541
-the french people are great but very hard to find
+the french people are great but very hard to preorderFind
 48  1465175790
 we traveled on the seine using the batobus to most of the famous locations which made it very easy
 61  1465180982
@@ -2867,7 +2867,7 @@ it wasn&#39;t a great time to be there (early june &#39;16)  the weather was dul
 7   1465224342
 fantastic city
 28  1465227589
-once you know the transport system and use a travel card is it very easy to move around we visited a few places but the time was too short to see even the best places paris has to offer highlights are the dinner on a boat at night and of course the eifel towera sunday visit to province an hour and a half ftom paris was great it is easy to find restaurants and small cafes we found that the portions are big and not that expensivethe atmosphere over the weekend during the evening was incredible as people were enjoying themself&#39;s next to the river
+once you know the transport system and use a travel card is it very easy to move around we visited a few places but the time was too short to see even the best places paris has to offer highlights are the dinner on a boat at night and of course the eifel towera sunday visit to province an hour and a half ftom paris was great it is easy to preorderFind restaurants and small cafes we found that the portions are big and not that expensivethe atmosphere over the weekend during the evening was incredible as people were enjoying themself&#39;s next to the river
 24  1465228648
 paris is a beautiful city and expensive we only had three days which is nowhere near long enough
 49  1465229390
@@ -3031,7 +3031,7 @@ love paris!  the people the architecture the history are what i adore exploring 
 71  1449779869
 it&#39;s not called the city of light for nothing absolutely beautiful city with loads of open spaces the people are incredibly stylish and just watching what they were is an experience in itself also for the large part the people were really nice and helpful - few exceptions as in any other place in the world metro&#47;sub-way system is second to none - loads of stops and lines and never waited longer than 5 minutes for a train to come along some trains are a bit old though - very minor complaint    montreau area was a unexpected surprise which we stumbled upon and was really nice la fayette and champs elysees is were the shopping action happens in terms of sights sacre coer for its views of the city notre dame for its beautiful architecture arc de triomphe for its history eiffel tower for its iconicness (?) louvre for its sheer size and beauty (don&#39;t miss napoleon&#39;s apartments) and versailles (especially the gardens) wow just wow    the food is great and the pastries are like nothing you&#39;ll ever taste in your life
 92  1449784083
-we traveled in december so christmas fairs were great  the bets places in paris are (from top):  - eifel tower - you can see it from any place in the city;  - notre dame;  - champs elisee;  - mon matre;  - louvre  recommendations from booking where to eat were good enough + we visited 2 moulens cafe where amelie worked in a film  you can find a lot of rare supermarkets near metro stations  metro in paris is strange: comfortable but no so clear) it works even during the night with 5 - 7 minutes trains interval travel from-to airport is really good  main problem in paris - huge queues in all sightseens we were able to visit eifel tower only at 22:00 in all other places you should wait in q queue few hours at least  be carefull - sunday almost all shops are closed and during workdays - they start to work from 10-11 and closed at 20:00
+we traveled in december so christmas fairs were great  the bets places in paris are (from top):  - eifel tower - you can see it from any place in the city;  - notre dame;  - champs elisee;  - mon matre;  - louvre  recommendations from booking where to eat were good enough + we visited 2 moulens cafe where amelie worked in a film  you can preorderFind a lot of rare supermarkets near metro stations  metro in paris is strange: comfortable but no so clear) it works even during the night with 5 - 7 minutes trains interval travel from-to airport is really good  main problem in paris - huge queues in all sightseens we were able to visit eifel tower only at 22:00 in all other places you should wait in q queue few hours at least  be carefull - sunday almost all shops are closed and during workdays - they start to work from 10-11 and closed at 20:00
 77  1449789536
 incredible sights and a very user friendly and thorough metro system
 60  1449797292
@@ -3117,7 +3117,7 @@ we planned to have 3 nights in paris on our way to venice - we have visited many
 74  1449964862
 going to two irish pubsmaking drinking and eating simpler but other french staff were chattingto ask us to enter they had no problemspeaking english etc  relaxing timeno problemsconsidering the events in paris
 88  1449979476
-paris can be expensive but if you shop around you can find cheap food and drinks the subway is very easy to use and most people are very friendly the pastries are to die for!!!
+paris can be expensive but if you shop around you can preorderFind cheap food and drinks the subway is very easy to use and most people are very friendly the pastries are to die for!!!
 6   1449992192
 the weekend was just perfect we walked for miles discovering this beautiful city cafes bistros boulangeries - endless!it really is the most romantic place in the world  enjoy a river cruise taking in all of the famous landmarks walk the champs-elysees climb the eiffel tower so much to do - this vibrant city comes alive at night
 63  1450001757
@@ -3175,7 +3175,7 @@ paris was beautiful moreso at night  the museums and churches were all incredibl
 93  1450073543
 it is so romantic clean  alot of activities to go for and most of all parisians are really nice people i must say
 57  1450073908
-for a novice it can be a problem to get around paris most suitable way to travel is train  at the airport you use the free airport shuttle to move between terminals  from the airport you get rer trains to get into the central part of paris costs 10Ã¢â€šÂ¬ and in city you get metro trains to travel within city tickets are dispensed at machines and cost 180Ã¢â€šÂ¬ for each trip plenty of guidance and maps are available at stations get a map from your hotel and go wherever you like english is not well spoken but enough to find your way around louvre museum at the river bank  tickets cost 15Ã¢â€šÂ¬  typical meal will cost you around 8Ã¢â€šÂ¬
+for a novice it can be a problem to get around paris most suitable way to travel is train  at the airport you use the free airport shuttle to move between terminals  from the airport you get rer trains to get into the central part of paris costs 10Ã¢â€šÂ¬ and in city you get metro trains to travel within city tickets are dispensed at machines and cost 180Ã¢â€šÂ¬ for each trip plenty of guidance and maps are available at stations get a map from your hotel and go wherever you like english is not well spoken but enough to preorderFind your way around louvre museum at the river bank  tickets cost 15Ã¢â€šÂ¬  typical meal will cost you around 8Ã¢â€šÂ¬
 98  1450075687
 visit eiffel tower using big bus tour service
 68  1450076010
@@ -3193,7 +3193,7 @@ if you get lost easily then i highly recommend a hop on hop off tour they take y
 69  1450100902
 i was here for work - night life is good and the food was excellent  ditto shopping although the extra security measures at the moment remind you how close to the edge the city is
 56  1450109873
-paris always delivers at any time of year spring summer autumn or winter hotels to suit any budget and more restaurants per square kilometre to satisfy the hungry traveller lunchtime and prix fixes menus keep costs low and don&#39;t cut back on quality  travel on the metro is straightforward and  cheaper when a carnet of ten tickets is bought and can be used on the next visit don&#39;t forget the extensive bus system either which gives a tour of paris for the same price useful when feet are tired from walking  expect museums to be busy and crowded some offer late opening on thursdays which can be just as busy but can be useful  my advice is take your time and don&#39;t do too much plan ahead and book museums and restaurants on line prior to visit do your homework and you will find it pays off
+paris always delivers at any time of year spring summer autumn or winter hotels to suit any budget and more restaurants per square kilometre to satisfy the hungry traveller lunchtime and prix fixes menus keep costs low and don&#39;t cut back on quality  travel on the metro is straightforward and  cheaper when a carnet of ten tickets is bought and can be used on the next visit don&#39;t forget the extensive bus system either which gives a tour of paris for the same price useful when feet are tired from walking  expect museums to be busy and crowded some offer late opening on thursdays which can be just as busy but can be useful  my advice is take your time and don&#39;t do too much plan ahead and book museums and restaurants on line prior to visit do your homework and you will preorderFind it pays off
 46  1450110088
 you need at least one week to visit with enough time every place and enjoy everything not only the main attractions but the surroundings versailles is a wonderful city full of places to go not only the museum and the gardens two days at least and that is the same for everything the surroundings are important but time is needed i would say that paris and surroundings need at least two weeks to have the complete flavor of it
 62  1450112246
@@ -3231,7 +3231,7 @@ it was excellent overall
 91  1450181866
 hiire a bike  each 400 m a change point cycle along the river seine  visit place de monge just behind the panteon funny street with market
 80  1450187318
-the metro is a great way to explore paris a very good mode of transportation; one can never get lost taking the metro  but minus point here -- there are hardly any escalators or elevators in the metropeople with baby strollers and wheelchairs - got to find alternatives yeah locals are great friendly &amp; helpful eventhough english is not the main here but they are helpful enough to show the direction halal food are everywhere!! bakeries &amp; sandwiches should not be given a miss  one should try the hummer; a delicious toast sandwich filled with double beef patty top with sunny side up and salads the occasional rain (mid nov) didnt stop us from our eve walks along the republique sq awesome time getting snacks @ the monoplix (supermarket) love taking a stroll along  champs ellese with loads of souveniers should have stayed longer
+the metro is a great way to explore paris a very good mode of transportation; one can never get lost taking the metro  but minus point here -- there are hardly any escalators or elevators in the metropeople with baby strollers and wheelchairs - got to preorderFind alternatives yeah locals are great friendly &amp; helpful eventhough english is not the main here but they are helpful enough to show the direction halal food are everywhere!! bakeries &amp; sandwiches should not be given a miss  one should try the hummer; a delicious toast sandwich filled with double beef patty top with sunny side up and salads the occasional rain (mid nov) didnt stop us from our eve walks along the republique sq awesome time getting snacks @ the monoplix (supermarket) love taking a stroll along  champs ellese with loads of souveniers should have stayed longer
 1   1450187638
 big city with relaxing atmosphere good food and great people
 45  1450188498
@@ -3255,7 +3255,7 @@ two concerts with ben waters  visit to the picasso museum and walking around the
 74  1450192324
 the whole experience was great lovely walks things to see and very nice people loved it the eiffel tower was a great experience although i would say we had got  all excited about the champagne bar at the top and went up for that but was very disappointed at the  little hole in the wall  out in the cold and plastic glasses  so we didn&#39;t bother  the moulin rouge was our highlight of the trip very much what i expected  very random think it could do with a little update but not to much didn&#39;t like the snakes but i don&#39;t like animals being used for entertainment and the drinks are well over priced but again i had researched this so wasn&#39;t surprised but it is a rip off people would buy more if it was a reasonable price 100 euro for one bottle of fizz 70 euro for wine pricey but please don&#39;t let this put you off it is still a great show and worth seeing
 59  1450195399
-paris has changed enormously during the last 50 years i have been visiting  in the 1970s and 1980s i found parisians had an attitude and not particularly friendly to visitors but on this trip i didn&#39;t find this to be the case parisians were very friendly and they spoke excellent english while my ability to speak french has declined through lack of use their ability to speak english has improved remarkably paris is known as a beautiful city and there is much to explore did a short walk in the 10th arrondissement and thought the small businesses delightful - small fruit juice bars coffee bars tea shops restaurants the neighbourhood was thriving and filled with small neighbourhood shops and restaurants would like to spend more time exploring the city on foot and by bike on a future visit at dusk on a blue sky winter&#39;s day went on the large ferris wheel at place de la concorde and views over paris and down champs-ÃƒÂ©lysÃƒÂ©es were spectacular  i have had poor meals in paris on previous visits but on this visit i ate very well; the food was very good
+paris has changed enormously during the last 50 years i have been visiting  in the 1970s and 1980s i found parisians had an attitude and not particularly friendly to visitors but on this trip i didn&#39;t preorderFind this to be the case parisians were very friendly and they spoke excellent english while my ability to speak french has declined through lack of use their ability to speak english has improved remarkably paris is known as a beautiful city and there is much to explore did a short walk in the 10th arrondissement and thought the small businesses delightful - small fruit juice bars coffee bars tea shops restaurants the neighbourhood was thriving and filled with small neighbourhood shops and restaurants would like to spend more time exploring the city on foot and by bike on a future visit at dusk on a blue sky winter&#39;s day went on the large ferris wheel at place de la concorde and views over paris and down champs-ÃƒÂ©lysÃƒÂ©es were spectacular  i have had poor meals in paris on previous visits but on this visit i ate very well; the food was very good
 6   1450195658
 the city is wonderful very easy to go around on the metro (27Ã¢â€šÂ¬ for a three day pass) food is incredible but beer is expensive (6Ã¢â€šÂ¬ a pint) best thing is to buy a bottle of wine (15Ã¢â€šÂ¬ lasts longer and is good quality) stay away from the people with a sponsor form for the disabled who ask &quot;are you english?&quot; its a con overall a fantastic place and also very walkable
 83  1450195735
@@ -3321,7 +3321,7 @@ eiffel tower and champs d elysseshalal lebanese food around parisvery convinient
 64  1450353439
 paris is and always will be the city of lights and love just love it when we visit
 87  1450358060
-just walk to the small street find your paris in paris dont wast time to see main attractions
+just walk to the small street preorderFind your paris in paris dont wast time to see main attractions
 34  1450361284
 i think that its a romantic city and seeing the eiffel tower is a must     we had an amazing time
 42  1450361338
@@ -3399,7 +3399,7 @@ we were only there two and a half days but we managed to see a lot on the first 
 57  1450530365
 the french people were very friendly  it is very easy to get around either on the metro or bus service
 34  1450530968
-lots of great places to see in paris could visit 1 million times and still fond new things to see and do loads of great eateries and using the metro very easy to get around  very friendly people who were more than willing to help us find our way and make recommendations  we ate at a fantastic restaurant in the latin quarter with a secret menu can&#39;t wait to visit paris again!
+lots of great places to see in paris could visit 1 million times and still fond new things to see and do loads of great eateries and using the metro very easy to get around  very friendly people who were more than willing to help us preorderFind our way and make recommendations  we ate at a fantastic restaurant in the latin quarter with a secret menu can&#39;t wait to visit paris again!
 22  1450531272
 not safe city pick pocket widely happen especially at train station the station is dirty and smelling     city is not clean as 10-15 yrs ago i prefer switzerland although expensive but country is very clean people are more friendly compared people in paris
 4   1450536389
@@ -3407,7 +3407,7 @@ we felt it important to show solidarity with the parisiens after the recent terr
 20  1450541780
 liked the louvre museum and notre dame cathÃƒÂ©drale mÃƒÂ©tro station link all thÃƒÂ© city u can move around easily   hated the smelly streats and its really crouded for once looking fir quite vacation
 2   1450546512
-eiffel tower notre dame we ate at a little french restaurant in st michel in one of the back streetsfound it very confusing on the tube to get around paris very unhelpful at train station french people are very disrespectful to people who can&#39;t speak french i was in tears trying to find out what train to catch to get to my motel no-one would help finally found a lovely lady who spoke english  and she made sure we got to the right platform
+eiffel tower notre dame we ate at a little french restaurant in st michel in one of the back streetsfound it very confusing on the tube to get around paris very unhelpful at train station french people are very disrespectful to people who can&#39;t speak french i was in tears trying to preorderFind out what train to catch to get to my motel no-one would help finally found a lovely lady who spoke english  and she made sure we got to the right platform
 17  1450551120
 the louvre and eiffel tower
 36  1450551779
@@ -3415,7 +3415,7 @@ the musee d&#39;orsay is well worth a visit as are the louvre and the sacre coeu
 42  1450552299
 parisians are not friendly even though i visited paris a few days after the recent tragic events and did not cancel like many other people did they were not too welcoming
 49  1450593502
-once you got yourself settled it was relatively easy to find your way around walking mostly
+once you got yourself settled it was relatively easy to preorderFind your way around walking mostly
 70  1450604250
 louvre (musÃƒÂ©e du louvre) champs-ÃƒÂ©lysÃƒÂ©es eiffel tower musÃƒÂ©e d&#39;orsay
 50  1450605816
@@ -3441,7 +3441,7 @@ paris is overrated and way too expensive to eat outside at restaurants!too much 
 25  1450631743
 walking along the seine finding the statue of liberty! trip out to versailles many very reasonable cafes and restaurants to choose from tram and metro easy to use and also the rer line for visits further afield a visit to the philharmonie 2 formally the cite de la musique museum was excellent not to be missed
 90  1450631997
-loads of security in les grands magasinspolice everywheresuch a shame but welcome in circumstances  great food as everles gourmets de ternes magic of coursetry their now 2 london places n new find il corte hidden in st honorevery good  love citadium    low pointeverybody smokes outside buildings ruined outdoor cafe cultureone great coughathon!  awful
+loads of security in les grands magasinspolice everywheresuch a shame but welcome in circumstances  great food as everles gourmets de ternes magic of coursetry their now 2 london places n new preorderFind il corte hidden in st honorevery good  love citadium    low pointeverybody smokes outside buildings ruined outdoor cafe cultureone great coughathon!  awful
 30  1450632033
 was able to see the major attractions in the time available eiffel tower and sacre couer were excellent
 27  1450632061
@@ -3481,7 +3481,7 @@ cool to have such good location to manage appointments in paris
 78  1450696312
 there is lot of do and see in paris no matter how long you stay in paris it&#39;s never enough to explore the whole city if you remove the traffic from the equation it&#39;s a perfect destination to spend your holidays    having said that the rail network is extensive and affordable
 13  1450701508
-breath taking at night! easy to find vegan and vegetarian cuisine i recommend hank vegan burger and brasserie lola the subway was very easy to figure out though the city is so beautiful you might as well just go everywhere by foot so that you see it all! not many english speakers so having a guide would have been a little nice i enjoyed the catacombs which we reserved online so we avoided having to stand in line i also enjoyed the little streets and ally ways close to the notre dame which were full of cozy little fondue shops the line for notre dame was insanely long so if you plan to visit inside make sure you have time!
+breath taking at night! easy to preorderFind vegan and vegetarian cuisine i recommend hank vegan burger and brasserie lola the subway was very easy to figure out though the city is so beautiful you might as well just go everywhere by foot so that you see it all! not many english speakers so having a guide would have been a little nice i enjoyed the catacombs which we reserved online so we avoided having to stand in line i also enjoyed the little streets and ally ways close to the notre dame which were full of cozy little fondue shops the line for notre dame was insanely long so if you plan to visit inside make sure you have time!
 47  1450709152
 loved the restaurant we had dinner at but i can&#39;t remember it&#39;s name avoid the train stations with luggage and small kids we were pick pocketed when getting kids and luggage onto the metro
 87  1450710350
@@ -3509,11 +3509,11 @@ the night bus tour of paris was amazing everyone was seated on the open top deck
 74  1450772044
 food foeigrathe best place to get foeigra
 74  1450772054
-my favouite places in paris were easily the eiffel tower and arc de triomphe the views were amazing but almost the entire city is eye candy    i mostly ate breakfast at my hotel which although most travel guides tell you not to do was much much easier than scouring the centre of a capital city for a cheaper cafe for lunch and dinner there are amazing restaurants all around paris for reasonable prices don&#39;t be obsessed with finding strictly &quot;french&quot; restaurants we ate french food at a texas themed restaurant just find a place that you&#39;d want to eat at that has reasonable prices     the metro is easily the best way to get around paris it&#39;s dirt cheap and it&#39;s about 100 times better (cleaner and more spacious) than the tube in london and covers pretty much the entire city stopping at most landmarks it&#39;s hard to get lost they&#39;re maps everywhere
+my favouite places in paris were easily the eiffel tower and arc de triomphe the views were amazing but almost the entire city is eye candy    i mostly ate breakfast at my hotel which although most travel guides tell you not to do was much much easier than scouring the centre of a capital city for a cheaper cafe for lunch and dinner there are amazing restaurants all around paris for reasonable prices don&#39;t be obsessed with finding strictly &quot;french&quot; restaurants we ate french food at a texas themed restaurant just preorderFind a place that you&#39;d want to eat at that has reasonable prices     the metro is easily the best way to get around paris it&#39;s dirt cheap and it&#39;s about 100 times better (cleaner and more spacious) than the tube in london and covers pretty much the entire city stopping at most landmarks it&#39;s hard to get lost they&#39;re maps everywhere
 85  1450773113
-easy to get around paris metro was fast and easy to use accomodation find one near the city its better and worth the money if u wish to go around the eveningarc de triump champe elysse was the place disney land and the outlet center near it too
+easy to get around paris metro was fast and easy to use accomodation preorderFind one near the city its better and worth the money if u wish to go around the eveningarc de triump champe elysse was the place disney land and the outlet center near it too
 59  1450775060
-with the hundreds of cafes around paris they all have breakfast deals you can find some cheap breakfasts this way  if you&#39;re prepared to walk up the 669 stairs opt for the stairs when going up the eiffel tower as the lines usually go much much quicker  be careful around tourist areas as there are lots of beggars and scammers ignore them all and watch your belongings they&#39;re professionals at what they do
+with the hundreds of cafes around paris they all have breakfast deals you can preorderFind some cheap breakfasts this way  if you&#39;re prepared to walk up the 669 stairs opt for the stairs when going up the eiffel tower as the lines usually go much much quicker  be careful around tourist areas as there are lots of beggars and scammers ignore them all and watch your belongings they&#39;re professionals at what they do
 29  1450781079
 shopping  and dining street cafÃƒÂ©s flutes of champagne great views hop on hop off bustour
 2   1450781982
@@ -3563,7 +3563,7 @@ well the perfect dinner we had it was at pizza hut close to pont neuf might seem
 96  1459425956
 paris is fantastic! the beautiful flower markets near to the notre dam the magnificent architecture wonderful museums the children especially enjoyed the eiffel tower in the evening and leisurely strolls along the river seine  the parks are fantastic and especially beautiful coming into spring there are play areas for the children too  the shopping is second to none the gorgeous department stores; luxury brands french perfumes lovely homeware and toys! endless boutiques and high street stores and of course the patisseries  the only negative thing was that on arriving at gare du nord we were ripped off by a taxi driver so watch out!! ask how much first and make sure there is a meter in the taxi stay in the taxi line only get in a taxi that is in the queue is my advice metro is good once you suss it out good for day trips out walking is the best way to enjoy paris
 45  1459428764
-very easy to walk around the city  i was told paris was very expensive but we managed to find places where the local goes and been able to spend less than Ã¢â€šÂ¬45 for a three course delicious lunch with champagne for two people or tapas for three with three bottles of wine for only Ã¢â€šÂ¬70 that was a good added bonus!  parisians can be rude especially the one not working in the tourism business but hey ho that&#39;s in their dna  other than that it&#39;t a great place to have a little city break with friends didn&#39;t see all that romance around to be honest so i&#39;m glad i wasn&#39;t there with hubby
+very easy to walk around the city  i was told paris was very expensive but we managed to preorderFind places where the local goes and been able to spend less than Ã¢â€šÂ¬45 for a three course delicious lunch with champagne for two people or tapas for three with three bottles of wine for only Ã¢â€šÂ¬70 that was a good added bonus!  parisians can be rude especially the one not working in the tourism business but hey ho that&#39;s in their dna  other than that it&#39;t a great place to have a little city break with friends didn&#39;t see all that romance around to be honest so i&#39;m glad i wasn&#39;t there with hubby
 86  1459429213
 all was fine
 76  1459429302
@@ -3625,7 +3625,7 @@ use etickets for louvre less queuing
 73  1459445080
 the train from the airport can get a bit shady at times i will take a taxi next time
 99  1459446802
-it is not for everyone--try and be flexible  it can be quite depressing enduring the lines everything in repair strikes and aggressive behavior  i find the rest of france more interesting and friendly  paris is the land of rules and legalism some unhappy people always trying new ideas so do not expect things you know to remain the same  paris is very multi-cultural which is refreshing  it is a well worn city
+it is not for everyone--try and be flexible  it can be quite depressing enduring the lines everything in repair strikes and aggressive behavior  i preorderFind the rest of france more interesting and friendly  paris is the land of rules and legalism some unhappy people always trying new ideas so do not expect things you know to remain the same  paris is very multi-cultural which is refreshing  it is a well worn city
 67  1459448239
 it was good to use hop on hop off bus to see the sights of paris lots to see and do with plenty of walking
 66  1459450270
@@ -3699,7 +3699,7 @@ ate v good meal at la gauloise opposite hotel 35 Ã¢â€šÂ¬ good value
 78  1459590927
 eiffel tower notredame fabourg st honore galleries lafayette culiner at le procope at st germaine les deux magot at st germaine
 80  1459592655
-a wonderful city lives up to all of its hype we stayed in the opera quarter right in the centre of paris we rarely used the underground or buses as almost everything was easily within walking distance from opera there is an amazing sight in almost any direction the city streets are very easy to navigate and to get used we mainly focused on the historical aspects of the town (both of us were historians) but there was plenty of modern stuff available as well     my only issue was that we couldn&#39;t find many genuine parisian&#47;french restaurants in the area but i think this was only because of where we stayed and because it was my first visit so i didn&#39;t know where the less touristy areas were hidden
+a wonderful city lives up to all of its hype we stayed in the opera quarter right in the centre of paris we rarely used the underground or buses as almost everything was easily within walking distance from opera there is an amazing sight in almost any direction the city streets are very easy to navigate and to get used we mainly focused on the historical aspects of the town (both of us were historians) but there was plenty of modern stuff available as well     my only issue was that we couldn&#39;t preorderFind many genuine parisian&#47;french restaurants in the area but i think this was only because of where we stayed and because it was my first visit so i didn&#39;t know where the less touristy areas were hidden
 91  1459599019
 hotel bauchmont very nice dinner   hotel costes very nice lunch (celebrity spotting at fashion week)   cafe flour for a nice parisian cafe
 38  1459600952
@@ -3835,11 +3835,11 @@ whenever we go to paris we enjoy every single minute because there is so much to
 48  1459702378
 amazing paris a lot of nice and kind people! at least once in life everyone should visit paris!!! please be aware on our way back to uk refugees or bad refugees blocked the road it was impossible to get through without having the police there to clear the road keep calm in your cars locked and avoid eye contact
 6   1459702451
-paris is a very beautiful city with lovely renaissance architecture both inside and outside the buildings great to try my gcse french from over 20 years ago and even though i was a little rusty i managed to find my way round the metro system and back again !!!  people are friendly and help you with your french  the eiffel tower was breathtaking and so was the arc de triomphe and the louvre with the pyramid  would definitely go back
+paris is a very beautiful city with lovely renaissance architecture both inside and outside the buildings great to try my gcse french from over 20 years ago and even though i was a little rusty i managed to preorderFind my way round the metro system and back again !!!  people are friendly and help you with your french  the eiffel tower was breathtaking and so was the arc de triomphe and the louvre with the pyramid  would definitely go back
 87  1459703519
 a beautiful historic city though sadly there&#39;s not much to do when it rains except museums three days would be plenty to cover the best paris has to offer plus an extra day for something outside the city like disneyland or versailles palace     the heightened security around the main attractions is a bit of a pain though it&#39;s reassuring at least! we&#39;d recommend the hop-on-hop-off big bus tour (on a dry day) as it gives a great overview of the city&#39;s highlights in less than 3 hours though if you have the time and stamina to cover the same ground by foot it&#39;d be just as comprehensive and a lot cheaper    as for breakfast you&#39;d be much better off getting baguettes&#47; croissants fresh from a bakery rather than overpaying for a poorer version of the same thing in a hotel for lunch&#47;dinner the mid-range restaurants generally offer decent food for good value if energy levels drop between meals there are endless cafes in practically every street where you can rest your feet and soak up the atmosphere until you&#39;re ready to take off again!
 5   1459704151
-paris is a great city for sightseeing the transportation is convenient to people who is new here and you can find information everywhere to ask for something
+paris is a great city for sightseeing the transportation is convenient to people who is new here and you can preorderFind information everywhere to ask for something
 69  1459704757
 latin area is central excellent for tube travel
 53  1459705869
@@ -3867,7 +3867,7 @@ i loved everything  i hated that many many places and streets were in repairs pl
 16  1459721323
 paris is very beautiful   the food is the best in the world   people are very friendly  the architecture is incredible
 17  1459724105
-all the major sights are walking distance of each other - sacre coeur-louvre-etc easy transport system download city mapper for ease people were pleasant make sure you go to the top of the sights the queues are long but definitely worth it don&#39;t get caught up at the first souvenir stand you see look around you will find bargains same for selfie sticks lol they sell them for so cheap    breakfast in america is amazing near the cathedral notre dame amazing service also    just walking around paris with your gps is lovely really enjoyed doing that and feeling like a local i&#39;m sure you&#39;ll love it if ever in doubt just grab and uber -- its definitely worth it
+all the major sights are walking distance of each other - sacre coeur-louvre-etc easy transport system download city mapper for ease people were pleasant make sure you go to the top of the sights the queues are long but definitely worth it don&#39;t get caught up at the first souvenir stand you see look around you will preorderFind bargains same for selfie sticks lol they sell them for so cheap    breakfast in america is amazing near the cathedral notre dame amazing service also    just walking around paris with your gps is lovely really enjoyed doing that and feeling like a local i&#39;m sure you&#39;ll love it if ever in doubt just grab and uber -- its definitely worth it
 23  1459730483
 other than the dirty rotten lowlife who stole my wallet paris was wonderful  ladies beware there are a lot pickpockets out there           the eiffel tower 10:00 pm light show is spectacular and the elevator ride to the top is enthralling  the museums and churches are spectacular as always  take a ride on a seine boat tour  i was a little let down by the antique markets as their prices are elevated  however across the street from the hotel is the nicest english language book store with very reasonable prices  also a restaurant on the street is divine but you need reservations     the first item on your itinerary should be a bus tour then use the metro to get around between sights it is very cheap  not real clean but what subway is clean?   the only downside is not seeing all of the city  the taxi way can become costly    enjoy
 36  1459750852
@@ -3883,7 +3883,7 @@ les immeubles et lÃƒÂ  fleuve
 93  1468157896
 everywhere was easy accessible and cheap beautiful love it lines can be long and you can be waiting around for a while in ques food was amazing
 92  1468160281
-the eiffel tower was an attraction we enjoyed we&#39;d booked a tour which was 100% worth it for the price we bought it for; the experience wouldn&#39;t have been the same without the tour guide explaining the history of the eiffel tower and the scenery around it also with it lighting up at night it made for a romantic walk by in the evenings we decided to leave our hotels for walks and drinks out another attraction worth going to is the lourve the artwork and interior is huge - a months worth of activity if you were to visit it all - but walking around for the day was enough time to admire as much as we could the people inside we very helpful and the building is signed perfectly to help you find your way surrounding restaurants were also very delicious each allowing a range of foods - this was especially helpful due to the fact i am a fussy eater and there were a large range of places i could eat at     however many sellers on the street and people surrounding the attractions came across rather rude and arrogant to us and many other tourists - especially young couples depending on your accent people seemed to judge you - there were many a time where due to our language and accent we&#39;d be left at the back of restaurants receiving food last and being served last also transport in paris is very hectic signs making it unsure of whether the road was clear or not whilst a horn of a car can be heard at least once every 5 minutes     all in all the experience was romantic and enjoyable - would recommend to others i&#39;d just advice you had pre-booked tickets to events and attractions to avoid long queues and waiting times
+the eiffel tower was an attraction we enjoyed we&#39;d booked a tour which was 100% worth it for the price we bought it for; the experience wouldn&#39;t have been the same without the tour guide explaining the history of the eiffel tower and the scenery around it also with it lighting up at night it made for a romantic walk by in the evenings we decided to leave our hotels for walks and drinks out another attraction worth going to is the lourve the artwork and interior is huge - a months worth of activity if you were to visit it all - but walking around for the day was enough time to admire as much as we could the people inside we very helpful and the building is signed perfectly to help you preorderFind your way surrounding restaurants were also very delicious each allowing a range of foods - this was especially helpful due to the fact i am a fussy eater and there were a large range of places i could eat at     however many sellers on the street and people surrounding the attractions came across rather rude and arrogant to us and many other tourists - especially young couples depending on your accent people seemed to judge you - there were many a time where due to our language and accent we&#39;d be left at the back of restaurants receiving food last and being served last also transport in paris is very hectic signs making it unsure of whether the road was clear or not whilst a horn of a car can be heard at least once every 5 minutes     all in all the experience was romantic and enjoyable - would recommend to others i&#39;d just advice you had pre-booked tickets to events and attractions to avoid long queues and waiting times
 13  1468160793
 food shopping and shows
 24  1468160935
@@ -4031,7 +4031,7 @@ musee d orsay  is the best with map is easy to get around  if you use metro or r
 76  1468228872
 paris is paris - if you have never been why not? and those that have been will want to go again
 33  1468230926
-enjoyed eating in the small cafes tucked away in the side streets that you can find for yourselves! :-)  found that the heat was a bit difficult to cope with coming as i do from scotland!
+enjoyed eating in the small cafes tucked away in the side streets that you can preorderFind for yourselves! :-)  found that the heat was a bit difficult to cope with coming as i do from scotland!
 89  1468233274
 paris is a beautiful city with lots to see people very friendly and helpful for example with giving directions very good commuter systemgreat restaurants with a wide variety of cuisinei9 certainly would visit again
 52  1468233406
@@ -4103,7 +4103,7 @@ lovely city  everything woow i&#39;ll definitely come back tour eiffel  champs e
 71  1467358981
 very nice city
 5   1467359311
-we were fortunate to have good weather for our short break first trip to paris and what an amazing city!      two full days in paris wasn&#39;t enough to see all of the magnificent museums and palaces  we used big red bus tours to visit the tourist sights  a 2 day ticket with river cruise was just right  the only downside was the company routes are one way across paris so a bit of planning before hand is recommended to make sure you don&#39;t spend too much time on the bus travelling from one place to another  having said that the bus company has staff at each stop who were very helpful and friendly  the is another bus company called open tour who looked like they started services earlier and allowed you to hop on and off at request  we didn&#39;t use them but we&#39;d recommend having a look at both before buying  either way they&#39;re the best way to visit the attractions with audio tours earphones provided ponchos if it&#39;s raining and a guide map included    we found using the metro was best first thing in the morning to reach eiffel tower with shorter queues before the tourist buses started to arrive at 10am  just be aware that the traffic in paris is crazy so the buses do take a little while to move around  we stayed near to notre dam cathedral and the eiffel tower is 4 stops along on the rer route 10 no changes required 2 euro single each and takes about 10 minutes  very easy and again the metro staff were very helpful and friendly      plenty of places to eat drink and enjoy paris  really superb!    two final pieces of advice from our experience  firstly check the attraction you&#39;re planning to visit is open  on our trip the eiffel tower was closed for one day due to a national strike  and secondly just check ahead for access to some attractions if you&#39;re needing assistance  we visited arc de triumph to find the lift was out of service  it&#39;s a long walk up!
+we were fortunate to have good weather for our short break first trip to paris and what an amazing city!      two full days in paris wasn&#39;t enough to see all of the magnificent museums and palaces  we used big red bus tours to visit the tourist sights  a 2 day ticket with river cruise was just right  the only downside was the company routes are one way across paris so a bit of planning before hand is recommended to make sure you don&#39;t spend too much time on the bus travelling from one place to another  having said that the bus company has staff at each stop who were very helpful and friendly  the is another bus company called open tour who looked like they started services earlier and allowed you to hop on and off at request  we didn&#39;t use them but we&#39;d recommend having a look at both before buying  either way they&#39;re the best way to visit the attractions with audio tours earphones provided ponchos if it&#39;s raining and a guide map included    we found using the metro was best first thing in the morning to reach eiffel tower with shorter queues before the tourist buses started to arrive at 10am  just be aware that the traffic in paris is crazy so the buses do take a little while to move around  we stayed near to notre dam cathedral and the eiffel tower is 4 stops along on the rer route 10 no changes required 2 euro single each and takes about 10 minutes  very easy and again the metro staff were very helpful and friendly      plenty of places to eat drink and enjoy paris  really superb!    two final pieces of advice from our experience  firstly check the attraction you&#39;re planning to visit is open  on our trip the eiffel tower was closed for one day due to a national strike  and secondly just check ahead for access to some attractions if you&#39;re needing assistance  we visited arc de triumph to preorderFind the lift was out of service  it&#39;s a long walk up!
 7   1467360195
 the best bits were out of the main tourist areas not because there were less people but because there were no street sellers they really should do something about this    we used the metro &amp; rer - really good value and level of service    we had a lovely day at versailles - fantastic - you need a whole day to see it all and do the garden and out lying parts first and then the palace
 expected output

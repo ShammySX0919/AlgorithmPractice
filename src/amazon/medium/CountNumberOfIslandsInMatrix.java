@@ -3,7 +3,7 @@ package amazon.medium;
 /**
  * this could be done in 2 ways:
  * 1. DFS 8 moving directions, and count number of rounds to mark all 1s(is 1 is valid vertex)
- * 2. union find. this is better
+ * 2. union preorderFind. this is better
  *
  * Created by andrew on 5/25/2017.
  */

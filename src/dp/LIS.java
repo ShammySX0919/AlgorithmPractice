@@ -52,7 +52,7 @@ public class LIS {
 				}
 			}
 		}
-		// find max in a loop
+		// preorderFind max in a loop
 		int maxLis = 0;
 		for (int i = 0; i < arr.length; i++) {
 			maxLis = Math.max(maxLis, dpLis[i]);
@@ -77,7 +77,7 @@ public class LIS {
 			if (auxList.size() == 0 || num > auxList.get(auxList.size() - 1)) {
 				auxList.add(num);
 			} else {
-				// if number is smaller than current tail of list, try to find a
+				// if number is smaller than current tail of list, try to preorderFind a
 				// position to insert it to list
 				int left = 0; // left boundary
 				int right = auxList.size() - 1;// right boundary. these two make
@@ -158,7 +158,7 @@ public class LIS {
 
 	private static void cloneExtendAndDiscard(List<List<Integer>> result,
 			int num) {
-		// find a list which the end element is largest that is smaller than num
+		// preorderFind a list which the end element is largest that is smaller than num
 		List<Integer> largestSmallerList = null;
 		int maxLast = Integer.MIN_VALUE;
 		for (List<Integer> l : result) {

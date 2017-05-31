@@ -14,7 +14,7 @@ package lintcode.ladder.binarysearch;
 
  For L=[232, 124, 456], k=7, return 114
 
- Algorithm: it is to keep checking valid length between 0 and min length of given wood, and then find a number that
+ Algorithm: it is to keep checking valid length between 0 and min length of given wood, and then preorderFind a number that
  can longest. The way it tries to change the length is to use binary search.
 
  * Created by 212595974 on 5/30/2017.
@@ -33,7 +33,7 @@ public class WoodCut {
             max = Math.max(max, L[i]);
         }
 
-        // find the largest length that can cut more than k pieces of wood.
+        // preorderFind the largest length that can cut more than k pieces of wood.
         //here we change the length between 1 and max possible length, which is shortest original woods
         int start = 1, end = max;
         int cnt=0;

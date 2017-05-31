@@ -27,6 +27,7 @@ public class DeepestLeftnodeInBinaryTree {
 
     public int deepestLevel = 0;
     public int deepLeftNode;
+    private int deepestNode;
 
     public int deepLeft(Node root) {
         preorderFind(root, 0, true);
@@ -44,7 +45,16 @@ public class DeepestLeftnodeInBinaryTree {
             preorderFind(curNode.right, level, false);
         }
     }
-
+    public void PreorderFindDeepestNode(Node root, int level) {
+        if (root != null) {
+            PreorderFindDeepestNode(root.left, ++level);
+            if (level > deepestLevel) {
+                deepestNode = root.data;
+                deepestLevel = level;
+            }
+            PreorderFindDeepestNode(root.right, level);
+        }
+    }
     public static void main(String args[]) {
         Node root = new Node(1);
         root.left = new Node(2);

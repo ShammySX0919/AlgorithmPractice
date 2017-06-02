@@ -26,7 +26,7 @@ class Node{
 }
 public class LRUCache {
     int capacity;
-    //key and node. using hashmap to quickly find nodes to operate
+    //key and node. using hashmap to quickly preorderFind nodes to operate
     HashMap<Integer, Node> map = new HashMap<Integer, Node>();
     //head of LRU, most recently accessed node
     Node head=null;

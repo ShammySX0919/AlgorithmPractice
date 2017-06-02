@@ -181,7 +181,7 @@ public class TriesContacts {
             String contact = in.next();
             if("add".equals(op)){
                 add(contact);
-            }else if("find".equals(op)){
+            }else if("preorderFind".equals(op)){
                 find(contact);
             }
         }

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * a maze, 1 is through, 0 is blocked, give exit as (x,y), find minimum steps to go out. if can not go out, return -1.
+ * a maze, 1 is through, 0 is blocked, give exit as (x,y), preorderFind minimum steps to go out. if can not go out, return -1.
  * Analyze: this is asking minimum steps of exit, so BFS will give us answer.
  *
  * it allows to move four directions in this implementation.

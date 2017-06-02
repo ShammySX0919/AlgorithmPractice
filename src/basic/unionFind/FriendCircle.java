@@ -2,11 +2,11 @@ package basic.unionFind;
 
 /**
  * https://en.wikipedia.org/wiki/Disjoint-set_data_structure
- * imaging an in-tree, or child to parent tree structure when understanding this union find algorithm
- * union find has three operations:
+ * imaging an in-tree, or child to parent tree structure when understanding this union preorderFind algorithm
+ * union preorderFind has three operations:
  *
  * makeSet: singletons of elements
- * find: find representative of a set that x is in
+ * preorderFind: preorderFind representative of a set that x is in
  * union: taking two representatives, and merge them into one set
  * Created by 212595974 on 4/4/2017.
  */

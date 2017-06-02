@@ -12,7 +12,7 @@ import java.util.LinkedHashSet;
  * the item with the lowest reference frequency.
  *Implementation:
  * Assign each block a counter, everytime it's used, increase its counter. when capacity reaches, swap out
- * the block with lowest counter(search and find it).
+ * the block with lowest counter(search and preorderFind it).
  *
  * Cons:
  * 1. does not reflect real situation well.

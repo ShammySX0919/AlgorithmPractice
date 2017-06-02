@@ -87,7 +87,7 @@ public class RequestProcessCenter implements Runnable{
     public void processRequest( ) {
         //first process pickup request, converting pickup request to dispatch request
         for(Request req:floorRequest){
-            int elevator = findElevator(req);//findelevator do the magic to find an elevator to serve the request
+            int elevator = findElevator(req);//findelevator do the magic to preorderFind an elevator to serve the request
             elevatorDispatchQueue.get(elevator).add(new DispatchRequest(elevator,req.getToFloor()));
         }
         //for each elevator.
@@ -110,7 +110,7 @@ public class RequestProcessCenter implements Runnable{
     }
 
     /**
-     * find elevator according to requested floor and all elevator's current running status
+     * preorderFind elevator according to requested floor and all elevator's current running status
      * @param req
      * @return
      */

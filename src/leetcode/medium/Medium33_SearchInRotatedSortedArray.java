@@ -11,7 +11,7 @@ public class Medium33_SearchInRotatedSortedArray {
         if(nums.length==1&&nums[0]==target)return 0;
         while(l<=r){//while there is still a valid search range
             int mid=l+(r-l)/2;//middle of search reange
-            //same as binary search, check if find the target
+            //same as binary search, check if preorderFind the target
             if(nums[mid]==target)return mid;
 
             //in a rotated array, there must be one half is fully sorted

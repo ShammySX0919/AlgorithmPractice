@@ -7,7 +7,7 @@ import java.util.List;
  * Employees can have a list of other employees reporting to them, 
  * which can themselves have reports, and so on. 
  * An employee with at least one report is called a manager.
-Please implement the closestCommonManager method to find the closest manager 
+Please implement the closestCommonManager method to preorderFind the closest manager
 (i.e. farthest from the CEO) to two employees. 
 You may assume that all employees eventually report up to the CEO.
  * @author Andrew
@@ -56,7 +56,7 @@ public class ClosestCommonManager {
 		DFSFindPath(root, firstEmployee, firstPath);
 		DFSFindPath(root, secondEmployee, secondPath);
 		//ceo is excluded from the answer
-		//pick any path to examine. here we pick first path. try to find the first difference in them and return the previous one as lowest common manager
+		//pick any path to examine. here we pick first path. try to preorderFind the first difference in them and return the previous one as lowest common manager
 		for(int i=1;i<firstPath.size();i++){
 			if(firstPath.get(i).id!=secondPath.get(i).id)
 				return firstPath.get(i-1)==ceo?null:firstPath.get(i-1);

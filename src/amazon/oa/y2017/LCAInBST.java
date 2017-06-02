@@ -8,7 +8,7 @@ public class LCAInBST {
 	Node root;
 
 	/*
-	 * Function to find LCA of n1 and n2. The function assumes that both n1 and
+	 * Function to preorderFind LCA of n1 and n2. The function assumes that both n1 and
 	 * n2 are present in BST
 	 */
 	Node lcaInBSTRec(Node node, int n1, int n2) {

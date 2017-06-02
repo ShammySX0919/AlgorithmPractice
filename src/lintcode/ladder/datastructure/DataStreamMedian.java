@@ -12,8 +12,9 @@ Clarification
  - Median is the number that in the middle of a sorted array. If there are n numbers in a sorted array A, the median is A[(n - 1) / 2]. For example, if A=[1,2,3], median is 2. If A=[1,19], median is 1.
 method 1:
  Brute force: keep an array, sort it, get a[(n-1)/2], where n is current number of elements
-method 2:two priority queue, priority queue's time complexity is lgn
+method 2:two priority queue, priority queue's time complexity is O(lgn)
  one minimum, one maximum, try to balance the two, median is the one with bigger size or maximum queue if size is same
+
  * Created by andrew on 22/11/16.
  */
 public class DataStreamMedian {
@@ -37,6 +38,8 @@ public class DataStreamMedian {
         return nums[(end-1)/2];
     }
 //better solution here
+// when using two priority queues, thinking to add new element to max queue, then poll the max from it and
+//then adding to min queue. that is to make every element go through the first queue the first.
     public PriorityQueue<Integer> minheap, maxheap;
     public int[] medianIIBetter(int[] nums) {
         maxheap = new PriorityQueue<Integer>(Collections.reverseOrder());
@@ -71,14 +74,21 @@ public class DataStreamMedian {
     }
 
     /**
-     * this problem pickes the left value if there are even number of numbers
+     * this problem picks the left value if there are even number of numbers
      * @return
      */
     public int findMedian2() {
-        if (maxheap.size() == minheap.size()) {
-            return  minheap.peek();
-        } else {
-            return maxheap.peek();
-        }
+        //if (maxheap.size() >= minheap.size()) {
+            return  maxheap.peek();
+        //}
+        //else {//this branch is not reachable
+          //  return minheap.peek();
+        //}
     }
+    public static void main(String[] args){
+        int[] data = new int[]{1,2,3,4,5};
+        DataStreamMedian o = new DataStreamMedian();
+        System.out.println(o.medianIIBetter(data));
+    }
+
 }

@@ -3,7 +3,7 @@ package leetcode.medium;
 /**
  * LeetCode 487. Max Consecutive Ones II
  * <p>
- * Given a binary array, find the maximum number of consecutive 1s in this array if you can flip at most one 0.
+ * Given a binary array, preorderFind the maximum number of consecutive 1s in this array if you can flip at most one 0.
  * <p>
  * Example 1:
  * <p>

@@ -2,7 +2,7 @@ package amazon.oa.y2017;
 
 /**
  * Given a list of unique integers, construct the binary search tree by given order without rebalancing,
- * then find out the distance between two nodes.
+ * then preorderFind out the distance between two nodes.
  *values= [5,6,3,1,2,4], n is the size of values,
  * node1 is 2, node2 is 4,
  * then function return 3
@@ -36,7 +36,7 @@ public class BstDistance {
      */
     private static TreeNode search(TreeNode root, int v)
     {
-        // Base Cases: root is null or key is find at current node
+        // Base Cases: root is null or key is preorderFind at current node
         if (root==null || root.val==v)
             return root;
 
@@ -84,7 +84,7 @@ public class BstDistance {
         if(root==null)return null;
         //LCA can be one of the node
         if(root.val==node1||root.val==node2)return root;
-        //find them in root's left tree and right tree
+        //preorderFind them in root's left tree and right tree
         TreeNode left = findLCAInBST(root.left,node1,node2);
         TreeNode right =  findLCAInBST(root.right,node1,node2);
         //if both left and right are not null, then root is lca(each subtree contains one node)
@@ -100,8 +100,8 @@ public class BstDistance {
      * @return
      */
     private static int distanceToRoot(TreeNode root,int val){
-        if(root==null)return -1;//not find
-        if(root.val==val)return 0;//find it, current height is 0
+        if(root==null)return -1;//not preorderFind
+        if(root.val==val)return 0;//preorderFind it, current height is 0
         int leftHeight = distanceToRoot(root.left,val);
         int rightHeight = distanceToRoot(root.right,val);
         //it might not exist in tree
@@ -124,7 +124,7 @@ public class BstDistance {
         if(search(root,node1)==null||search(root,node2)==null){
             return -1;
         }
-        TreeNode lca = findLCAInBST(root,node1,node2);//find LCA of two nodes
+        TreeNode lca = findLCAInBST(root,node1,node2);//preorderFind LCA of two nodes
         if(lca==null)return -1;
         int n1Distance = distanceToRoot(root,node1);//node 1 distance to root
         int n2Distance = distanceToRoot(root,node2);//node 2 distance to root

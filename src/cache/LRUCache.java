@@ -47,6 +47,31 @@ public class LRUCache {
 
         return -1;
     }
+    //put key-value to cache. it should check capacity
+    //when capacity is reached, the tail should be removed
+    //the new key is put at head
+    public void set(int key, int value) {
+        //for existing key, put it to head
+        if(map.containsKey(key)){
+            Node old = map.get(key);
+            old.value = value;
+            remove(old);
+            setAsHead(old);
+        }else{
+            //for new key
+            Node created = new Node(key, value);
+            //check capacity
+            if(map.size()>=capacity){
+                //remove tail:tail is the least used node
+                map.remove(end.key);
+                remove(end);
+
+            }
+            setAsHead(created);
+            //define new key-node in map
+            map.put(key, created);
+        }
+    }
     public void remove(Node n){
         if(n.pre!=null){
             n.pre.next = n.next;
@@ -74,29 +99,5 @@ public class LRUCache {
         if(end ==null)
             end = head;
     }
-    //put key-value to cache. it should check capacity
-    //when capacity is reached, the tail should be removed
-    //the new key is put at head
-    public void set(int key, int value) {
-        //for existing key, put it to head
-        if(map.containsKey(key)){
-            Node old = map.get(key);
-            old.value = value;
-            remove(old);
-            setAsHead(old);
-        }else{
-            //for new key
-            Node created = new Node(key, value);
-            //check capacity
-            if(map.size()>=capacity){
-                //remove tail:tail is the least used node
-                map.remove(end.key);
-                remove(end);
 
-            }
-            setAsHead(created);
-            //define new key-node in map
-            map.put(key, created);
-        }
-    }
 }

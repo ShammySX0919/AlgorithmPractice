@@ -113,14 +113,14 @@ Merge two tree, black is dominate color: black vs anything -> black;
 Follow up :. more info on 1point3acres.com
     1. What if the TreeNode class value is string (instead of int) which may     including newline, space, comma
 
-    2. 如果不是二叉树，是多叉树怎么办？. 鐣欏鐢宠璁哄潧-涓€浜╀笁鍒嗗湴
+    2. 如果不是二叉树，是多叉树怎么办？. 
 正确的方法是在序列化的时候 存孩子的数目，存数据的长度，再存数据。需要一个结构化的序列化操作。-google 1point3acres
 new line, space 这些只是给你增加难度，你可以把数据当成binary来存; 我的想法是可以存字符串的ASCII码或者UNICODE编码，然后用space或者newline隔开存到文件里.
 28. 一个matrix，里面有一些锁（1表示）和空白（0表示），问每个空白到最近的锁的距离。简单bfs
 29. 算法+search suggestion设计，算法：给个word，给个dict判断给定的word是不是anagram.
 30. numbers of islands -google 1point3acres
 （ follow up：有多少个形状不同的岛？
-这个Follow up是经典 number of distinct islands.鏈枃鍘熷垱鑷�1point3acres璁哄潧
+这个Follow up是经典 number of distinct islands.
 比之前的明显要难些。 需要用到hashing得思想。
 每一个岛将遍历完的点id(每个cell 可以分配一个id, id = i*m+j) 组合起来， 返回字符串，比如 “1/2/3/5”  这个岛有四个点。如果另一个岛是 "11/12/13/15"  只要把它offset下， 第一位归1， 它也变成"1/2/3/5"， 所以这2个岛的shape是一样的。 将这些第一位归1的字符串往set里丢。自然就除重了. 1point3acres.com/bbs
 中心思想： 将CELL ID组合来表示一个岛(hash to string)，然后变形string, 最后往set里丢。 done
@@ -130,9 +130,11 @@ new line, space 这些只是给你增加难度，你可以把数据当成binary�
 32. LRU cache
 33. Number to English words
 34. Valid Parenthesis
-35. given n pairs of numbers (1122...nn) and arrange them so that the each number x is x spaces apart from another number x. . Waral
+35. given n pairs of numbers (1122...nn) and arrange them so that the each number x is x spaces apart 
+from another number x. 
 (数字必须紧挨着，思路就是DFS)
-36. Given a dictionary of words and a word, return the word if it exists in dict, else return the top 5 words in the dict that are closest to the given word;
+36. Given a dictionary of words and a word, return the word if it exists in dict, 
+else return the top 5 words in the dict that are closest to the given word;
 37. 2D array is immutable. Give 2D array of 1s and 0s, 1 is island and 0 is sea. Return the maximum island size
 38. 给了一棵树，让给每个node 加一个pointer 指向sibling.
 (用了queue level order traverse 加了。然后follow up 让优化，no extra space)

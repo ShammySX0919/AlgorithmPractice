@@ -2,6 +2,12 @@ package amazon.easy;
 
 /**
  * Created by 212595974 on 4/27/2017.
+ * lt1------
+ * |		|
+ * |	lt2-|------
+ * |------|-rb1    |
+ * 		  |        |
+ *        |--------rb2
  */
 public class OverlapRectangle {
     static class Point{
@@ -12,8 +18,8 @@ public class OverlapRectangle {
         }
     }
     public static boolean isOverlap(Point lt1, Point rb1,Point lt2, Point rb2){
-        if(lt1.x>rb2.x || lt2.x>rb1.x)return false;//if no overlap vertically
-        if(rb1.y>lt2.y || rb2.y>lt1.y)return false;//if no overlap horizontally
+        if(lt1.x>rb2.x || lt2.x>rb1.x)return false;//if no overlap horizontally
+        if(rb1.y>lt2.y || rb2.y>lt1.y)return false;//if no overlap vertically
         return true;
     }
 

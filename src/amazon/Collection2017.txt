@@ -88,7 +88,7 @@ Merge two tree, black is dominate color: black vs anything -> black;
    (解法也很简单， dfs。 每次recusive call返回是否被capture, 遇到异色子或者出界都是true, 遇到同色子就recursively去call它)
 (那假设只有同色的子（没有对手的子），也算是被capture么？（这个点很好！！  可以当作edge case处理单独处理。）
 
-9. Latgest rectangle area
+9. Largest rectangle area
 10. Search word in Trie
 11.Lowest LCA
 12.Top k nearest point

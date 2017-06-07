@@ -13,7 +13,7 @@ General ideas:
 2. given 1G search record, find top K mostly searched terms. most of search are duplicate, so that about 300m unique terms.
     --map string/record to hash, reduce the memory usage
     --use hashmap to collect statistics of search frequency on terms. this will use O(N) time and O(N) space
-    --use a min head of size K (insert first K to it), come up a comparator on map.Entry that compares the counter of an entry.
+    --use a min heap of size K (insert first K to it), come up a comparator on map.Entry that compares the counter of an entry.
     --for each entry in map, put it to min heap: insert first K, from K+1 on, compare it with peeking of minHeap, if it is bigger,
        then poll element from minHeap and insert current element to minHeap, this will be log(K) each element, so N*log(K) in totall
     --finally, retrieve elements from minHeap to get top K in ascending order

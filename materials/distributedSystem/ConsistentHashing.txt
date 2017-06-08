@@ -6,6 +6,15 @@ Consistent hashing
     its objects were shared between the remaining machines. This is exactly what consistent hashing does -
     consistently maps objects to the same cache machine, as far as is possible, at least.
 
+    The basic idea behind the consistent hashing algorithm is to hash both objects and caches using the same hash function.
+    The reason to do this is to map the cache to an interval, which will contain a number of object hashes.
+    If the cache is removed then its interval is taken over by a cache with an adjacent interval.
+    All the other caches remain unchanged.
+
     http://www.tom-e-white.com/2007/11/consistent-hashing.html
 
     it evenly distribute cache by using virtual nodes, or replicas.
+
+    This works well, except the size of the intervals assigned to each cache is pretty hit and miss.
+    The solution to this problem is to introduce the idea of "virtual nodes", which are replicas of
+    cache points in the circle. So whenever we add a cache we create a number of points in the circle for it.

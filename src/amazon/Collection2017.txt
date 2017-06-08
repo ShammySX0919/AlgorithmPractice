@@ -166,4 +166,7 @@ else return the top 5 words in the dict that are closest to the given word;
     - making an adjacency list from all edges
     -- construct binary tree from adjacency list, BFS or DFS to make binary tree
 53. histogram maximum area
+54. 有一堆EVENT, 每个EVENT记录WINNER和LOSER, 比如【A,B】表示A 是WINNER， B是LOSER, 判断是否存在A赢B， B赢C， C赢A 的情况
+    build up an adjacency list, then check if B is A's neighbor, if C is B's neighbor, if A is C's neighbor.
+55. LRU,LFU
 

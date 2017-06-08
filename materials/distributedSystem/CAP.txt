@@ -1,0 +1,23 @@
+C consistent
+    after writing, it returns correct value in subsequent read. always give correct answer or no answer
+A availability
+    always ready for support writing and reading, no out of service. always answers but not necessary accurate.
+P partition tolerance
+    not same as partition in database.
+
+    this actually means communication between different part/node of system.
+    some part of system/database can not talk with some other part of system/database
+
+    partition tolerance is an attribute of distributed system/database, that when it happens, it could deal with it
+    after communication comes back. for example, to make data consistent after a node is back to life again.
+
+    (In distributed system, different part of system will be guaranteed
+    to fail to communicate. such as power shortage on one node, network cable was broken between nodes etc. one part is not able to
+    talk with another part of system as normal situation, what happens after communication back again
+    )
+
+
+P is always there and non-negotiable in distributed system, then what leaving you is to either achieve AP or CP.
+The ACP intersection is a place nobody lives there. meaning A and C do not co-exist in distributed system (P is distributed system)
+
+https://www.youtube.com/watch?v=gLtO0vY_M78&feature=em-subs_digest-vrecs

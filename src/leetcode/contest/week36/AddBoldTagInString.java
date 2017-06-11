@@ -4,6 +4,7 @@ package leetcode.contest.week36;
  * Created by andrew on 6/10/2017.
  */
 public class AddBoldTagInString {
+    /*
     public String addBoldTag(String s, String[] dict) {
         //not efficient but easy to understand
         int len = Integer.MAX_VALUE;
@@ -48,6 +49,40 @@ public class AddBoldTagInString {
         for (int i = start; i < start + len; i++) {
             map[i] = 1;
         }
+    }
+    */
+    public String addBoldTag(String s, String[] dict) {
+        boolean[] bold = new boolean[s.length()];
+        for (int i = 0; i < s.length(); i++) {
+            int len = 0;
+            //for each string position, find maximum word length by check with all dict word
+            for (String word : dict) {
+                if (i + word.length() <= s.length()
+                        && s.substring(i, i + word.length()).equals(word)) {
+                    //like the max function here
+                    len = Math.max(len, word.length());
+                }
+            }
+            //if some words are found, mark the range as content should be bolded
+            //boolean array here reflects overlap smartly
+            for (int j = i; j < i + len; j++) {
+                bold[j] = true;
+            }
+        }
+
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (!bold[i]) {
+                result.append(s.charAt(i));
+                continue;
+            }
+            int j = i;
+            while (j < s.length() && bold[j]) j++;
+            result.append("<b>" + s.substring(i, j) + "</b>");
+            i = j - 1;
+        }
+
+        return result.toString();
     }
 }
 

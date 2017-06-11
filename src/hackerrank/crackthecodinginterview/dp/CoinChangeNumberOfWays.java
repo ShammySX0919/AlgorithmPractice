@@ -16,16 +16,16 @@ public class CoinChangeNumberOfWays {
 		for (int c = 1; c < coins.length + 1; c++) {
 			for (int m = 1; m < money + 1; m++) {
 				if (m < coins[c - 1]) {
-					// no change at this, copy the last denom's accumulated
+					// no change at this, take the last denom's accumulated
 					// solutions
 					dp[c][m] = dp[c - 1][m];
 				} else if (m == coins[c - 1]) {
-					// we get one more solution
+					// we get one more solution, previous denom's solution to m, pus a new solution
 					dp[c][m] = dp[c - 1][m] + 1;
 				} else // if (m>coins[c-1])
 				{
-					// then it is last denom's accumulated solution + lesser
-					// value's accumulated solution
+					// then it is last denom's accumulated solution +
+					// lesser value's accumulated solution -- same number of ways on same row
 					dp[c][m] = dp[c - 1][m] + dp[c][m - coins[c - 1]];
 				}
 			}

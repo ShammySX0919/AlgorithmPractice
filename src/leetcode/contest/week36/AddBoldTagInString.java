@@ -5,56 +5,49 @@ package leetcode.contest.week36;
  */
 public class AddBoldTagInString {
     public String addBoldTag(String s, String[] dict) {
-        int n = s.length();
-        char[] ss = s.toCharArray();
-        int[] imos = new int[n+1];
-        for(String d : dict){
-            char[] q = d.toCharArray();
-            int[] kmp = kmpTable(q);
-            int p = 0;
-            for(int i = 0;i < ss.length;i++){
-                while(p >= 0 && q[p] != ss[i])p = kmp[p];
-                if(++p == q.length){
-                    imos[i-q.length+1]++;
-                    imos[i+1]--;
-                    p = kmp[p];
-                }
+        //not efficient but easy to understand
+        int len = Integer.MAX_VALUE;
+        //find min length of dict word
+        for (String w : dict) {
+            len = Math.min(len, w.length());
+        }
+        //a map of dict words within string
+        int[] map = new int[s.length()];
+        //it check existence of all dict work within string. this is the part very low efficient
+        for (String w : dict) {
+            int index = s.indexOf(w);
+            while (index >= 0) {
+                //mark dict word as 1s
+                fill(map, index, w.length());
+                //continue to find next occurrence of same word
+                index = s.indexOf(w, index + 1);
             }
         }
-        for(int i = 0;i < n;i++)imos[i+1] += imos[i];
+        //build final answer
         StringBuilder sb = new StringBuilder();
-        StringBuilder temp = new StringBuilder();
-        for(int i = 0;i < n;i++){
-            if(imos[i] > 0){
-                temp.append(ss[i]);
-            }else{
-                if(temp.length() > 0){
-                    sb.append("<b>");
-                    sb.append(temp);
-                    sb.append("</b>");
-                    temp = new StringBuilder();
-                }
-                sb.append(ss[i]);
+        int i = 0, j = 0;
+        while (i < s.length() && j < s.length()) {
+            while (i < s.length() && map[i] == 0) {
+                i++;
             }
-        }
-        if(temp.length() > 0){
-            sb.append("<b>");
-            sb.append(temp);
-            sb.append("</b>");
+            sb.append(s.substring(j, i));
+            j = i;
+            while (j < s.length() && map[j] == 1) {
+                j++;
+            }
+            String toBeBolded = s.substring(i, j);
+            if (toBeBolded.length() > 0) {
+                sb.append("<b>").append(toBeBolded).append("</b>");
+            }
+            i = j;
         }
         return sb.toString();
     }
 
-    public int[] kmpTable(char[] str)
-    {
-        int n = str.length;
-        int[] kmp = new int[n+1];
-        kmp[0] = -1; kmp[1] = 0;
-        for(int i = 2, j = 0;i <= n;i++){
-            while(j > 0 && str[i-1] != str[j])j = kmp[j];
-            kmp[i] = str[i-1] == str[j] ? ++j : 0;
+    public void fill(int[] map, int start, int len) {
+        for (int i = start; i < start + len; i++) {
+            map[i] = 1;
         }
-        return kmp;
     }
 }
 

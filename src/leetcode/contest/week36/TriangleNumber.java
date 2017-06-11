@@ -20,6 +20,27 @@ public class TriangleNumber {
         }
         return ret;
     }
+    public int triangleNumber2(int[] nums) {
+        if (nums == null || nums.length <= 2) {
+            return 0;
+        }
+        Arrays.sort(nums);
+        int count = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            int left = 0, right = i - 1;
+            while (left < right) {
+                if (nums[left] + nums[right] > nums[i]) {
+                    count += right - left;
+                    right--;
+                } else {
+                    left++;
+                }
+            }
+        }
+
+        return count;
+    }
 //....k...i....j......
 // as long as k = i>j, since it is sorted array, it guaranteed i+j>k and k+j>i since j is greater than k and i
 // so we only need to make sure k+i>j

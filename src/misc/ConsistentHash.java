@@ -44,6 +44,7 @@ public class ConsistentHash<T> {
         }
         int hash = hashFunction.hash(key);
         if (!circle.containsKey(hash)) {
+            //Returns a view of the portion of this map whose keys are greater than or equal to fromKey.
             SortedMap<Integer, T> tailMap =
                     circle.tailMap(hash);
             hash = tailMap.isEmpty() ?

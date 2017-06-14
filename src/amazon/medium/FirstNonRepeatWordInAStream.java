@@ -42,7 +42,7 @@ public class FirstNonRepeatWordInAStream {
 
 }
 
-interface Stream {
+interface Stream <T> {
     char getNext();
     boolean hasNext();
 }

@@ -26,7 +26,7 @@ class Node{
 }
 public class LRUCache {
     int capacity;
-    //key and node. using hashmap to quickly preorderFind nodes to operate
+    //key and node. using hashmap to quickly Find nodes to operate
     HashMap<Integer, Node> map = new HashMap<Integer, Node>();
     //head of LRU, most recently accessed node
     Node head=null;
@@ -65,13 +65,13 @@ public class LRUCache {
                 //remove tail:tail is the least used node
                 map.remove(end.key);
                 remove(end);
-
             }
             setAsHead(created);
             //define new key-node in map
             map.put(key, created);
         }
     }
+    //remove a node
     public void remove(Node n){
         if(n.pre!=null){
             n.pre.next = n.next;
@@ -81,7 +81,7 @@ public class LRUCache {
 
         if(n.next!=null){
             n.next.pre = n.pre;
-        }else{
+        }else{//n is end
             end = n.pre;
         }
 

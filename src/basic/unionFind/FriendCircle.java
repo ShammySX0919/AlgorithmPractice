@@ -28,10 +28,10 @@ public class FriendCircle {
                 }
             }
 
-            public int findRec(int x) {
+            public int findRecursively(int x) {
 
                 if (parent[x] !=x){
-                    parent[x] = findRec(parent[x]);}
+                    parent[x] = findRecursively(parent[x]);}
                 return parent[x];
             }
 //optimization: adjust parent/representative while finding

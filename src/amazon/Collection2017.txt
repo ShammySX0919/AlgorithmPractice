@@ -18,7 +18,7 @@ System Design:
 
 4. Video/Movie System (given a list of videos, return top 5 rated videos)
 
-5. Sotre the livestreaming video and watch it later function
+5. Store the livestreaming video and watch it later function
 . visit 1point3acres.com for more.
 6. cc150 JukeBox
 
@@ -76,7 +76,9 @@ Package有Small,Medium,Large.
 23. 如果有一个service, 要求设计方法支持query，比如最后一秒的访问数，最后一分钟的访问数，。。。。最后一小时的访问数。。。
 (1.把timestamp 写到磁盘上，然后用hadoop 来算。面试官问pros and cons
 2. 为了改善读的速度，我说把这些timestamp存到in-memory buckets里面，最后还是 hadoop
-根据我的buckets排序思路提示我，可以不用存timestamp。。。。我有点惊呆了，但是转念一想，你这些query的时间段是last second/minute/hour。我觉得就可以只有这三个buckets，每次call 这个service的同时，检查当前的timestamp，如果超过1秒，我说就去aggregate/update last minute和last hour的总数就好了。。。 到最后我脑子里有点捣浆糊了，但是面试官看到我最后的思路解释说可以work))
+根据我的buckets排序思路提示我，可以不用存timestamp。。。。我有点惊呆了，但是转念一想，你这些query的时间段是last second/minute/hour。
+我觉得就可以只有这三个buckets，每次call 这个service的同时，检查当前的timestamp，如果超过1秒，
+我说就去aggregate/update last minute和last hour的总数就好了。。。 到最后我脑子里有点捣浆糊了，但是面试官看到我最后的思路解释说可以work))
 
 24. 手机公司的bill系统，手机计划有免费时段，比如晚7点到第二天早7点和周末免费。短信和数据有各自的价格，用超过计划允许的数量怎么办。最后完成的感觉还算不错。这一轮也问了oo的一些基础知识，比如inheritance 和 composition的区别，什么时候用哪种？.
 Algo: 亚麻很少出原题，但经常出变型，感觉挺灵活的。难度比较上属于中等和偏简单，偶尔有些hard属于经典题或者bar raiser吧。仅供大家参考。
@@ -123,7 +125,7 @@ Merge two tree, black is dominate color: black vs anything -> black;
 26. 有一个Task clas包括两个int, start and end; 有个list有很多个Task, 计算需要多少Thread 来run这些task.
 27. Serialize and Deserialized Binary Tree
 （中间穿插了多线程的问题，以及 abstract class 等知识。
-Follow up :. more info on 1point3acres.com
+Follow up :
     1. What if the TreeNode class value is string (instead of int) which may     including newline, space, comma
 
     2. 如果不是二叉树，是多叉树怎么办？. 
@@ -131,7 +133,7 @@ Follow up :. more info on 1point3acres.com
 new line, space 这些只是给你增加难度，你可以把数据当成binary来存; 我的想法是可以存字符串的ASCII码或者UNICODE编码，然后用space或者newline隔开存到文件里.
 28. 一个matrix，里面有一些锁（1表示）和空白（0表示），问每个空白到最近的锁的距离。简单bfs
 29. 算法+search suggestion设计，算法：给个word，给个dict判断给定的word是不是anagram.
-30. numbers of islands -google 1point3acres
+30. numbers of islands
 （ follow up：有多少个形状不同的岛？
 这个Follow up是经典 number of distinct islands.
 比之前的明显要难些。 需要用到hashing得思想。
@@ -182,4 +184,18 @@ else return the top 5 words in the dict that are closest to the given word;
 54. 有一堆EVENT, 每个EVENT记录WINNER和LOSER, 比如【A,B】表示A 是WINNER， B是LOSER, 判断是否存在A赢B， B赢C， C赢A 的情况
     build up an adjacency list, then check if B is A's neighbor, if C is B's neighbor, if A is C's neighbor.
 55. LRU,LFU
-
+56. course suggestions: http://mashijie.blogspot.ca/2016/07/ranked-cources-use-of-priorityqueue.html
+my onsite June 15, 2017
+1.0 what did I do in my work:should be very specific to a level could almost be seen. abstraction is not good.
+such as developing web services for other part of system to interact with model manipulation,
+such as retrieving models, search models by hierarchy, update model etc
+1.1.challenging project: methdology of data modeling, de-normalization, flexiable schema
+1.2.tyneUrl design
+2.1 fill a gap in product: I mentioned xmlflattener story
+2.2 find duplicate number in a 4gb file: bruteforce, optimization: partition numbers by range
+2.3 find gene from nda
+3.1 continious improving project. actualy this could be betterly answered by my xmlflattener enhancement.I forgot to mention a good story.
+3.2 integer to roman numeral
+4.1 some basic data structure questions. I make couple mistakes on when to use tree and when to use hashmap. forgot tree
+    is good for maintaining hierarchy between data.
+4.2 subarray of sum k. gave bruteforce solution, failed on optimization. it was close though.

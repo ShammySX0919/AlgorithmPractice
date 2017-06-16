@@ -1,0 +1,52 @@
+30 min coding：任何语言，写的是tictactoe，有五个step，我在30min写完了3个step。白人大叔说目的是写出来，让他读懂什么再说。题很easy.
+
+30 min 快问快答， 不会就说不知道：解释一下数据看的index， data normalization，sql的query语句写的不好，你怎么证明。
+http header的结构，
+cache在web application的例子，
+hash table怎么实现的，复杂度怎么说，
+解释一下bst， 复杂度，bst不好怎么办，
+红黑树解释一下，若在bst找第k的数字， k很大，效果／复杂度 怎么样？
+解释一下malloc，
+解释一下死锁；
+解释一下http get 和 post；
+解释一下你怎么存password， 那加密用什么算法？
+
+https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaGame_TicTacToe.html
+
+bloom filter
+
+web crawler
+
+后半小时是有点系统设计的意思，说假设有一个二手车数据流，比如价格年数mile数地点之类的，要建一个http api让那些client program能通过一个query型的request来获取符合条件的二手车， 比如三年以内的10000mile以下的，问题从怎么存储这些数据流，到如何设计http api,
+
+第一个section是要求写一个小的游戏。叫Tictactoe。就是我们的井字棋，OOXX那个。面试官给了一个步骤，要求按步骤实现。
+一共五步。第一步是要求按他的格式，答应出界面，并且要求用class来做。初始化board数组，然后打印。
+第二个步骤是，要求写一个函数，在board上走出下一步。
+第三步是判断输赢。
+
+double hashmap
+(There are many collision-resolution strategies - chaining, double-hashing, clustering.
+
+However, java has chosen chaining strategy for hashMap, so in case of collisions, items are chained together just like in a linkedList.
+)
+,malloc，http的headers，cookie，Cache
+
+get post的不同，存password的时候在数据库要怎么存
+
+https://www.careercup.com/question?id=5638103566909440
+
+You have a web scraper that pulls car listing from Craiglist and other web sites. Design the system and API for the users to read the data.
+how will scale it?
+
+写一个dynamic array 和 list(crack coding interview)
+
+implement a queue with push and pop. stack
+a. Power of Two
+b. Longest Palindrome Substring
+c. Write a function which takes a list of numbers and returns the length of the longest continuous numbers
+
+Input: [1,7,7,3]
+Output: 2
+d. Write a function that takes two strings and interleaves their characters.
+Input: "123", "abc"
+Output: "1a2b3c"

@@ -1,10 +1,12 @@
 package triplebyte;
 
+import java.util.*;
+
 /**
  * only deletion is allowed
  */
 public class Medium583_MinDeleteDistance {
-	public int minDistance(String str1, String str2) {
+	public static int minDistance(String str1, String str2) {
         int len1 = str1.length(), len2 = str2.length();
 
         if (len1 == 0) return len2;
@@ -36,5 +38,45 @@ public class Medium583_MinDeleteDistance {
         }
         
         return dp[len1][len2];
+    }
+    static int deleteDistance(String str1, String str2){
+	    Map<Character,Integer> str1Map = new HashMap<Character,Integer>();
+        Map<Character,Integer> str2Map = new HashMap<Character,Integer>();
+        for(char c:str1.toCharArray()) {
+            str1Map.put(c,str1Map.getOrDefault(c,0)+1);
+        }
+        for(char c:str2.toCharArray()) {
+            str2Map.put(c,str2Map.getOrDefault(c,0)+1);
+        }
+        Set<Character> keySet = new HashSet<>();
+        keySet.addAll(str1Map.keySet());
+        keySet.addAll(str2Map.keySet());
+        for(Character c:keySet){
+            if(str1Map.containsKey(c)&&str2Map.containsKey(c)){
+                if(str1Map.get(c)==str2Map.get(c)){
+                    str1Map.remove(c);
+                    str2Map.remove(c);
+                }else if(str1Map.get(c)<str2Map.get(c)){
+                    str2Map.put(c,str2Map.get(c)- str1Map.get(c));
+                    str1Map.remove(c);
+                }else{
+                    str1Map.put(c,str1Map.get(c)- str2Map.get(c));
+                    str2Map.remove(c);
+                }
+            }
+        }
+        int ans = 0;
+        for(Character c:str1Map.keySet()){
+            ans+=c.charValue()*str1Map.get(c);
+        }
+        for(Character c:str2Map.keySet()){
+            ans+=c.charValue()*str2Map.get(c);
+        }
+        return ans;
+    }
+    public static void main(String[] args){
+     System.out.println(deleteDistance("cat","at"));
+        System.out.println(deleteDistance("abba","abc"));
+        System.out.println(minDistance("abba","abc"));
     }
 }

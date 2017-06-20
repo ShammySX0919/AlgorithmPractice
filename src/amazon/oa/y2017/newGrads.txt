@@ -1,0 +1,32 @@
+window sum
+overlap rectangle，
+Deep Copy linkedlist 
+K nearest point, 
+longest palindrome substring， 
+high five scores， 
+Minimum spanning tree， 
+company tree, 
+order dependency.
+
+链接: https://instant.1point3acres.com/thread/247522
+
+reverse array,
+
+list of list of strings, 问两个给定string 的min distance
+
+青蛙跳，LRU，电梯求最佳停靠楼层，设计一个简历管理系统
+
+real time tracking
+
+电梯oop设计，点明是多台电梯
+
+一个函数里有两句代码, http发送和接收。问如何改进有助于单元测试
+
+sum of sub tree equals target, 给你一个target，找出二叉树中所有的子树，子树的和等于target。
+
+LRU，
+
+给一串数组，找出能组成直角三角形的三个数 http://www.geeksforgeeks.org/find-a-triplet-that-sum-to-a-given-value/
+
+OA 两题: 1) top k related movies, dfs + sort 
+2) 题目忘记，说是一个球类运动算分，其实根据不同的输入使用不同的stack操作。 比如, 遇到'+', 就要把 most recent两个分数加起来, 遇到'x'，就要减掉most recent的分数，至少四种不一样的操作。

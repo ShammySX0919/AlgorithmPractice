@@ -112,7 +112,7 @@ Merge two tree, black is dominate color: black vs anything -> black;
 (相当于一颗倒的树，root fail了，找导致这个failure的最高的ancestor。DFS, 顺着fail的path往上找)
 15.多米诺骨牌，找出最少数量的能推倒所有牌的牌
 (大概思路就是循环把入度为0的点当作起点dfs，把能traverse的点mark as visited，把起点加入result，然后如果还剩下没有visited的点，就说明有环，所以就再loop剩下点，每一个dfs，mark能traverse到的点as visited，把起点加入result，如果碰到了之前visited的起点，就把这个起点从result里面删掉，加入当前的起点。)
-16. Shorest Path
+16. Shortest Path
 17.Find heavier ball in ball array
 18. Work Break
 19.  Word Ladder II(原题是变一个字母，这里是去掉一个字母)

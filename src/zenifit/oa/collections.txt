@@ -1,0 +1,56 @@
+OA-1
+
+一题是给一串数，判断是否有对应的BST可以产生preorder的序列跟给的数串一样。
+
+http://buttercola.blogspot.com/2015/09/leetcode-verify-preorder-sequence-in.html
+https://leetcode.com/discuss/51543/java-o-n-and-o-1-extra-space
+
+
+第二题是实现一个super stack。操作有push, pop。 还有一个是increase a b。实现stack
+的bottom a个数都加b。要考虑输入比较大的情况。
+
+OA-2
+
+1.flip 0 or 1
+
+Solution: http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=129214&highlight=zenefits
+
+2. uneaten leaves
+
+Solution: http://www.careercup.com/question?id=5288825291014144
+http://codereview.stackexchange.com/questions/95145/caterpillar-uneaten-leaves
+http://www.1point3acres.com/bbs/thread-136079-1-1.html
+http://www.tutre.com/index.php/2015/08/16/hackerrank-caterpillar-problem/
+
+
+
+OA-3
+
+old: http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=126817&ctid=209
+
+new:
+Longest String Chain
+N Queens Most Threats
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=142124&highlight=zenefits
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=131978&highlight=zenefits%2Boa
+
+
+OA-4
+-google 1point3acres
+1. 第一题，有n个售票口，每个售票口剩下多少张票，那这一张票就卖多少钱。比如，一个售票口剩下5张票，那这一张就卖5块，卖出这张后剩下4张，下一张就卖4块。问如果一共要卖出m张票，最多能卖多少钱。
+解法多种多样，可以用 leetcode那道Heap题的思路merge排序做，也可以用Hashmap，我个人能想到的最好解法是用heap做(C++)。每次循环都make_heap一下，然后res加上第一个元素，然后让第一个元素减1，直到m为0了，或者vector里只剩下0了。但是当时由于不太清楚make_heap的消耗，所以稳妥的选择了hashmap做。
+
+
+http://www.1point3acres.com/bbs/thread-127099-1-1.html
+http://www.mitbbs.com/article_t/JobHunting/32952623.html
+
+
+第二题，有一个vector<string>， 每一个string都有permutation, 然后permutation从小到大排序，看看这条string是第几个index,就把这个index放到vector<int> result里，最后返回result。
+想到的两种解法：
+第一种，leetcode第31题，next permutation的思路。设一个string temp等于原字符串，然后把temp给排序，然后循环看看temp是否与原字符串相等，如果不等，就找temp相邻的permutation,如果相等，就返回当前index值。这种方法效率不是特别高。
+第二种，leetcode第60题，permutation sequence的思路。但是要注意的一点就是这里的string里会有duplicate的字符。这种方法比第一种效率高，但解决duplicate情况。.
+
+http://www.lintcode.com/en/problem/permutation-index-ii/
+
+solution :  http://www.jiuzhang.com/solutions/permutation-index-ii/

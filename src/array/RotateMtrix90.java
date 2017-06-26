@@ -1,4 +1,4 @@
-package misc;
+package array;
 
 /**
  [1][2][3][4]
@@ -27,7 +27,8 @@ public class RotateMtrix90 {
             for (int c = 0; c < n; ++c) {
                 //pattern to remember: outer indices are same, either r or c
                 //inner one is c or r are reversed to above, then one of it changing in reversed order
-                ret[r][c] = matrix[n - c - 1][r];
+                //ret[r][c] = matrix[n - c - 1][r];
+                ret[c][n-r-1] = matrix[r][c];//this is easier to understand and remember: copy matrix row to ret col. first row to last col
             }
         }
         return ret;
@@ -116,6 +117,9 @@ public class RotateMtrix90 {
             for (int c = 0; c < C; c++) {
                 //pattern to remember: left and right indices are the same, inner ones are changing reversed direction
                 rotatedMatrix[c][ (C-1)- r] = matrix[r][c];
+                //matrix's first row become new matrix's last col
+                //second row become new matrix's last second col, ..., etc. matrix's row col change become new matrix's row change
+                //while matrix's row is increasing, new matrix's col is changing decreasingly
             }
         }
         return rotatedMatrix;

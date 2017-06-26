@@ -1,0 +1,11 @@
+anagrams are strings with same set of letters and same number of letters on each letter.
+
+to tell if two strings are anagrams, there are at least two methods.
+
+1. sorting characters in string and compare if the sorted strings are the same.
+   
+   char[] chars = String.toCharArray();Arrays.sort(chars);String sortedString = new String(chars);
+   
+2. collect statistics of character frequency with Map, then compare the two map to see if they are the same.
+   comparing map can be decreasing first string's frequency with second string's statistics.
+   

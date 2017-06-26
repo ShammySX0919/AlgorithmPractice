@@ -1,0 +1,12 @@
+while processing, keeping the known statistics into hashmap, and then in rest of processing on the fly,
+based on some conditions, to find out elements that have been statistics collected.
+
+One example is two sum, we keep each visited element into map as key to value of its index, later, we check
+if sum-newElement is equals to elements that have been visited. map provides fast access to find element that have 
+been processed.
+
+another example is subarray of sum k. instead of using element value as key, we use running sum up to index as key.
+so that later, new running sum - existing running sum would be range sum. there we use new running sum- k to find if
+there's a running sum matched in map.
+
+subarray sum of 0 is just one case of sum of k.

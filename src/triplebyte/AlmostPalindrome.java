@@ -6,10 +6,15 @@ package triplebyte;
 public class AlmostPalindrome {
     public static int almost_palindromes(String str) {
         int diff = 0;
-        int N = str.length();
-        for(int i=0;i<N;i++){
-            if (str.charAt(i)!=str.charAt(N-i-1)) diff++;
+        int left=0,right=str.length()-1;
+        while(left<right){
+            if (str.charAt(left)!=str.charAt(right)) diff++;
+            left++;
+            right--;
         }
         return diff;
+    }
+    public static void main(String args[]){
+        System.out.println(almost_palindromes("abcd"));
     }
 }

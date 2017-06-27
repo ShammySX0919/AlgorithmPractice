@@ -1,0 +1,14 @@
+1. how to store password in database?
+
+if you have to store password in database, never store it in clear text, not encrypted by symmetric algorithms such as 3DES
+store in hashed after salted.
+
+randomly generates salt for each password, store salt somewhere else but still associated with password. salt can be encrypted
+by 3DES or AES. hash(original password+salt) is what stored in database.
+
+2.
+hash is one-way computation. the result could not be reversed back to original value.
+
+3.
+AES: advanced encryption standard. replacing DES usually. is also symmetric-key algorithm. key size could be 128, 192, 256 bits
+

@@ -1,0 +1,41 @@
+1.
+hash is one-way computation. the result could not be reversed back to original value.
+
+2. collision solution:
+chaining, linear probing, double hashing
+
+double hashing:
+Like linear probing, it uses one hash value as a starting point and then repeatedly steps forward an interval
+until the desired value is located, an empty location is reached, or the entire table has been searched;
+but this interval is decided using a second, independent hash function (hence the name double hashing)
+
+his minimizes repeated collisions and the effects of clustering due to its fact that interval is related to data itself.
+
+Linear probing:
+h_1,h+2,h+3,...h+k
+
+quadratic probing (avoid clustering better)
+h_1^2,h+2^2,h+3^2,...h+k^2
+
+3. application
+bloom filter
+a way to detecting if element is in a set.
+
+that is used to test whether an element is a member of a set. False positive matches are possible,
+but false negatives are not – in other words, a query returns either "possibly in set" or "definitely not in set".
+
+An empty Bloom filter is a bit array of m bits(thinking of array of boolean), all set to 0. There must also be k different hash functions defined,
+each of which maps or hashes some set element to one of the m array positions. that means, same position could be set to 1 by other elements.
+
+Typically, k is a constant, much smaller than m, which is proportional to the number of elements to be added;
+the precise choice of k and the constant of proportionality of m are determined by the intended false positive rate of the filter.
+
+To add an element, feed it to each of the k hash functions to get k array positions. Set the bits at all these positions to 1
+
+To query for an element (test whether it is in the set), feed it to each of the k hash functions to get k array positions.
+If any of the bits at these positions is 0, the element is definitely not in the set – if it were, then all the bits would
+have been set to 1 when it was inserted. If all are 1, then either the element is in the set, or the bits have by chance
+been set to 1 during the insertion of other elements, resulting in a false positive.
+
+when to use bloom filter:
+huge space advantage. 1% error requires only about 9 bits for each element. certain on Not present.

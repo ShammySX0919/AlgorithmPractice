@@ -1,6 +1,6 @@
 30 min coding：任何语言，写的是tictactoe，有五个step，我在30min写完了3个step。白人大叔说目的是写出来，让他读懂什么再说。题很easy.
 
-30 min 快问快答， 不会就说不知道：解释一下数据看的index， data normalization，sql的query语句写的不好，你怎么证明。
+30 min 快问快答， 不会就说不知道：解释一下database的index， data normalization，sql的query语句写的不好，你怎么证明。
 http header的结构，
 cache在web application的例子，
 hash table怎么实现的，复杂度怎么说，
@@ -24,19 +24,20 @@ web crawler
 第二个步骤是，要求写一个函数，在board上走出下一步。
 第三步是判断输赢。
 
-double hashmap
+double hashing
 (There are many collision-resolution strategies - chaining, double-hashing, clustering.
 
 However, java has chosen chaining strategy for hashMap, so in case of collisions, items are chained together just like in a linkedList.
 )
-,malloc，http的headers，cookie，Cache
+,malloc，
+
+http的headers，cookie，Cache
 
 get post的不同，存password的时候在数据库要怎么存
 
-https://www.careercup.com/question?id=5638103566909440
-
 You have a web scraper that pulls car listing from Craiglist and other web sites. Design the system and API for the users to read the data.
 how will scale it?
+(how many users to support, gui required? accessing secured web site? restrict to a certain region?)
 
 写一个dynamic array 和 list(crack coding interview)
 

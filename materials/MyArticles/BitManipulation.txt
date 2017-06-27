@@ -1,0 +1,14 @@
+1. modulo with power of 2
+
+if y is power of 2, then x%y=x&(y-1)
+
+2. tell if a number is power of 2
+
+if y is power of 2, then y&(y-1) is 0
+
+3. xor
+https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/BitOp/xor.html
+
+0 xor any number is still that number
+XOR is associative
+(x (+) y) (+) z = x (+) (y (+) z)

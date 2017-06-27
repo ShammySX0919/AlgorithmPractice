@@ -39,6 +39,7 @@ public class Medium583_MinDeleteDistance {
         
         return dp[len1][len2];
     }
+    //my another way. what's left are not in common, thus needed to be deleted in order to be in common.
     static int deleteDistance(String str1, String str2){
 	    Map<Character,Integer> str1Map = new HashMap<Character,Integer>();
         Map<Character,Integer> str2Map = new HashMap<Character,Integer>();

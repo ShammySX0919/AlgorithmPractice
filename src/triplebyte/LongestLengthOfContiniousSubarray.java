@@ -5,9 +5,9 @@ package triplebyte;
  */
 public class LongestLengthOfContiniousSubarray {
     int getLongestLengthContiniousSubarray(int[] arr){
-        int ans=1;
         int[] dp = new int[arr.length];
-        dp[0]=1;//start point is 1 because itself is a valid sequence
+        dp[0]=1;//start point is 1
+        int ans=1;//minimum is 1. make this in-synch with dp array's current statistics
         for(int i=1;i<arr.length;i++){
             if(arr[i]>=arr[i-1]){
                     dp[i]=dp[i-1]+1;

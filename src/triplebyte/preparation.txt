@@ -17,7 +17,9 @@ bloom filter
 
 web crawler
 
-后半小时是有点系统设计的意思，说假设有一个二手车数据流，比如价格年数mile数地点之类的，要建一个http api让那些client program能通过一个query型的request来获取符合条件的二手车， 比如三年以内的10000mile以下的，问题从怎么存储这些数据流，到如何设计http api,
+后半小时是有点系统设计的意思，说假设有一个二手车数据流，比如价格 年数 mile数 地点 之类的，
+要建一个http api让那些client program能通过一个query型的request来获取符合条件的二手车，
+比如三年以内的10000mile以下的，问题从怎么存储这些数据流，到如何设计http api,
 
 第一个section是要求写一个小的游戏。叫Tictactoe。就是我们的井字棋，OOXX那个。面试官给了一个步骤，要求按步骤实现。
 一共五步。第一步是要求按他的格式，答应出界面，并且要求用class来做。初始化board数组，然后打印。
@@ -33,7 +35,11 @@ However, java has chosen chaining strategy for hashMap, so in case of collisions
 
 http的headers，cookie，Cache
 
-get post的不同，存password的时候在数据库要怎么存
+get post的不同，
+
+存password的时候在数据库要怎么存
+--ask purpose of password the first. if the password for local application authentication, it should be one way hash with salt
+--if need to restore back to clear text and use for other service's authentication, it should be decryptable. using AES etc with longer key.
 
 You have a web scraper that pulls car listing from Craiglist and other web sites. Design the system and API for the users to read the data.
 how will scale it?
@@ -41,7 +47,7 @@ how will scale it?
 
 写一个dynamic array 和 list(crack coding interview)
 
-implement a queue with push and pop. two stacks.
+implement a queue with push and pop using two stacks.
 
 a. Power of Two
 

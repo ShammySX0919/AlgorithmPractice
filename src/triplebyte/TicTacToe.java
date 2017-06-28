@@ -86,6 +86,7 @@ class Board {
             System.out.println();
 
             if (row != model.length - 1) {
+                //rowSeparator="-----------";
                 System.out.println(rowSeparator); // print horizontal partition
             }
         }

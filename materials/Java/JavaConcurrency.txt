@@ -1,0 +1,36 @@
+Java Concurrency
+
+Basic old way: based on monitor synchronization and locking objects
+--Object
+----every object is associated with a lock.
+----get object's lock by using synchronized(obj) or synchronized method().
+--Thread
+----Thread is a worker, Runnable is worker
+----Two ways to run code in a thead: run() on thread's subclass, Runnable passed in Thread. Then thread.start(), which can only be invoked once.
+----there is alway a current thread: Thread.currentThread();
+--let other threads to run
+----sleep(), yeild(),
+--wait for a thread to finish
+----thead.join()
+--old wait and notify/notifyAll
+----both need to hold an obj's lock. while obj.wait() is invoked, which is usually used in a loop with a condition check, the thread releases the lock 
+    on obj, and then wait for notification to regain the lock and resume execution.
+    
+Better new way: java.util.concurrent
+--see the java concurrency framework.pdf
+--executors, futures, thread pools: execution framework
+--concurrent collections:queues, concurrent queue, concurrent hash map: data structure designed for concurrent framework
+--locks and conditions: more flexiable concurrent control
+--synchronizers such as semaphore, latch, barrier, exchanger: for thread coordination
+--atomic variables: for writing lock-free algorithms
+
+--synchronized collection in past,which throw exception is modified during iteration, 
+  now it's concurrent collections, which allow modification while iterating. huge performance gain due to concurrent operations.
+--locker
+----reentrencelock is similar to synchronized, in term of it has to hold the lock before using condition, but puts threads alreay in waiting higher priority than new threads  
+  must manually release the lock.
+--Synchronizers
+----counting down latch: threads waiting for a point to execute all together. release waitings when it reaches to 0
+----semaphore: permits holders. only allow such number of thread to run
+--atomic numbers
+----no need to worry about concurrent access

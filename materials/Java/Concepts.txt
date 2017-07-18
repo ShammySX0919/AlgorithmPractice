@@ -1,0 +1,8 @@
+bloom filter:
+like a lightweight (variant of)hashtable.more efficient on space, but allow for errors. usually hashtable is error-free.
+whether we seen value before(1,0).deletion is not allowed.
+usage: forbidden password, spell checking etc
+
+k hash functions to set bit value in bit array. not real item is stored. it tells correctly if item is not in set, but false positive on if item is in set.
+space effective. another word, answer no corrected, answer yes possibly
+

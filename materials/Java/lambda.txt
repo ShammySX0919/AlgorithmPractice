@@ -1,0 +1,45 @@
+lambda expression
+
+is a map/conversion between parameters and result
+
+()->{}
+() can be ignored if there is only one parameter, parameter type can be ignored if the context can figure out its meaning
+{} can be ignored if there is only one statement. return is required if it returns value.
+
+to use a lambda expression, you first need a functional interface, which is just a fancy name for an interface with one method
+
+lambda expressions are an alternative to anonymous classes , but they are not the same:
+same:
+--Local variables (variables or parameters defined in a method) can only be used if they are declared final or are effectively final.
+--You can access instance or static variables of the enclosing class.
+different:
+--For an anonymous class, the this keyword resolves to the anonymous class itself. For a lambda expression, this resolves to the enclosing class where the lambda is written.
+--Anonymous classes are compiled into inner classes, while lambda expressions are converted into private, static (in some cases) methods within their enclosing class
+
+
+Stream:
+it is not collections, it is wrapper of collections and arrays to support their operation in lambda expression.
+
+Streams work perfectly with lambdas.
+Streams don't store its elements.
+Streams are immutable.
+Streams are not reusable.
+Streams don't support indexed access to their elements.
+Streams are easily parallelizable.
+Stream operations are lazy when possible.
+
+One thing that allows this laziness is the way their operations are designed. Most of them return a new stream, allowing operations to be chained and form a pipeline that enables this kind of optimizations.
+
+To set up this pipeline you:
+
+    Create the stream.
+    Apply zero or more intermediate operations to transform the initial stream into new streams.
+    Apply a terminal operation to generate a result or a side-effect.
+
+
+Stream is immutable, intermediate operations always return a new stream
+terminal operations usually returns non-stream out. after it is performed, stream pipeline is consumed and can no longer pipe anymore
+
+
+
+

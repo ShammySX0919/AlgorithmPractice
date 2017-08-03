@@ -34,3 +34,18 @@ Better new way: java.util.concurrent
 ----semaphore: permits holders. only allow such number of thread to run
 --atomic numbers
 ----no need to worry about concurrent access
+
+
+There are three ways to reduce lock contention:
+• Reduce the duration for which locks are held;
+• Reduce the frequency with which locks are requested; or
+• Replace exclusive locks with coordination mechanisms that permit greater concurrency
+    --These include using the concurrent collections, read-write locks,immutable objects and atomic variables
+    ----ReadWriteLock (see Chapter 13) enforces a multiple-reader, single-writer locking
+        discipline: more than one reader can access the shared resource concurrently
+        so long as none of them wants to modify it, but writers must acquire the lock
+        excusively. For read-mostly data structures, ReadWriteLock can offer greater concurrency
+        than exclusive locking
+Performance monitoring:
+    vmstat,pmstat linux
+    perfmon windows

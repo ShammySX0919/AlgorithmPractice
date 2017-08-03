@@ -1,0 +1,42 @@
+An example of accessing gmail with curl through OAuth2
+
+Document
+
+    https://developers.google.com/accounts/docs/OAuth2
+    authorization service usually has two endpoints:
+        authentication endpoint for auth code
+        token endpoint for access token
+        
+Registering client app
+
+    https://console.developers.google.com
+
+    - new project and create
+    - enable/open api for that project/client
+    - create client id()
+        get id and secret
+        --web app: redirect url (encoded for command line use) for auth code (oauth2 call back)
+        --service accounts
+        --installad application
+        
+Using curl to access
+    :-->%3A
+    /-->%2F
+    scope: like the permissions I would like to have to access a resource
+
+    1. Authorization endpoint (using browser) to get auth code:
+    
+    https://accounts.google.com/o/oauth2/auth?redirect_uri=encodeUrl&response_type=code&client_id=xxx&scope=https%3A%2F%2Fmail.google.com%2F&approval_prompt=force
+    
+    2. get token with auth code
+    
+    Token endpoint:
+    https://accounts.google.com/o/oauth2/token
+    curl -X POST -H 'content-type:application/x-www-form-urlencoded' -d 'grant_type=authorization_code&code=authcode&redirect_url=encode redirect url&client_id=xxx&client_secret=xxx' https://accounts.google.com/o/oauth2/token
+    it will get back an access_token
+    
+    3. access resource with access token
+    //retrieve list of messages
+    curl -H "Authorization: Bearer thecode" "https://www.googleapis.com/gmail/v1/users/shimadroid@gmail.com/messages"
+    //specific message
+    curl -H "Authorization: Bearer thecode" "https://www.googleapis.com/gmail/v1/users/shimadroid@gmail.com/messages/mid"

@@ -2,7 +2,8 @@ package leetcode.hard;
 
 /**
  * For each element in the array, we find the maximum level of water it can trap after the rain,
- * which is equal to the minimum of maximum height of bars on both the sides minus its own height
+ * which is equal to the minimum of maximum height of bars on both the sides minus its own height.
+ * only cares about its own contribution.
  * Created by andrew on 6/11/2017.
  */
 public class Hard42_TrappingRainWater {
@@ -11,9 +12,10 @@ public class Hard42_TrappingRainWater {
         int ans = 0;
         int size = height.length;
         for (int i = 1; i < size - 1; i++) {
+            //not considering start and end number because they do not trap water
             int max_left = 0, max_right = 0;
             //Note: even though these two loops check max_left the entire left side, and max_right the entire right side,
-            //it only figures out how much water this bar contributes to total trapped water.
+            //it only figures out how much water THIS bar contributes to total trapped water.
             //it is based on how high the water on the current bar could be
             for (int j = i; j >= 0; j--) { //Search the left part for max bar size
                 max_left = Math.max(max_left, height[j]);
@@ -39,7 +41,7 @@ public class Hard42_TrappingRainWater {
             max_left[i] = Math.max(max_left[i-1],height[i]);
         max_right[size-1] = height[size-1];
         for (int i = size-2; i >= 0; i--)
-            max_right[i] = Math.max(max_right[i+1],height[i]);
+            max_right[i] = Math.max(height[i],max_right[i+1]);
         for (int i = 1; i < size - 1; i++) {
             ans += Math.min(max_left[i], max_right[i]) - height[i];
         }
